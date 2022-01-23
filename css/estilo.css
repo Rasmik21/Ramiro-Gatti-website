@@ -1,0 +1,1975 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+}    
+nav{
+    background-color: orangered;
+}
+main{
+    background-color: black;
+}
+ul{
+    list-style-type: none;   
+}
+footer{
+    background-color: orangered;
+}
+
+
+/* HOME */
+
+
+@media only screen and (max-width: 600px){
+
+/* Header */
+header{
+    color: darkorange;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    height: 200px;
+}
+header h1{
+    padding-top: 150px;
+}
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/* Nav */
+nav{
+    height: 200px;  
+}
+.red{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;    
+}
+.home{
+    height: 40px;
+}
+.contacto{
+    height: 40px;
+}
+.historia{
+    height: 40px;
+}
+.personajes{
+    height: 40px;
+}
+.acercaDe{
+    height: 40px;
+}
+
+/* Main */
+.m{
+    display: grid;
+    height: 800px;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 250px 250px;
+    row-gap: 15px;
+}
+.video{
+    width: 100%;
+}
+.video iframe{
+    height: 100%;
+    width: 100%;
+}
+.imagen{
+    width: 100%;
+}
+.imagen img{
+    height: 100%;
+    width: 100%;
+}
+.info{
+    display: grid;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;    
+}
+#parrafo{
+    align-self: center;
+}
+
+/* Footer */
+.f{
+    top: 600px;
+    height: 240px;
+}
+.f h2{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.redes{
+    position: absolute;
+    top: 1300px;
+}
+
+}
+
+@media only screen and (min-width: 600px){
+
+/* Header */
+header{
+    color: darkorange;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    height: 200px;
+}
+header h1{
+    padding-top: 150px;
+}
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/* Nav */
+nav{
+    height: 200px;  
+}
+.red{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;   
+}
+.home{
+    height: 40px;
+}
+.contacto{
+    height: 40px;
+}
+.historia{
+    height: 40px;
+}
+.personajes{
+    height: 40px;
+}
+.acercaDe{
+    height: 40px;
+}
+
+/* Main */
+.m{
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 350px 250px;
+    row-gap: 15px;
+}
+.video{
+    width: 100%;
+}
+.video iframe{
+    height: 100%;
+    width: 100%;
+}
+.imagen{
+    width: 100%
+}
+.imagen img{
+    height: 100%;
+    width: 100%;
+}
+.info{
+    display: grid;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;   
+}
+#parrafo{
+    align-self: center;
+}
+
+/* Footer */
+.f{
+    top: 600px;
+    height: 240px;
+}
+.f h2{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.redes{
+    position: absolute;
+    top: 1500px;
+}
+
+}
+
+@media only screen and (min-width: 768px){
+
+/* Header */
+header{
+    color: darkorange;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    height: 200px;
+}
+header h1{
+    padding-top: 150px;
+}
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/* Nav */
+nav{
+    height: 100px;
+    width: 100%;
+}
+.red{
+    height: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-evenly;    
+}
+
+/* Main */
+.m{
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 350px 250px;
+    row-gap: 15px;
+}
+.video{
+    width: 100%;
+}
+.video iframe{
+    height: 100%;
+    width: 100%;
+}
+.imagen{
+    width: 100%
+}
+.imagen img{
+    height: 100%;
+    width: 100%;
+}
+.info{
+    display: grid;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;    
+}
+#parrafo{
+    align-self: center;
+}
+
+/* Footer */
+.f{
+    top: 600px;
+    height: 240px;
+}
+.f h2{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.redes{
+    position: absolute;
+    top: 1400px;
+}
+
+}
+
+@media only screen and (min-width: 992px){
+
+/* Header */
+header{
+    color: darkorange;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    height: 200px;
+}
+header h1{
+    padding-top: 150px;
+}
+
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/* Nav */
+nav{
+    height: 100px;
+    width: 100%;
+}
+.red{
+    height: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-evenly;    
+}
+
+/* Main */
+.m{
+    display: flex;
+    display: grid;
+    height: 1200px;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 600px 100px;
+    row-gap: 33px;
+}
+.video{
+    width: 100%;
+}
+.video iframe{
+    height: 100%;
+    width: 100%;
+}
+.imagen{
+    width: 100%
+}
+.imagen img{
+    height: 100%;
+    width: 100%;
+}
+.info{
+    display: grid;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;  
+}
+#parrafo{
+    align-self: center;
+}
+
+/* Footer */
+.f{
+    top: 600px;
+    height: 240px;
+}
+.f h2{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.redes{
+    position: absolute;
+    top: 1600px;
+}
+
+}
+
+
+/*HISTORIA*/
+
+
+@media only screen and (max-width: 600px){
+
+/*Header*/
+
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/*Nav*/
+
+nav{
+    height: 200px;
+}
+#red{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;    
+}
+#home{
+    height: 40px;
+}
+#contacto{
+    height: 40px;
+}
+#historia{
+    height: 40px;
+}
+#personajes{
+    height: 40px;
+}
+#acercaDe{
+    height: 40px;
+}
+
+/*Main*/
+
+.m1{
+    display: grid;
+    height: 800px;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 300px;
+    align-content: center;
+    row-gap: 30px;
+}
+
+#parrafos{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+    color: white;
+    display: grid;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center; 
+}
+
+#video{
+    width: 100%;
+}
+#video iframe{
+    width: 100%;
+    height: 100%;
+}
+/*Footer*/
+
+.f1{
+    top: 600px;
+    height: 240px;
+}
+.f1 h2{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+#redes2{
+    position: absolute;
+    top: 1300px;
+}
+
+}
+
+@media only screen and (min-width: 600px){
+
+/*Header*/
+
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/*Nav*/
+nav{
+    height: 200px;
+}
+#red{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;    
+}
+#home{
+    height: 40px;
+}
+#contacto{
+    height: 40px;
+}
+#historia{
+    height: 40px;
+}
+#personajes{
+    height: 40px;
+}
+#acercaDe{
+    height: 40px;
+}
+
+/*Main*/
+
+.m1{
+    display: grid;
+    height: 800px;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 300px;
+    align-content: center;
+    row-gap: 30px;
+}
+
+#parrafos{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+    color: white;
+    display: grid;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center; 
+}
+
+#video{
+    width: 100%;
+}
+#video iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/*Footer*/
+
+.f1{
+    top: 600px;
+    height: 240px;
+}
+.f1 h2{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+#redes2{
+    position: absolute;
+    top: 1300px;
+}
+
+}
+
+@media only screen and (min-width: 768px){
+
+/*Header*/
+
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/*Nav*/
+
+nav{
+    height: 100px;
+    width: 100%;
+}
+#red{
+    height: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-evenly;    
+}
+
+/*Main*/
+
+.m1{
+    display: grid;
+    height: 800px;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 400px;
+    align-content: center;
+    row-gap: 30px;
+}
+
+#parrafos{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center; 
+    align-items: center;
+}
+
+#video{
+    width: 100%;
+}
+#video iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/*Footer*/
+
+.f1{
+    top: 600px;
+    height: 240px;
+}
+.f1 h2{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+#redes2{
+    position: absolute;
+    top: 1200px;
+}
+
+}
+
+@media only screen and (min-width: 992px){
+
+/*Header*/
+
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/*Nav*/
+
+nav{
+    height: 100px;
+    width: 100%;
+}
+#red{
+    height: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-evenly;    
+}
+
+/*Main*/
+
+.m1{
+    display: grid;
+    height: 800px;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 400px;
+    align-content: center;
+    row-gap: 30px;
+}
+
+#parrafos{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center; 
+    align-items: center;
+}
+
+#video{
+    width: 100%;
+}
+#video iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/*Footer*/
+
+.f1{
+    top: 600px;
+    height: 240px;
+}
+.f1 h2{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+#redes2{
+    position: absolute;
+    top: 1200px;
+}
+
+}
+
+
+/*PERSONAJES*/
+
+
+@media only screen and (max-width: 600px){
+
+/*Header*/
+
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/*Nav*/
+
+nav{
+    height: 200px;
+}
+.red1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;    
+}
+.home1{
+    height: 40px;
+}
+.contacto1{
+    height: 40px;
+}
+.historia1{
+    height: 40px;
+}
+.personajes1{
+    height: 40px;
+}
+.acercaDe1{
+    height: 40px;
+}
+
+/*Main*/
+
+.m2{
+    display: grid;
+    height: 1130px;
+    grid-template-columns: 100%;
+    grid-template-rows: 1030px 50px;
+    align-content: center;
+    row-gap: 30px;
+    
+}
+.characters{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100x 100px 100px 100px;
+    grid-template-areas: "Naruto Sasuke Sakura"
+                         "Kakashi Itachi Minato" 
+                         "Obito Madara Hashirama"
+                         "Tobirama Sarutobi Pain" 
+                         "Tsunade Orochimaru Jiraiya";
+}
+.Naruto{
+    height: 80%;
+    width: 70%;
+    grid-area: Naruto;
+}
+.Sasuke{
+    height: 80%;
+    width: 70%;
+    grid-area: Sasuke;
+}
+.Sakura{
+    height: 80%;
+    width: 70%;
+    grid-area: Sakura;
+}
+.Kakashi{
+    height: 80%;
+    width: 70%;
+    grid-area: Kakashi;
+}
+.Itachi{
+    height: 80%;
+    width: 75%;
+    grid-area: Itachi;
+}
+.Minato{
+    height: 80%;
+    width: 70%;
+    grid-area: Minato;
+}
+.Obito{
+    height: 80%;
+    width: 80%;
+    grid-area: Obito;
+}
+.Madara{
+    height: 80%;
+    width: 70%;
+    grid-area: Madara;
+}
+.Hashirama{
+    height: 80%;
+    width: 70%;
+    grid-area: Hashirama;
+}
+.Tobirama{
+    height: 80%;
+    width: 70%;
+    grid-area: Tobirama;
+}
+.Sarutobi{
+    height: 80%;
+    width: 70%;
+    grid-area: Sarutobi;
+}
+.Pain{
+    height: 80%;
+    width: 80%;
+    grid-area: Pain;
+}
+.Tsunade{
+    height: 80%;
+    width: 70%;
+    grid-area: Tsunade;
+}
+.Orochimaru{
+    height: 80%;
+    width: 70%;
+    grid-area: Orochimaru;
+}
+.Jiraiya{
+    height: 80%;
+    width: 70%;
+    grid-area: Jiraiya;
+}
+.description{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.descripcion{
+    color: white;
+}
+/*Footer*/
+
+.f2{
+    top: 600px;
+    height: 240px;
+}
+.f2 h2{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.redes3{
+    position: absolute;
+    top: 1690px;
+}
+
+}
+
+@media only screen and (min-width: 600px){
+
+/*Header*/
+
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/*Nav*/
+
+nav{
+    height: 200px;
+}
+.red1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;    
+}
+.home1{
+    height: 40px;
+}
+.contacto1{
+    height: 40px;
+}
+.historia1{
+    height: 40px;
+}
+.personajes1{
+    height: 40px;
+}
+.acercaDe1{
+    height: 40px;
+}
+
+/*Main*/
+
+.m2{
+    display: grid;
+    height: 400px;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 50px;
+    align-content: center;
+    row-gap: 30px;
+    
+}
+.characters{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 90px 90px 90px;
+    grid-template-areas: "Naruto Sasuke Sakura Kakashi Itachi"
+                         "Minato Obito Madara Hashirama Tobirama"
+                         "Sarutobi Pain Tsunade Orochimaru Jiraiya";
+}
+.Naruto{
+    height: 90%;
+    width: 70%;
+    grid-area: Naruto;
+}
+.Sasuke{
+    height: 90%;
+    width: 70%;
+    grid-area: Sasuke;
+}
+.Sakura{
+    height: 90%;
+    width: 70%;
+    grid-area: Sakura;
+}
+.Kakashi{
+    height: 90%;
+    width: 70%;
+    grid-area: Kakashi;
+}
+.Itachi{
+    height: 90%;
+    width: 70%;
+    grid-area: Itachi;
+}
+.Minato{
+    height: 90%;
+    width: 70%;
+    grid-area: Minato;
+}
+.Obito{
+    height: 90%;
+    width: 70%;
+    grid-area: Obito;
+}
+.Madara{
+    height: 90%;
+    width: 70%;
+    grid-area: Madara;
+}
+.Hashirama{
+    height: 90%;
+    width: 70%;
+    grid-area: Hashirama;
+}
+.Tobirama{
+    height: 90%;
+    width: 70%;
+    grid-area: Tobirama;
+}
+.Sarutobi{
+    height: 90%;
+    width: 70%;
+    grid-area: Sarutobi;
+}
+.Pain{
+    height: 90%;
+    width: 70%;
+    grid-area: Pain;
+}
+.Tsunade{
+    height: 90%;
+    width: 70%;
+    grid-area: Tsunade;
+}
+.Orochimaru{
+    height: 90%;
+    width: 70%;
+    grid-area: Orochimaru;
+}
+.Jiraiya{
+    height: 90%;
+    width: 70%;
+    grid-area: Jiraiya;
+}
+
+.description{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.descripcion{
+    color: white;
+}
+
+/*Footer*/
+
+.f2{
+    top: 600px;
+    height: 240px;
+}
+.f2 h2{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.redes3{
+    position: absolute;
+    top: 970px;
+}
+
+}
+
+@media only screen and (min-width: 768px){
+
+/*Header*/
+
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/*Nav*/
+
+nav{
+    height: 100px;
+    width: 100%;
+}
+.red1{
+    height: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-evenly;    
+}
+
+/*Main*/
+
+.m2{
+    display: grid;
+    height: 1800px;
+    grid-template-columns: 100%;
+    grid-template-rows: 1700px 50px;
+    align-content: center;
+    row-gap: 30px;
+    
+}
+.characters{
+    height: 110%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "Naruto Sasuke Sakura Kakashi Itachi"
+                         "Minato Obito Madara Hashirama Tobirama"
+                         "Sarutobi Pain Tsunade Orochimaru Jiraiya";
+}
+
+.Naruto{
+    height: 70%;
+    width: 100%;
+    grid-area: Naruto;
+}
+.Sasuke{
+    height: 70%;
+    width: 100%;
+    grid-area: Sasuke;
+}
+.Sakura{
+    height: 70%;
+    width: 100%;
+    grid-area: Sakura;
+}
+.Kakashi{
+    height: 70%;
+    width: 100%;
+    grid-area: Kakashi;
+}
+.Itachi{
+    height: 70%;
+    width: 100%;
+    grid-area: Itachi;
+}
+.Minato{
+    height: 70%;
+    width: 100%;
+    grid-area: Minato;
+}
+.Obito{
+    height: 70%;
+    width: 100%;
+    grid-area: Obito;
+}
+.Madara{
+    height: 70%;
+    width: 100%;
+    grid-area: Madara;
+}
+.Hashirama{
+    height: 70%;
+    width: 100%;
+    grid-area: Hashirama;
+}
+.Tobirama{
+    height: 70%;
+    width: 100%;
+    grid-area: Tobirama;
+}
+.Sarutobi{
+    height: 70%;
+    width: 100%;
+    grid-area: Sarutobi;
+}
+.Pain{
+    height: 70%;
+    width: 100%;
+    grid-area: Pain;
+}
+.Tsunade{
+    height: 70%;
+    width: 100%;
+    grid-area: Tsunade;
+}
+.Orochimaru{
+    height: 70%;
+    width: 100%;
+    grid-area: Orochimaru;
+}
+.Jiraiya{
+    height: 70%;
+    width: 100%;
+    grid-area: Jiraiya;
+}
+.description{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.descripcion{
+    color: white;
+}
+
+
+/*Footer*/
+
+.f2{
+    top: 2500px;
+    height: 240px;
+}
+.f2 h2{
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.redes3{
+    position: absolute;
+    top: 2270px;
+}
+
+}
+
+@media only screen and (min-width: 992px){
+
+/*Header*/
+
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/*Nav*/
+
+nav{
+    height: 100px;
+    width: 100%;
+}
+.red1{
+    height: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-evenly;    
+}
+
+/*Main*/
+
+.m2{
+    display: grid;
+    height: 1800px;
+    grid-template-columns: 100%;
+    grid-template-rows: 1700px 50px;
+    align-content: center;
+    row-gap: 30px;
+    
+}
+.characters{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "Naruto Sasuke Sakura Kakashi Itachi"
+                         "Minato Obito Madara Hashirama Tobirama"
+                         "Sarutobi Pain Tsunade Orochimaru Jiraiya";
+}
+.description{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.descripcion{
+    color: white;
+}
+.Naruto{
+    height: 80%;
+    width: 100%;
+    grid-area: Naruto;
+}
+.Sasuke{
+    height: 80%;
+    width: 100%;
+    grid-area: Sasuke;
+}
+.Sakura{
+    height: 80%;
+    width: 100%;
+    grid-area: Sakura;
+}
+.Kakashi{
+    height: 80%;
+    width: 100%;
+    grid-area: Kakashi;
+}
+.Itachi{
+    height: 80%;
+    width: 90%;
+    grid-area: Itachi;
+}
+.Minato{
+    height: 80%;
+    width: 90%;
+    grid-area: Minato;
+}
+.Obito{
+    height: 80%;
+    width: 100%;
+    grid-area: Obito;
+}
+.Madara{
+    height: 80%;
+    width: 90%;
+    grid-area: Madara;
+}
+.Hashirama{
+    height: 80%;
+    width: 100%;
+    grid-area: Hashirama;
+}
+.Tobirama{
+    height: 80%;
+    width: 100%;
+    grid-area: Tobirama;
+}
+.Sarutobi{
+    height: 80%;
+    width: 100%;
+    grid-area: Sarutobi;
+}
+.Pain{
+    height: 80%;
+    width: 100%;
+    grid-area: Pain;
+}
+.Tsunade{
+    height: 80%;
+    width: 100%;
+    grid-area: Tsunade;
+}
+.Orochimaru{
+    height: 80%;
+    width: 90%;
+    grid-area: Orochimaru;
+}
+.Jiraiya{
+    height: 80%;
+    width: 100%;
+    grid-area: Jiraiya;
+}
+
+/*Footer*/
+
+.f2{
+    top: 2500px;
+    height: 240px;
+}
+.f2 h2{
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.redes3{
+    position: absolute;
+    top: 2270px;
+}
+
+}
+
+
+/*CONTACTO*/
+
+
+@media only screen and (max-width: 600px){
+
+/*Header*/
+
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/*Nav*/
+
+nav{
+    height: 200px;
+}
+#red1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;    
+}
+#home1{
+    height: 40px;
+}
+#contacto1{
+    height: 40px;
+}
+#historia1{
+    height: 40px;
+}
+#personajes1{
+    height: 40px;
+}
+#acercaDe1{
+    height: 40px;
+}
+
+/*Main*/
+
+.m3{
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 250px 450px;
+    row-gap: 15px;
+    justify-items: center;
+    
+    
+    
+}
+.m3 h3{
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    align-self: center;
+}
+.kakashi3{
+    height: 100%;
+    width: 100%;
+}
+
+/*Footer*/
+
+.f3{
+    top: 600px;
+    height: 240px;
+}
+.f3 h2{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.redes4{
+    position: absolute;
+    top: 1570px;
+}
+
+}
+
+@media only screen and (min-width: 600px){
+
+/*Header*/
+
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/*Nav*/
+
+nav{
+    height: 200px;
+}
+#red1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;    
+}
+#home1{
+    height: 40px;
+}
+#contacto1{
+    height: 40px;
+}
+#historia1{
+    height: 40px;
+}
+#personajes1{
+    height: 40px;
+}
+#acercaDe1{
+    height: 40px;
+}
+
+/*Main*/
+
+.m3{
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 250px 450px;
+    row-gap: 15px;
+    justify-items: center;
+    
+    
+    
+}
+.m3 h3{
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    align-self: center;
+    justify-self: center;
+}
+.kakashi3{
+    height: 100%;
+    width: 100%;
+}
+
+/*Footer*/
+
+.f3{
+    top: 600px;
+    height: 240px;
+}
+.f3 h2{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.redes4{
+    position: absolute;
+    top: 1570px;
+}
+
+}
+
+@media only screen and (min-width: 768px){
+
+/*Header*/
+
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/*Nav*/
+
+nav{
+    height: 100px;
+    width: 100%;
+}
+#red1{
+    height: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-evenly;    
+}
+
+/*Main*/
+
+.m3{
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 45% 45%;
+    grid-template-areas: "a1 a1"
+                         "a2 a3";   
+}
+.m3 h3{
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    justify-self: center;
+    grid-area: a1;
+}
+.section{
+    grid-area: a2;
+    align-self: flex-end;
+}
+.kakashi3{
+    height: 100%;
+    width: 100%;
+    grid-area: a3;
+}
+
+/*Footer*/
+
+.f3{
+    top: 600px;
+    height: 240px;
+}
+.f3 h2{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.redes4{
+    position: absolute;
+    top: 1470px;
+}
+
+}
+
+@media only screen and (min-width: 992px){
+
+/*Header*/
+
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/*Nav*/
+
+nav{
+    height: 100px;
+    width: 100%;
+}
+#red1{
+    height: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-evenly;    
+}
+
+/*Main*/
+
+.m3{
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 45% 45%;
+    grid-template-areas: "a1 a1"
+                         "a2 a3";   
+}
+.m3 h3{
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    justify-self: center;
+    grid-area: a1;
+}
+.section{
+    grid-area: a2;
+    align-self: flex-end;
+}
+.kakashi3{
+    height: 100%;
+    width: 100%;
+    grid-area: a3;
+}
+
+/*Footer*/
+
+.f3{
+    top: 600px;
+    height: 240px;
+}
+.f3 h2{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.redes4{
+    position: absolute;
+    top: 1470px;
+}
+
+}
+
+
+/*ACERCA DE*/
+
+
+@media only screen and (max-width: 600px){
+
+/*Header*/
+
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/*Nav*/
+
+nav{
+    height: 200px;
+}
+.red2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;    
+}
+.home2{
+    height: 40px;
+}
+.contacto2{
+    height: 40px;
+}
+.historia2{
+    height: 40px;
+}
+.personajes2{
+    height: 40px;
+}
+.acercaDe2{
+    height: 40px;
+}
+
+/*Main*/
+
+.m4{
+    display: grid;
+    height: 700px;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "a1"
+                         "a2";
+}
+.m4 h3{
+    color: white;
+    grid-area: a1;
+    align-self: center;
+}
+.dattebayo{
+    height: 100%;
+    width: 100%;
+    grid-area: a2;
+}
+
+/*Footer*/
+
+.f4{
+    top: 600px;
+    height: 240px;
+}
+.f4 h2{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.redes5{
+    position: absolute;
+    top: 1270px;
+}
+
+}
+
+@media only screen and (min-width: 600px){
+
+/*Header*/
+
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/*Nav*/
+
+nav{
+    height: 200px;
+}
+.red2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;    
+}
+.home2{
+    height: 40px;
+}
+.contacto2{
+    height: 40px;
+}
+.historia2{
+    height: 40px;
+}
+.personajes2{
+    height: 40px;
+}
+.acercaDe2{
+    height: 40px;
+}
+
+/*Main*/
+
+.m4{
+    display: grid;
+    height: 700px;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "a1"
+                         "a2";
+}
+.m4 h3{
+    color: white;
+    grid-area: a1;
+    align-self: center;
+}
+.dattebayo{
+    height: 100%;
+    width: 100%;
+    grid-area: a2;
+}
+
+/*Footer*/
+
+.f4{
+    top: 600px;
+    height: 240px;
+}
+.f4 h2{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.redes5{
+    position: absolute;
+    top: 1270px;
+}
+
+}
+
+@media only screen and (min-width: 768px){
+
+/*Header*/
+
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/*Nav*/
+
+nav{
+    height: 100px;
+    width: 100%;
+}
+.red2{
+    height: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-evenly;    
+}
+
+/*Main*/
+
+.m4{
+    display: grid;
+    height: 700px;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "a1"
+                         "a2";
+}
+.m4 h3{
+    color: white;
+    grid-area: a1;
+    align-self: center;
+}
+.dattebayo{
+    height: 100%;
+    width: 100%;
+    grid-area: a2;
+}
+
+/*Footer*/
+
+.f4{
+    top: 600px;
+    height: 240px;
+}
+.f4 h2{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.redes5{
+    position: absolute;
+    top: 1170px;
+}
+
+}
+
+@media only screen and (min-width: 992px){
+
+/*Header*/
+
+.logg{
+    position:absolute;
+}
+.loguito{
+    height: 100%;
+}
+
+/*Nav*/
+
+nav{
+    height: 100px;
+    width: 100%;
+}
+.red2{
+    height: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-evenly;    
+}
+
+/*Main*/
+
+.m4{
+    display: grid;
+    height: 700px;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "a1"
+                         "a2";
+}
+.m4 h3{
+    color: white;
+    grid-area: a1;
+    align-self: center;
+}
+.dattebayo{
+    height: 100%;
+    width: 100%;
+    grid-area: a2;
+}
+
+/*Footer*/
+
+.f4{
+    top: 600px;
+    height: 240px;
+}
+.f4 h2{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.redes5{
+    position: absolute;
+    top: 1170px;
+}
+
+}
