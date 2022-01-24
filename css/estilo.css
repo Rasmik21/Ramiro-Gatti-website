@@ -455,7 +455,6 @@ nav{
     font-family: 'Permanent Marker', cursive;
     text-align: center; 
 }
-
 #video{
     width: 100%;
 }
@@ -797,76 +796,151 @@ nav{
     height: 80%;
     width: 70%;
     grid-area: Naruto;
+    transition: height 2s, width 2s;
+}
+.Naruto :hover{
+    height: 300px;
+    width: 150px;
 }
 .Sasuke{
     height: 80%;
     width: 70%;
     grid-area: Sasuke;
+    transition: height 2s, width 2s;
+}
+.Sasuke :hover{
+    height: 300px;
+    width: 150px;
 }
 .Sakura{
     height: 80%;
     width: 70%;
     grid-area: Sakura;
+    transition: height 2s, width 2s;
+}
+.Sakura :hover{
+    height: 300px;
+    width: 150px;
 }
 .Kakashi{
     height: 80%;
     width: 70%;
     grid-area: Kakashi;
+    transition: height 2s, width 2s;
+}
+.Kakashi :hover{
+    height: 300px;
+    width: 150px;
 }
 .Itachi{
     height: 80%;
     width: 75%;
     grid-area: Itachi;
+    transition: height 2s, width 2s;
+}
+.Itachi :hover{
+    height: 300px;
+    width: 150px;
 }
 .Minato{
     height: 80%;
     width: 70%;
     grid-area: Minato;
+    transition: height 2s, width 2s;
+}
+.Minato :hover{
+    height: 300px;
+    width: 150px;
 }
 .Obito{
     height: 80%;
     width: 80%;
     grid-area: Obito;
+    transition: height 2s, width 2s;
+}
+.Obito:hover{
+    height: 300px;
+    width: 150px;
 }
 .Madara{
     height: 80%;
     width: 70%;
     grid-area: Madara;
+    transition: height 2s, width 2s;
+}
+.Madara :hover{
+    height: 300px;
+    width: 150px;
 }
 .Hashirama{
     height: 80%;
     width: 70%;
     grid-area: Hashirama;
+    transition: height 2s, width 2s;
+}
+.Hashirama :hover{
+    height: 300px;
+    width: 150px;
 }
 .Tobirama{
     height: 80%;
     width: 70%;
     grid-area: Tobirama;
+    transition: height 2s, width 2s;
+}
+.Tobirama :hover{
+    height: 300px;
+    width: 150px;
 }
 .Sarutobi{
     height: 80%;
     width: 70%;
     grid-area: Sarutobi;
+    transition: height 2s, width 2s;
+}
+.Sarutobi :hover{
+    height: 300px;
+    width: 150px;
 }
 .Pain{
     height: 80%;
     width: 80%;
     grid-area: Pain;
+    transition: height 2s, width 2s;
+}
+.Pain :hover{
+    height: 300px;
+    width: 150px;
 }
 .Tsunade{
     height: 80%;
     width: 70%;
     grid-area: Tsunade;
+    transition: height 2s, width 2s;
+}
+.Tsunade :hover{
+    height: 300px;
+    width: 150px;
 }
 .Orochimaru{
     height: 80%;
     width: 70%;
     grid-area: Orochimaru;
+    transition: height 2s, width 2s;
+}
+.Orochimaru :hover{
+    height: 300px;
+    width: 150px;
 }
 .Jiraiya{
     height: 80%;
     width: 70%;
     grid-area: Jiraiya;
+    transition: height 2s, width 2s;
+}
+.Jiraiya :hover{
+    height: 300px;
+    width: 150px;
 }
 .description{
     display: grid;
@@ -961,78 +1035,152 @@ nav{
     height: 90%;
     width: 70%;
     grid-area: Naruto;
+    transition: height 2s, width 2s;
+}
+.Naruto :hover{
+    height: 300px;
+    width: 150px;
 }
 .Sasuke{
     height: 90%;
     width: 70%;
     grid-area: Sasuke;
+    transition: height 2s, width 2s;
+}
+.Sasuke :hover{
+    height: 300px;
+    width: 150px;
 }
 .Sakura{
     height: 90%;
     width: 70%;
     grid-area: Sakura;
+    transition: height 2s, width 2s;
+}
+.Sakura :hover{
+    height: 300px;
+    width: 150px;
 }
 .Kakashi{
     height: 90%;
     width: 70%;
     grid-area: Kakashi;
+    transition: height 2s, width 2s;
+}
+.Kakashi :hover{
+    height: 300px;
+    width: 150px;
 }
 .Itachi{
     height: 90%;
     width: 70%;
     grid-area: Itachi;
+    transition: height 2s, width 2s;
+}
+.Itachi :hover{
+    height: 300px;
+    width: 150px;
 }
 .Minato{
     height: 90%;
     width: 70%;
     grid-area: Minato;
+    transition: height 2s, width 2s;
+}
+.Minato :hover{
+    height: 300px;
+    width: 150px;
 }
 .Obito{
     height: 90%;
     width: 70%;
     grid-area: Obito;
+    transition: height 2s, width 2s;
+}
+.Obito :hover{
+    height: 300px;
+    width: 150px;
 }
 .Madara{
     height: 90%;
     width: 70%;
     grid-area: Madara;
+    transition: height 2s, width 2s;
+}
+.Madara :hover{
+    height: 300px;
+    width: 150px;
 }
 .Hashirama{
     height: 90%;
     width: 70%;
     grid-area: Hashirama;
+    transition: height 2s, width 2s;
+}
+.Hashirama :hover{
+    height: 300px;
+    width: 150px;
 }
 .Tobirama{
     height: 90%;
     width: 70%;
     grid-area: Tobirama;
+    transition: height 2s, width 2s;
+}
+.Tobirama :hover{
+    height: 300px;
+    width: 150px;
 }
 .Sarutobi{
     height: 90%;
     width: 70%;
     grid-area: Sarutobi;
+    transition: height 2s, width 2s;
+}
+.Sarutobi :hover{
+    height: 300px;
+    width: 150px;
 }
 .Pain{
     height: 90%;
     width: 70%;
     grid-area: Pain;
+    transition: height 2s, width 2s;
+}
+.Pain :hover{
+    height: 300px;
+    width: 150px;
 }
 .Tsunade{
     height: 90%;
     width: 70%;
     grid-area: Tsunade;
+    transition: height 2s, width 2s;
+}
+.Tsunade :hover{
+    height: 300px;
+    width: 150px;
 }
 .Orochimaru{
     height: 90%;
     width: 70%;
     grid-area: Orochimaru;
+    transition: height 2s, width 2s;
+}
+.Orochimaru :hover{
+    height: 300px;
+    width: 150px;
 }
 .Jiraiya{
     height: 90%;
     width: 70%;
     grid-area: Jiraiya;
+    transition: height 2s, width 2s;
 }
-
+.Jiraiya :hover{
+    height: 300px;
+    width: 150px;
+}
 .description{
     display: grid;
     justify-items: center;
@@ -1113,76 +1261,151 @@ nav{
     height: 70%;
     width: 100%;
     grid-area: Naruto;
+    transition: height 2s, width 2s;
+}
+.Naruto :hover{
+    height: 500px;
+    width: 300px;
 }
 .Sasuke{
     height: 70%;
     width: 100%;
     grid-area: Sasuke;
+    transition: height 2s, width 2s;
+}
+.Sasuke :hover{
+    height: 500px;
+    width: 300px;
 }
 .Sakura{
     height: 70%;
     width: 100%;
     grid-area: Sakura;
+    transition: height 2s, width 2s;
+}
+.Sakura :hover{
+    height: 500px;
+    width: 300px;
 }
 .Kakashi{
     height: 70%;
     width: 100%;
     grid-area: Kakashi;
+    transition: height 2s, width 2s;
+}
+.Kakashi :hover{
+    height: 500px;
+    width: 300px;
 }
 .Itachi{
     height: 70%;
     width: 100%;
     grid-area: Itachi;
+    transition: height 2s, width 2s;
+}
+.Itachi :hover{
+    height: 400px;
+    width: 250px;
 }
 .Minato{
     height: 70%;
     width: 100%;
     grid-area: Minato;
+    transition: height 2s, width 2s;
+}
+.Minato :hover{
+    height: 500px;
+    width: 300px;
 }
 .Obito{
     height: 70%;
     width: 100%;
     grid-area: Obito;
+    transition: height 2s, width 2s;
+}
+.Obito :hover{
+    height: 500px;
+    width: 300px;
 }
 .Madara{
     height: 70%;
     width: 100%;
     grid-area: Madara;
+    transition: height 2s, width 2s;
+}
+.Madara :hover{
+    height: 500px;
+    width: 300px;
 }
 .Hashirama{
     height: 70%;
     width: 100%;
     grid-area: Hashirama;
+    transition: height 2s, width 2s;
+}
+.Hashirama :hover{
+    height: 500px;
+    width: 300px;
 }
 .Tobirama{
     height: 70%;
     width: 100%;
     grid-area: Tobirama;
+    transition: height 2s, width 2s;
+}
+.Tobirama :hover{
+    height: 400px;
+    width: 250px;
 }
 .Sarutobi{
     height: 70%;
     width: 100%;
     grid-area: Sarutobi;
+    transition: height 2s, width 2s;
+}
+.Sarutobi :hover{
+    height: 500px;
+    width: 300px;
 }
 .Pain{
     height: 70%;
     width: 100%;
     grid-area: Pain;
+    transition: height 2s, width 2s;
+}
+.Pain :hover{
+    height: 500px;
+    width: 300px;
 }
 .Tsunade{
     height: 70%;
     width: 100%;
     grid-area: Tsunade;
+    transition: height 2s, width 2s;
+}
+.Tsunade :hover{
+    height: 500px;
+    width: 300px;
 }
 .Orochimaru{
     height: 70%;
     width: 100%;
     grid-area: Orochimaru;
+    transition: height 2s, width 2s;
+}
+.Orochimaru :hover{
+    height: 500px;
+    width: 300px;
 }
 .Jiraiya{
     height: 70%;
     width: 100%;
     grid-area: Jiraiya;
+    transition: height 2s, width 2s;
+}
+.Jiraiya :hover{
+    height: 400px;
+    width: 250px;
 }
 .description{
     display: grid;
@@ -1272,76 +1495,151 @@ nav{
     height: 80%;
     width: 100%;
     grid-area: Naruto;
+    transition: height 2s, width 2s;
+}
+.Naruto :hover{
+    height: 500px;
+    width: 300px;
 }
 .Sasuke{
     height: 80%;
     width: 100%;
     grid-area: Sasuke;
+    transition: height 2s, width 2s;
+}
+.Sasuke :hover{
+    height: 500px;
+    width: 300px;
 }
 .Sakura{
     height: 80%;
     width: 100%;
     grid-area: Sakura;
+    transition: height 2s, width 2s;
+}
+.Sakura :hover{
+    height: 500px;
+    width: 300px;
 }
 .Kakashi{
     height: 80%;
     width: 100%;
     grid-area: Kakashi;
+    transition: height 2s, width 2s;
+}
+.Kakashi :hover{
+    height: 500px;
+    width: 300px;
 }
 .Itachi{
     height: 80%;
     width: 90%;
     grid-area: Itachi;
+    transition: height 2s, width 2s;
+}
+.Itachi :hover{
+    height: 500px;
+    width: 300px;
 }
 .Minato{
     height: 80%;
     width: 90%;
     grid-area: Minato;
+    transition: height 2s, width 2s;
+}
+.Minato :hover{
+    height: 500px;
+    width: 300px;
 }
 .Obito{
     height: 80%;
     width: 100%;
     grid-area: Obito;
+    transition: height 2s, width 2s;
+}
+.Obito :hover{
+    height: 500px;
+    width: 300px;
 }
 .Madara{
     height: 80%;
     width: 90%;
     grid-area: Madara;
+    transition: height 2s, width 2s;
+}
+.Madara :hover{
+    height: 500px;
+    width: 300px;
 }
 .Hashirama{
     height: 80%;
     width: 100%;
     grid-area: Hashirama;
+    transition: height 2s, width 2s;
+}
+.Hashirama :hover{
+    height: 500px;
+    width: 300px;
 }
 .Tobirama{
     height: 80%;
     width: 100%;
     grid-area: Tobirama;
+    transition: height 2s, width 2s;
+}
+.Tobirama :hover{
+    height: 500px;
+    width: 300px;
 }
 .Sarutobi{
     height: 80%;
     width: 100%;
     grid-area: Sarutobi;
+    transition: height 2s, width 2s;
+}
+.Sarutobi :hover{
+    height: 500px;
+    width: 300px;
 }
 .Pain{
     height: 80%;
     width: 100%;
     grid-area: Pain;
+    transition: height 2s, width 2s;
+}
+.Pain :hover{
+    height: 500px;
+    width: 300px;
 }
 .Tsunade{
     height: 80%;
     width: 100%;
     grid-area: Tsunade;
+    transition: height 2s, width 2s;
+}
+.Tsunade :hover{
+    height: 500px;
+    width: 300px;
 }
 .Orochimaru{
     height: 80%;
     width: 90%;
     grid-area: Orochimaru;
+    transition: height 2s, width 2s;
+}
+.Orochimaru :hover{
+    height: 500px;
+    width: 300px;
 }
 .Jiraiya{
     height: 80%;
     width: 100%;
     grid-area: Jiraiya;
+    transition: height 2s, width 2s;
+}
+.Jiraiya :hover{
+    height: 500px;
+    width: 300px;
 }
 
 /*Footer*/
