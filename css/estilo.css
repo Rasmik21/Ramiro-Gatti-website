@@ -438,7 +438,7 @@ nav{
     display: grid;
     height: 800px;
     grid-template-columns: 100%;
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 450px 300px;
     align-content: center;
     row-gap: 30px;
 }
@@ -527,7 +527,7 @@ nav{
     display: grid;
     height: 800px;
     grid-template-columns: 100%;
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 350px 300px;
     align-content: center;
     row-gap: 30px;
 }
@@ -1664,6 +1664,10 @@ nav{
 
 /*CONTACTO*/
 
+.form2{
+    display: grid;
+    row-gap: 15px;
+}
 
 @media only screen and (max-width: 600px){
 
@@ -1710,9 +1714,9 @@ nav{
 
 .m3{
     display: grid;
-    height: 1000px;
+    height: 1500px;
     grid-template-columns: 100%;
-    grid-template-rows: 250px 250px 450px;
+    grid-template-rows: 250px 500px 450px;
     row-gap: 15px;
     justify-items: center;
     
@@ -1723,6 +1727,15 @@ nav{
     color: white;
     font-family: 'Permanent Marker', cursive;
     align-self: center;
+}
+.section{
+    display: grid;
+    row-gap: 20px;
+ 
+}
+.form{
+    display: grid;
+    row-gap: 20px;
 }
 .kakashi3{
     height: 100%;
@@ -1743,7 +1756,7 @@ nav{
 }
 .redes4{
     position: absolute;
-    top: 1570px;
+    top: 2070px;
 }
 
 }
@@ -1793,9 +1806,9 @@ nav{
 
 .m3{
     display: grid;
-    height: 1000px;
+    height: 1500px;
     grid-template-columns: 100%;
-    grid-template-rows: 250px 250px 450px;
+    grid-template-rows: 250px 500px 450px;
     row-gap: 15px;
     justify-items: center;
     
@@ -1812,6 +1825,15 @@ nav{
     height: 100%;
     width: 100%;
 }
+.section{
+    display: grid;
+    row-gap: 20px;
+ 
+}
+.form{
+    display: grid;
+    row-gap: 20px;
+}
 
 /*Footer*/
 
@@ -1827,7 +1849,7 @@ nav{
 }
 .redes4{
     position: absolute;
-    top: 1570px;
+    top: 2070px;
 }
 
 }
