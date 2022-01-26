@@ -116,7 +116,7 @@ nav{
 }
 .redes{
     position: absolute;
-    top: 1300px;
+    top: 1290px;
 }
 
 }
@@ -214,7 +214,7 @@ nav{
 }
 .redes{
     position: absolute;
-    top: 1500px;
+    top: 1490px;
 }
 
 }
@@ -297,7 +297,7 @@ nav{
 }
 .redes{
     position: absolute;
-    top: 1400px;
+    top: 1390px;
 }
 
 }
@@ -382,7 +382,7 @@ nav{
 }
 .redes{
     position: absolute;
-    top: 1600px;
+    top: 1590px;
 }
 
 }
@@ -476,7 +476,7 @@ nav{
 }
 #redes2{
     position: absolute;
-    top: 1300px;
+    top: 1290px;
 }
 
 }
@@ -567,7 +567,7 @@ nav{
 }
 #redes2{
     position: absolute;
-    top: 1300px;
+    top: 1290px;
 }
 
 }
@@ -643,7 +643,7 @@ nav{
 }
 #redes2{
     position: absolute;
-    top: 1200px;
+    top: 1190px;
 }
 
 }
@@ -719,7 +719,7 @@ nav{
 }
 #redes2{
     position: absolute;
-    top: 1200px;
+    top: 1190px;
 }
 
 }
@@ -773,9 +773,9 @@ nav{
 
 .m2{
     display: grid;
-    height: 1130px;
+    height: 1170px;
     grid-template-columns: 100%;
-    grid-template-rows: 1030px 50px;
+    grid-template-rows: 1030px 100px;
     align-content: center;
     row-gap: 30px;
     
@@ -964,7 +964,7 @@ nav{
 }
 .redes3{
     position: absolute;
-    top: 1690px;
+    top: 1700px;
 }
 
 }
@@ -2045,13 +2045,16 @@ nav{
 
 .m4{
     display: grid;
-    height: 700px;
+    height: 800px;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+    row-gap: 25px;
+    grid-template-rows: 350px 350px;
     grid-template-areas: "a1"
                          "a2";
+                    
 }
 .m4 h3{
+    height: 100%;
     color: white;
     grid-area: a1;
     align-self: center;
@@ -2076,7 +2079,7 @@ nav{
 }
 .redes5{
     position: absolute;
-    top: 1270px;
+    top: 1370px;
 }
 
 }
