@@ -5,10 +5,10 @@
 
 header{
     background-color: black;
-}    
+}
 nav{
     background-color: orangered;
-}
+}    
 main{
     background-color: black;
 }
@@ -45,12 +45,17 @@ header h1{
 /* Nav */
 nav{
     height: 200px;  
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
 }
+
+
 .red{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
     justify-content: center;
     justify-content: space-between;
     justify-content: space-around;    
@@ -143,6 +148,9 @@ header h1{
 /* Nav */
 nav{
     height: 200px;  
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
 }
 .red{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -406,6 +414,9 @@ nav{
 
 nav{
     height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
 }
 #red{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -495,6 +506,9 @@ nav{
 /*Nav*/
 nav{
     height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
 }
 #red{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -695,6 +709,8 @@ nav{
     font-family: 'Permanent Marker', cursive;
     text-align: center; 
     align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 #video{
@@ -949,6 +965,7 @@ nav{
 }
 .descripcion{
     color: white;
+    font-family: 'Permanent Marker', cursive;
 }
 /*Footer*/
 
@@ -1188,6 +1205,7 @@ nav{
 }
 .descripcion{
     color: white;
+    font-family: 'Permanent Marker', cursive;
 }
 
 /*Footer*/
@@ -1414,6 +1432,7 @@ nav{
 }
 .descripcion{
     color: white;
+    font-family: 'Permanent Marker', cursive;
 }
 
 
@@ -1490,6 +1509,7 @@ nav{
 }
 .descripcion{
     color: white;
+    font-family: 'Permanent Marker', cursive;
 }
 .Naruto{
     height: 80%;
@@ -1727,6 +1747,7 @@ nav{
     color: white;
     font-family: 'Permanent Marker', cursive;
     align-self: center;
+    
 }
 .section{
     display: grid;
@@ -1959,13 +1980,17 @@ nav{
     grid-template-columns: 50% 50%;
     grid-template-rows: 45% 45%;
     grid-template-areas: "a1 a1"
-                         "a2 a3";   
+                         "a2 a3";  
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .m3 h3{
     color: white;
     font-family: 'Permanent Marker', cursive;
     justify-self: center;
     grid-area: a1;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .section{
     grid-area: a2;
@@ -2058,6 +2083,7 @@ nav{
     color: white;
     grid-area: a1;
     align-self: center;
+    font-family: 'Permanent Marker', cursive;
 }
 .dattebayo{
     height: 100%;
@@ -2139,6 +2165,7 @@ nav{
     color: white;
     grid-area: a1;
     align-self: center;
+    font-family: 'Permanent Marker', cursive;
 }
 .dattebayo{
     height: 100%;
@@ -2205,6 +2232,7 @@ nav{
     color: white;
     grid-area: a1;
     align-self: center;
+    font-family: 'Permanent Marker', cursive;
 }
 .dattebayo{
     height: 100%;
@@ -2271,6 +2299,10 @@ nav{
     color: white;
     grid-area: a1;
     align-self: center;
+    font-family: 'Permanent Marker', cursive;
+    padding-right: 10px;
+    padding-left: 10px;
+    
 }
 .dattebayo{
     height: 100%;
