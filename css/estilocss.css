@@ -1,0 +1,1681 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-color: black; }
+
+nav {
+  background-color: orangered; }
+
+main {
+  background-color: black; }
+
+ul {
+  list-style-type: none; }
+
+footer {
+  background-color: orangered; }
+
+/* HOME */
+@media only screen and (max-width: 600px) {
+  /* Header */
+  header {
+    color: darkorange;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    height: 200px; }
+    header h1 {
+      padding-top: 150px; }
+    header .logg {
+      position: absolute; }
+    header .loguito {
+      height: 100%; }
+  /* Nav */
+  nav {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse; }
+    nav .red {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around; }
+      nav .red .home {
+        height: 40px; }
+      nav .red .contacto {
+        height: 40px; }
+      nav .red .historia {
+        height: 40px; }
+      nav .red .personajes {
+        height: 40px; }
+      nav .red .acercaDe {
+        height: 40px; }
+  /* Main */
+  .m {
+    display: grid;
+    height: 800px;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 250px 250px;
+    row-gap: 15px; }
+    .m .video {
+      width: 100%; }
+      .m .video iframe {
+        height: 100%;
+        width: 100%; }
+    .m .imagen {
+      width: 100%; }
+      .m .imagen img {
+        height: 100%;
+        width: 100%; }
+    .m .info {
+      display: grid;
+      color: white;
+      font-family: 'Permanent Marker', cursive;
+      text-align: center; }
+      .m .info #parrafo {
+        align-self: center; }
+  /* Footer */
+  .f {
+    top: 600px;
+    height: 240px; }
+    .f h2 {
+      position: relative;
+      top: 30px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f .redes {
+      position: absolute;
+      top: 1290px; } }
+
+@media only screen and (min-width: 600px) {
+  /* Header */
+  header {
+    color: darkorange;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    height: 200px; }
+    header h1 {
+      padding-top: 150px; }
+    header .logg {
+      position: absolute; }
+    header .loguito {
+      height: 100%; }
+  /* Nav */
+  nav {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse; }
+    nav .red {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around; }
+      nav .red .home {
+        height: 40px; }
+      nav .red .contacto {
+        height: 40px; }
+      nav .red .historia {
+        height: 40px; }
+      nav .red .personajes {
+        height: 40px; }
+      nav .red .acercaDe {
+        height: 40px; }
+  /* Main */
+  .m {
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 350px 250px;
+    row-gap: 15px; }
+    .m .video {
+      width: 100%; }
+      .m .video iframe {
+        height: 100%;
+        width: 100%; }
+    .m .imagen {
+      width: 100%; }
+      .m .imagen img {
+        height: 100%;
+        width: 100%; }
+    .m .info {
+      display: grid;
+      color: white;
+      font-family: 'Permanent Marker', cursive;
+      text-align: center; }
+      .m .info #parrafo {
+        align-self: center; }
+  /* Footer */
+  .f {
+    top: 600px;
+    height: 240px; }
+    .f h2 {
+      position: relative;
+      top: 30px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f .redes {
+      position: absolute;
+      top: 1490px; } }
+
+@media only screen and (min-width: 768px) {
+  /* Header */
+  header {
+    color: darkorange;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    height: 200px; }
+    header h1 {
+      padding-top: 150px; }
+    header .logg {
+      position: absolute; }
+    header .loguito {
+      height: 100%; }
+  /* Nav */
+  nav {
+    height: 100px;
+    width: 100%; }
+    nav .red {
+      height: 100px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      justify-content: space-evenly; }
+  /* Main */
+  .m {
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 350px 250px;
+    row-gap: 15px; }
+    .m .video {
+      width: 100%; }
+      .m .video iframe {
+        height: 100%;
+        width: 100%; }
+    .m .imagen {
+      width: 100%; }
+      .m .imagen img {
+        height: 100%;
+        width: 100%; }
+    .m .info {
+      display: grid;
+      color: white;
+      font-family: 'Permanent Marker', cursive;
+      text-align: center; }
+      .m .info #parrafo {
+        align-self: center; }
+  /* Footer */
+  .f {
+    top: 600px;
+    height: 240px; }
+    .f h2 {
+      position: relative;
+      top: 30px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f .redes {
+      position: absolute;
+      top: 1390px; } }
+
+@media only screen and (min-width: 992px) {
+  /* Header */
+  header {
+    color: darkorange;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    height: 200px; }
+    header h1 {
+      padding-top: 150px; }
+    header .logg {
+      position: absolute; }
+    header .loguito {
+      height: 100%; }
+  /* Nav */
+  nav {
+    height: 100px;
+    width: 100%; }
+    nav .red {
+      height: 100px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      justify-content: space-evenly; }
+  /* Main */
+  .m {
+    display: flex;
+    display: grid;
+    height: 1200px;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 600px 100px;
+    row-gap: 33px; }
+  .video {
+    width: 100%; }
+    .video iframe {
+      height: 100%;
+      width: 100%; }
+  .imagen {
+    width: 100%; }
+    .imagen img {
+      height: 100%;
+      width: 100%; }
+  .info {
+    display: grid;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center; }
+    .info #parrafo {
+      align-self: center; }
+  /* Footer */
+  .f {
+    top: 600px;
+    height: 240px; }
+    .f h2 {
+      position: relative;
+      top: 30px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f .redes {
+      position: absolute;
+      top: 1590px; } }
+
+/*HISTORIA*/
+@media only screen and (max-width: 600px) {
+  /*Header*/
+  .logg {
+    position: absolute; }
+  .loguito {
+    height: 100%; }
+  /*Nav*/
+  nav {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse; }
+    nav #red {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around; }
+      nav #red #home {
+        height: 40px; }
+      nav #red #contacto {
+        height: 40px; }
+      nav #red #historia {
+        height: 40px; }
+      nav #red #personajes {
+        height: 40px; }
+      nav #red #acercaDe {
+        height: 40px; }
+  /*Main*/
+  .m1 {
+    display: grid;
+    height: 800px;
+    grid-template-columns: 100%;
+    grid-template-rows: 450px 300px;
+    align-content: center;
+    row-gap: 30px; }
+    .m1 #parrafos {
+      display: grid;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      align-self: center;
+      justify-self: center;
+      color: white;
+      display: grid;
+      font-family: 'Permanent Marker', cursive;
+      text-align: center; }
+    .m1 #video {
+      width: 100%; }
+      .m1 #video iframe {
+        width: 100%;
+        height: 100%; }
+  /*Footer*/
+  .f1 {
+    top: 600px;
+    height: 240px; }
+    .f1 h2 {
+      position: relative;
+      top: 30px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f1 #redes2 {
+      position: absolute;
+      top: 1290px; } }
+
+@media only screen and (min-width: 600px) {
+  /*Header*/
+  .logg {
+    position: absolute; }
+  .loguito {
+    height: 100%; }
+  /*Nav*/
+  nav {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse; }
+    nav #red {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around; }
+      nav #red #home {
+        height: 40px; }
+      nav #red #contacto {
+        height: 40px; }
+      nav #red #historia {
+        height: 40px; }
+      nav #red #personajes {
+        height: 40px; }
+      nav #red #acercaDe {
+        height: 40px; }
+  /*Main*/
+  .m1 {
+    display: grid;
+    height: 800px;
+    grid-template-columns: 100%;
+    grid-template-rows: 350px 300px;
+    align-content: center;
+    row-gap: 30px; }
+    .m1 #parrafos {
+      display: grid;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      align-self: center;
+      justify-self: center;
+      color: white;
+      display: grid;
+      font-family: 'Permanent Marker', cursive;
+      text-align: center; }
+    .m1 #video {
+      width: 100%; }
+      .m1 #video iframe {
+        width: 100%;
+        height: 100%; }
+  /*Footer*/
+  .f1 {
+    top: 600px;
+    height: 240px; }
+    .f1 h2 {
+      position: relative;
+      top: 30px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f1 #redes2 {
+      position: absolute;
+      top: 1290px; } }
+
+@media only screen and (min-width: 768px) {
+  /*Header*/
+  .logg {
+    position: absolute; }
+  .loguito {
+    height: 100%; }
+  /*Nav*/
+  nav {
+    height: 100px;
+    width: 100%; }
+    nav #red {
+      height: 100px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      justify-content: space-evenly; }
+  /*Main*/
+  .m1 {
+    display: grid;
+    height: 800px;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 400px;
+    align-content: center;
+    row-gap: 30px; }
+    .m1 #parrafos {
+      display: grid;
+      width: 100%;
+      height: 100%;
+      align-self: center;
+      justify-self: center;
+      color: white;
+      font-family: 'Permanent Marker', cursive;
+      text-align: center;
+      align-items: center; }
+    .m1 #video {
+      width: 100%; }
+      .m1 #video iframe {
+        width: 100%;
+        height: 100%; }
+  /*Footer*/
+  .f1 {
+    top: 600px;
+    height: 240px; }
+    .f1 h2 {
+      position: relative;
+      top: 30px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f1 #redes2 {
+      position: absolute;
+      top: 1190px; } }
+
+@media only screen and (min-width: 992px) {
+  /*Header*/
+  .logg {
+    position: absolute; }
+  .loguito {
+    height: 100%; }
+  /*Nav*/
+  nav {
+    height: 100px;
+    width: 100%; }
+    nav #red {
+      height: 100px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      justify-content: space-evenly; }
+  /*Main*/
+  .m1 {
+    display: grid;
+    height: 800px;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 400px;
+    align-content: center;
+    row-gap: 30px; }
+    .m1 #parrafos {
+      display: grid;
+      width: 100%;
+      height: 100%;
+      align-self: center;
+      justify-self: center;
+      color: white;
+      font-family: 'Permanent Marker', cursive;
+      text-align: center;
+      align-items: center;
+      padding-left: 30px;
+      padding-right: 30px; }
+    .m1 #video {
+      width: 100%; }
+      .m1 #video iframe {
+        width: 100%;
+        height: 100%; }
+  /*Footer*/
+  .f1 {
+    top: 600px;
+    height: 240px; }
+    .f1 h2 {
+      position: relative;
+      top: 30px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f1 #redes2 {
+      position: absolute;
+      top: 1190px; } }
+
+/*PERSONAJES*/
+@media only screen and (max-width: 600px) {
+  /*Header*/
+  .logg {
+    position: absolute; }
+  .loguito {
+    height: 100%; }
+  /*Nav*/
+  nav {
+    height: 200px; }
+    nav .red1 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around; }
+      nav .red1 .home1 {
+        height: 40px; }
+      nav .red1 .contacto1 {
+        height: 40px; }
+      nav .red1 .historia1 {
+        height: 40px; }
+      nav .red1 .personajes1 {
+        height: 40px; }
+      nav .red1 .acercaDe1 {
+        height: 40px; }
+  /*Main*/
+  .m2 {
+    display: grid;
+    height: 1170px;
+    grid-template-columns: 100%;
+    grid-template-rows: 1030px 100px;
+    align-content: center;
+    row-gap: 30px; }
+    .m2 .characters {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 100px 100x 100px 100px 100px;
+      grid-template-areas: "Naruto Sasuke Sakura" "Kakashi Itachi Minato"  "Obito Madara Hashirama" "Tobirama Sarutobi Pain"  "Tsunade Orochimaru Jiraiya"; }
+      .m2 .characters .Naruto {
+        height: 80%;
+        width: 70%;
+        grid-area: Naruto;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Naruto :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Sasuke {
+        height: 80%;
+        width: 70%;
+        grid-area: Sasuke;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Sasuke :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Sakura {
+        height: 80%;
+        width: 70%;
+        grid-area: Sakura;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Sakura :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Kakashi {
+        height: 80%;
+        width: 70%;
+        grid-area: Kakashi;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Kakashi :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Itachi {
+        height: 80%;
+        width: 75%;
+        grid-area: Itachi;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Itachi :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Minato {
+        height: 80%;
+        width: 70%;
+        grid-area: Minato;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Minato :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Obito {
+        height: 80%;
+        width: 80%;
+        grid-area: Obito;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Obito:hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Madara {
+        height: 80%;
+        width: 70%;
+        grid-area: Madara;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Madara :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Hashirama {
+        height: 80%;
+        width: 70%;
+        grid-area: Hashirama;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Hashirama :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Tobirama {
+        height: 80%;
+        width: 70%;
+        grid-area: Tobirama;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Tobirama :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Sarutobi {
+        height: 80%;
+        width: 70%;
+        grid-area: Sarutobi;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Sarutobi :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Pain {
+        height: 80%;
+        width: 80%;
+        grid-area: Pain;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Pain :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Tsunade {
+        height: 80%;
+        width: 70%;
+        grid-area: Tsunade;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Tsunade :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Orochimaru {
+        height: 80%;
+        width: 70%;
+        grid-area: Orochimaru;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Orochimaru :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Jiraiya {
+        height: 80%;
+        width: 70%;
+        grid-area: Jiraiya;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Jiraiya :hover {
+        height: 300px;
+        width: 150px; }
+    .m2 .description {
+      display: grid;
+      justify-items: center;
+      align-items: center; }
+      .m2 .description .descripcion {
+        color: white;
+        font-family: 'Permanent Marker', cursive; }
+  /*Footer*/
+  .f2 {
+    top: 600px;
+    height: 240px; }
+    .f2 h2 {
+      position: relative;
+      top: 30px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f2 .redes3 {
+      position: absolute;
+      top: 1700px; } }
+
+@media only screen and (min-width: 600px) {
+  /*Header*/
+  .logg {
+    position: absolute; }
+  .loguito {
+    height: 100%; }
+  /*Nav*/
+  nav {
+    height: 200px; }
+    nav .red1 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around; }
+      nav .red1 .home1 {
+        height: 40px; }
+      nav .red1 .contacto1 {
+        height: 40px; }
+      nav .red1 .historia1 {
+        height: 40px; }
+      nav .red1 .personajes1 {
+        height: 40px; }
+      nav .red1 .acercaDe1 {
+        height: 40px; }
+  /*Main*/
+  .m2 {
+    display: grid;
+    height: 400px;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 50px;
+    align-content: center;
+    row-gap: 30px; }
+    .m2 .characters {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      grid-template-rows: 90px 90px 90px;
+      grid-template-areas: "Naruto Sasuke Sakura Kakashi Itachi" "Minato Obito Madara Hashirama Tobirama" "Sarutobi Pain Tsunade Orochimaru Jiraiya"; }
+      .m2 .characters .Naruto {
+        height: 90%;
+        width: 70%;
+        grid-area: Naruto;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Naruto :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Sasuke {
+        height: 90%;
+        width: 70%;
+        grid-area: Sasuke;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Sasuke :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Sakura {
+        height: 90%;
+        width: 70%;
+        grid-area: Sakura;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Sakura :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Kakashi {
+        height: 90%;
+        width: 70%;
+        grid-area: Kakashi;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Kakashi :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Itachi {
+        height: 90%;
+        width: 70%;
+        grid-area: Itachi;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Itachi :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Minato {
+        height: 90%;
+        width: 70%;
+        grid-area: Minato;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Minato :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Obito {
+        height: 90%;
+        width: 70%;
+        grid-area: Obito;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Obito :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Madara {
+        height: 90%;
+        width: 70%;
+        grid-area: Madara;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Madara :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Hashirama {
+        height: 90%;
+        width: 70%;
+        grid-area: Hashirama;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Hashirama :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Tobirama {
+        height: 90%;
+        width: 70%;
+        grid-area: Tobirama;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Tobirama :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Sarutobi {
+        height: 90%;
+        width: 70%;
+        grid-area: Sarutobi;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Sarutobi :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Pain {
+        height: 90%;
+        width: 70%;
+        grid-area: Pain;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Pain :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Tsunade {
+        height: 90%;
+        width: 70%;
+        grid-area: Tsunade;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Tsunade :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Orochimaru {
+        height: 90%;
+        width: 70%;
+        grid-area: Orochimaru;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Orochimaru :hover {
+        height: 300px;
+        width: 150px; }
+      .m2 .characters .Jiraiya {
+        height: 90%;
+        width: 70%;
+        grid-area: Jiraiya;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Jiraiya :hover {
+        height: 300px;
+        width: 150px; }
+    .m2 .description {
+      display: grid;
+      justify-items: center;
+      align-items: center; }
+      .m2 .description .descripcion {
+        color: white;
+        font-family: 'Permanent Marker', cursive; }
+  /*Footer*/
+  .f2 {
+    top: 600px;
+    height: 240px; }
+    .f2 h2 {
+      position: relative;
+      top: 30px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f2 .redes3 {
+      position: absolute;
+      top: 970px; } }
+
+@media only screen and (min-width: 768px) {
+  /*Header*/
+  .logg {
+    position: absolute; }
+  .loguito {
+    height: 100%; }
+  /*Nav*/
+  nav {
+    height: 100px;
+    width: 100%; }
+    nav .red1 {
+      height: 100px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      justify-content: space-evenly; }
+  /*Main*/
+  .m2 {
+    display: grid;
+    height: 1800px;
+    grid-template-columns: 100%;
+    grid-template-rows: 1700px 50px;
+    align-content: center;
+    row-gap: 30px; }
+    .m2 .characters {
+      height: 110%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "Naruto Sasuke Sakura Kakashi Itachi" "Minato Obito Madara Hashirama Tobirama" "Sarutobi Pain Tsunade Orochimaru Jiraiya"; }
+      .m2 .characters .Naruto {
+        height: 70%;
+        width: 100%;
+        grid-area: Naruto;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Naruto :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Sasuke {
+        height: 70%;
+        width: 100%;
+        grid-area: Sasuke;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Sasuke :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Sakura {
+        height: 70%;
+        width: 100%;
+        grid-area: Sakura;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Sakura :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Kakashi {
+        height: 70%;
+        width: 100%;
+        grid-area: Kakashi;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Kakashi :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Itachi {
+        height: 70%;
+        width: 100%;
+        grid-area: Itachi;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Itachi :hover {
+        height: 400px;
+        width: 250px; }
+      .m2 .characters .Minato {
+        height: 70%;
+        width: 100%;
+        grid-area: Minato;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Minato :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Obito {
+        height: 70%;
+        width: 100%;
+        grid-area: Obito;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Obito :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Madara {
+        height: 70%;
+        width: 100%;
+        grid-area: Madara;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Madara :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Hashirama {
+        height: 70%;
+        width: 100%;
+        grid-area: Hashirama;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Hashirama :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Tobirama {
+        height: 70%;
+        width: 100%;
+        grid-area: Tobirama;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Tobirama :hover {
+        height: 400px;
+        width: 250px; }
+      .m2 .characters .Sarutobi {
+        height: 70%;
+        width: 100%;
+        grid-area: Sarutobi;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Sarutobi :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Pain {
+        height: 70%;
+        width: 100%;
+        grid-area: Pain;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Pain :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Tsunade {
+        height: 70%;
+        width: 100%;
+        grid-area: Tsunade;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Tsunade :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Orochimaru {
+        height: 70%;
+        width: 100%;
+        grid-area: Orochimaru;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Orochimaru :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Jiraiya {
+        height: 70%;
+        width: 100%;
+        grid-area: Jiraiya;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Jiraiya :hover {
+        height: 400px;
+        width: 250px; }
+    .m2 .description {
+      display: grid;
+      justify-items: center;
+      align-items: center; }
+      .m2 .description .descripcion {
+        color: white;
+        font-family: 'Permanent Marker', cursive; }
+  /*Footer*/
+  .f2 {
+    top: 2500px;
+    height: 240px; }
+    .f2 h2 {
+      position: relative;
+      top: 50px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f2 .redes3 {
+      position: absolute;
+      top: 2270px; } }
+
+@media only screen and (min-width: 992px) {
+  /*Header*/
+  .logg {
+    position: absolute; }
+  .loguito {
+    height: 100%; }
+  /*Nav*/
+  nav {
+    height: 100px;
+    width: 100%; }
+    nav .red1 {
+      height: 100px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      justify-content: space-evenly; }
+  /*Main*/
+  .m2 {
+    display: grid;
+    height: 1800px;
+    grid-template-columns: 100%;
+    grid-template-rows: 1700px 50px;
+    align-content: center;
+    row-gap: 30px; }
+    .m2 .characters {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "Naruto Sasuke Sakura Kakashi Itachi" "Minato Obito Madara Hashirama Tobirama" "Sarutobi Pain Tsunade Orochimaru Jiraiya"; }
+      .m2 .characters .Naruto {
+        height: 80%;
+        width: 100%;
+        grid-area: Naruto;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Naruto :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Sasuke {
+        height: 80%;
+        width: 100%;
+        grid-area: Sasuke;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Sasuke :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Sakura {
+        height: 80%;
+        width: 100%;
+        grid-area: Sakura;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Sakura :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Kakashi {
+        height: 80%;
+        width: 100%;
+        grid-area: Kakashi;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Kakashi :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Itachi {
+        height: 80%;
+        width: 90%;
+        grid-area: Itachi;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Itachi :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Minato {
+        height: 80%;
+        width: 90%;
+        grid-area: Minato;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Minato :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Obito {
+        height: 80%;
+        width: 100%;
+        grid-area: Obito;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Obito :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Madara {
+        height: 80%;
+        width: 90%;
+        grid-area: Madara;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Madara :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Hashirama {
+        height: 80%;
+        width: 100%;
+        grid-area: Hashirama;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Hashirama :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Tobirama {
+        height: 80%;
+        width: 100%;
+        grid-area: Tobirama;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Tobirama :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Sarutobi {
+        height: 80%;
+        width: 100%;
+        grid-area: Sarutobi;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Sarutobi :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Pain {
+        height: 80%;
+        width: 100%;
+        grid-area: Pain;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Pain :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Tsunade {
+        height: 80%;
+        width: 100%;
+        grid-area: Tsunade;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Tsunade :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Orochimaru {
+        height: 80%;
+        width: 90%;
+        grid-area: Orochimaru;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Orochimaru :hover {
+        height: 500px;
+        width: 300px; }
+      .m2 .characters .Jiraiya {
+        height: 80%;
+        width: 100%;
+        grid-area: Jiraiya;
+        transition: height 2s, width 2s; }
+      .m2 .characters .Jiraiya :hover {
+        height: 500px;
+        width: 300px; }
+    .m2 .description {
+      display: grid;
+      justify-items: center;
+      align-items: center; }
+      .m2 .description .descripcion {
+        color: white;
+        font-family: 'Permanent Marker', cursive; }
+  /*Footer*/
+  .f2 {
+    top: 2500px;
+    height: 240px; }
+    .f2 h2 {
+      position: relative;
+      top: 50px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f2 .redes3 {
+      position: absolute;
+      top: 2270px; } }
+
+/*CONTACTO*/
+.form2 {
+  display: grid;
+  row-gap: 15px; }
+
+@media only screen and (max-width: 600px) {
+  /*Header*/
+  .logg {
+    position: absolute; }
+  .loguito {
+    height: 100%; }
+  /*Nav*/
+  nav {
+    height: 200px; }
+    nav #red1 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around; }
+      nav #red1 #home1 {
+        height: 40px; }
+      nav #red1 #contacto1 {
+        height: 40px; }
+      nav #red1 #historia1 {
+        height: 40px; }
+      nav #red1 #personajes1 {
+        height: 40px; }
+      nav #red1 #acercaDe1 {
+        height: 40px; }
+  /*Main*/
+  .m3 {
+    display: grid;
+    height: 1500px;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 500px 450px;
+    row-gap: 15px;
+    justify-items: center; }
+    .m3 h3 {
+      color: white;
+      font-family: 'Permanent Marker', cursive;
+      align-self: center; }
+    .m3 .section {
+      display: grid;
+      row-gap: 20px; }
+      .m3 .section .form {
+        display: grid;
+        row-gap: 20px; }
+    .m3 .kakashi3 {
+      height: 100%;
+      width: 100%; }
+  /*Footer*/
+  .f3 {
+    top: 600px;
+    height: 240px; }
+    .f3 h2 {
+      position: relative;
+      top: 30px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f3 .redes4 {
+      position: absolute;
+      top: 2070px; } }
+
+@media only screen and (min-width: 600px) {
+  /*Header*/
+  .logg {
+    position: absolute; }
+  .loguito {
+    height: 100%; }
+  /*Nav*/
+  nav {
+    height: 200px; }
+    nav #red1 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around; }
+      nav #red1 #home1 {
+        height: 40px; }
+      nav #red1 #contacto1 {
+        height: 40px; }
+      nav #red1 #historia1 {
+        height: 40px; }
+      nav #red1 #personajes1 {
+        height: 40px; }
+      nav #red1 #acercaDe1 {
+        height: 40px; }
+  /*Main*/
+  .m3 {
+    display: grid;
+    height: 1500px;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 500px 450px;
+    row-gap: 15px;
+    justify-items: center; }
+    .m3 h3 {
+      color: white;
+      font-family: 'Permanent Marker', cursive;
+      align-self: center;
+      justify-self: center; }
+    .m3 .section {
+      display: grid;
+      row-gap: 20px; }
+      .m3 .section .form {
+        display: grid;
+        row-gap: 20px; }
+    .m3 .kakashi3 {
+      height: 100%;
+      width: 100%; }
+  /*Footer*/
+  .f3 {
+    top: 600px;
+    height: 240px; }
+    .f3 h2 {
+      position: relative;
+      top: 30px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f3 .redes4 {
+      position: absolute;
+      top: 2070px; } }
+
+@media only screen and (min-width: 768px) {
+  /*Header*/
+  .logg {
+    position: absolute; }
+  .loguito {
+    height: 100%; }
+  /*Nav*/
+  nav {
+    height: 100px;
+    width: 100%; }
+    nav #red1 {
+      height: 100px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      justify-content: space-evenly; }
+  /*Main*/
+  .m3 {
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 45% 45%;
+    grid-template-areas: "a1 a1" "a2 a3"; }
+    .m3 h3 {
+      color: white;
+      font-family: 'Permanent Marker', cursive;
+      justify-self: center;
+      grid-area: a1; }
+    .m3 .section {
+      grid-area: a2;
+      align-self: flex-end; }
+    .m3 .kakashi3 {
+      height: 100%;
+      width: 100%;
+      grid-area: a3; }
+  /*Footer*/
+  .f3 {
+    top: 600px;
+    height: 240px; }
+    .f3 h2 {
+      position: relative;
+      top: 30px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f3 .redes4 {
+      position: absolute;
+      top: 1470px; } }
+
+@media only screen and (min-width: 992px) {
+  /*Header*/
+  .logg {
+    position: absolute; }
+  .loguito {
+    height: 100%; }
+  /*Nav*/
+  nav {
+    height: 100px;
+    width: 100%; }
+    nav #red1 {
+      height: 100px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      justify-content: space-evenly; }
+  /*Main*/
+  .m3 {
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 45% 45%;
+    grid-template-areas: "a1 a1" "a2 a3";
+    padding-right: 10px;
+    padding-left: 10px; }
+    .m3 h3 {
+      color: white;
+      font-family: 'Permanent Marker', cursive;
+      justify-self: center;
+      grid-area: a1;
+      padding-right: 10px;
+      padding-left: 10px; }
+    .m3 .section {
+      grid-area: a2;
+      align-self: flex-end; }
+    .m3 .kakashi3 {
+      height: 100%;
+      width: 100%;
+      grid-area: a3; }
+  /*Footer*/
+  .f3 {
+    top: 600px;
+    height: 240px; }
+    .f3 h2 {
+      position: relative;
+      top: 30px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f3 .redes4 {
+      position: absolute;
+      top: 1470px; } }
+
+/*ACERCA DE*/
+@media only screen and (max-width: 600px) {
+  /*Header*/
+  .logg {
+    position: absolute; }
+  .loguito {
+    height: 100%; }
+  /*Nav*/
+  nav {
+    height: 200px; }
+    nav .red2 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around; }
+      nav .red2 .home2 {
+        height: 40px; }
+      nav .red2 .contacto2 {
+        height: 40px; }
+      nav .red2 .historia2 {
+        height: 40px; }
+      nav .red2 .personajes2 {
+        height: 40px; }
+      nav .red2 .acercaDe2 {
+        height: 40px; }
+  /*Main*/
+  .m4 {
+    display: grid;
+    height: 800px;
+    grid-template-columns: 100%;
+    row-gap: 25px;
+    grid-template-rows: 350px 350px;
+    grid-template-areas: "a1" "a2"; }
+    .m4 h3 {
+      height: 100%;
+      color: white;
+      grid-area: a1;
+      align-self: center;
+      font-family: 'Permanent Marker', cursive; }
+    .m4 .dattebayo {
+      height: 100%;
+      width: 100%;
+      grid-area: a2; }
+  /*Footer*/
+  .f4 {
+    top: 600px;
+    height: 240px; }
+    .f4 h2 {
+      position: relative;
+      top: 30px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f4 .redes5 {
+      position: absolute;
+      top: 1370px; } }
+
+@media only screen and (min-width: 600px) {
+  /*Header*/
+  .logg {
+    position: absolute; }
+  .loguito {
+    height: 100%; }
+  /*Nav*/
+  nav {
+    height: 200px; }
+    nav .red2 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around; }
+      nav .red2 .home2 {
+        height: 40px; }
+      nav .red2 .contacto2 {
+        height: 40px; }
+      nav .red2 .historia2 {
+        height: 40px; }
+      nav .red2 .personajes2 {
+        height: 40px; }
+      nav .red2 .acercaDe2 {
+        height: 40px; }
+  /*Main*/
+  .m4 {
+    display: grid;
+    height: 700px;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "a1" "a2"; }
+    .m4 h3 {
+      color: white;
+      grid-area: a1;
+      align-self: center;
+      font-family: 'Permanent Marker', cursive; }
+    .m4 .dattebayo {
+      height: 100%;
+      width: 100%;
+      grid-area: a2; }
+  /*Footer*/
+  .f4 {
+    top: 600px;
+    height: 240px; }
+    .f4 h2 {
+      position: relative;
+      top: 30px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f4 .redes5 {
+      position: absolute;
+      top: 1270px; } }
+
+@media only screen and (min-width: 768px) {
+  /*Header*/
+  .logg {
+    position: absolute; }
+  .loguito {
+    height: 100%; }
+  /*Nav*/
+  nav {
+    height: 100px;
+    width: 100%; }
+    nav .red2 {
+      height: 100px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      justify-content: space-evenly; }
+  /*Main*/
+  .m4 {
+    display: grid;
+    height: 700px;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "a1" "a2"; }
+    .m4 h3 {
+      color: white;
+      grid-area: a1;
+      align-self: center;
+      font-family: 'Permanent Marker', cursive; }
+    .m4 .dattebayo {
+      height: 100%;
+      width: 100%;
+      grid-area: a2; }
+  /*Footer*/
+  .f4 {
+    top: 600px;
+    height: 240px; }
+    .f4 h2 {
+      position: relative;
+      top: 30px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f4 .redes5 {
+      position: absolute;
+      top: 1170px; } }
+
+@media only screen and (min-width: 992px) {
+  /*Header*/
+  .logg {
+    position: absolute; }
+  .loguito {
+    height: 100%; }
+  /*Nav*/
+  nav {
+    height: 100px;
+    width: 100%; }
+    nav .red2 {
+      height: 100px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      justify-content: space-evenly; }
+  /*Main*/
+  .m4 {
+    display: grid;
+    height: 700px;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "a1" "a2"; }
+    .m4 h3 {
+      color: white;
+      grid-area: a1;
+      align-self: center;
+      font-family: 'Permanent Marker', cursive;
+      padding-right: 10px;
+      padding-left: 10px; }
+    .m4 .dattebayo {
+      height: 100%;
+      width: 100%;
+      grid-area: a2; }
+  /*Footer*/
+  .f4 {
+    top: 600px;
+    height: 240px; }
+    .f4 h2 {
+      position: relative;
+      top: 30px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+    .f4 .redes5 {
+      position: absolute;
+      top: 1170px; } }
