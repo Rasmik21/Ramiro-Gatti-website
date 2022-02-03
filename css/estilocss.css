@@ -23,7 +23,7 @@ footer {
   header {
     color: darkorange;
     text-align: center;
-    font-family: 'Permanent Marker', cursive;
+    font-family: "Permanent Marker", cursive;
     height: 200px; }
     header h1 {
       padding-top: 150px; }
@@ -75,7 +75,7 @@ footer {
     .m .info {
       display: grid;
       color: white;
-      font-family: 'Permanent Marker', cursive;
+      font-family: "Permanent Marker", cursive;
       text-align: center; }
       .m .info #parrafo {
         align-self: center; }
@@ -87,7 +87,7 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f .redes {
       position: absolute;
       top: 1290px; } }
@@ -97,7 +97,7 @@ footer {
   header {
     color: darkorange;
     text-align: center;
-    font-family: 'Permanent Marker', cursive;
+    font-family: "Permanent Marker", cursive;
     height: 200px; }
     header h1 {
       padding-top: 150px; }
@@ -149,7 +149,7 @@ footer {
     .m .info {
       display: grid;
       color: white;
-      font-family: 'Permanent Marker', cursive;
+      font-family: "Permanent Marker", cursive;
       text-align: center; }
       .m .info #parrafo {
         align-self: center; }
@@ -161,7 +161,7 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f .redes {
       position: absolute;
       top: 1490px; } }
@@ -171,7 +171,7 @@ footer {
   header {
     color: darkorange;
     text-align: center;
-    font-family: 'Permanent Marker', cursive;
+    font-family: "Permanent Marker", cursive;
     height: 200px; }
     header h1 {
       padding-top: 150px; }
@@ -210,7 +210,7 @@ footer {
     .m .info {
       display: grid;
       color: white;
-      font-family: 'Permanent Marker', cursive;
+      font-family: "Permanent Marker", cursive;
       text-align: center; }
       .m .info #parrafo {
         align-self: center; }
@@ -222,7 +222,7 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f .redes {
       position: absolute;
       top: 1390px; } }
@@ -232,7 +232,7 @@ footer {
   header {
     color: darkorange;
     text-align: center;
-    font-family: 'Permanent Marker', cursive;
+    font-family: "Permanent Marker", cursive;
     height: 200px; }
     header h1 {
       padding-top: 150px; }
@@ -272,7 +272,7 @@ footer {
   .info {
     display: grid;
     color: white;
-    font-family: 'Permanent Marker', cursive;
+    font-family: "Permanent Marker", cursive;
     text-align: center; }
     .info #parrafo {
       align-self: center; }
@@ -284,7 +284,7 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f .redes {
       position: absolute;
       top: 1590px; } }
@@ -337,7 +337,7 @@ footer {
       justify-self: center;
       color: white;
       display: grid;
-      font-family: 'Permanent Marker', cursive;
+      font-family: "Permanent Marker", cursive;
       text-align: center; }
     .m1 #video {
       width: 100%; }
@@ -352,7 +352,7 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f1 #redes2 {
       position: absolute;
       top: 1290px; } }
@@ -404,7 +404,7 @@ footer {
       justify-self: center;
       color: white;
       display: grid;
-      font-family: 'Permanent Marker', cursive;
+      font-family: "Permanent Marker", cursive;
       text-align: center; }
     .m1 #video {
       width: 100%; }
@@ -419,7 +419,7 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f1 #redes2 {
       position: absolute;
       top: 1290px; } }
@@ -456,7 +456,7 @@ footer {
       align-self: center;
       justify-self: center;
       color: white;
-      font-family: 'Permanent Marker', cursive;
+      font-family: "Permanent Marker", cursive;
       text-align: center;
       align-items: center; }
     .m1 #video {
@@ -472,7 +472,7 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f1 #redes2 {
       position: absolute;
       top: 1190px; } }
@@ -509,7 +509,7 @@ footer {
       align-self: center;
       justify-self: center;
       color: white;
-      font-family: 'Permanent Marker', cursive;
+      font-family: "Permanent Marker", cursive;
       text-align: center;
       align-items: center;
       padding-left: 30px;
@@ -527,7 +527,7 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f1 #redes2 {
       position: absolute;
       top: 1190px; } }
@@ -701,7 +701,7 @@ footer {
       align-items: center; }
       .m2 .description .descripcion {
         color: white;
-        font-family: 'Permanent Marker', cursive; }
+        font-family: "Permanent Marker", cursive; }
   /*Footer*/
   .f2 {
     top: 600px;
@@ -710,7 +710,7 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f2 .redes3 {
       position: absolute;
       top: 1700px; } }
@@ -883,7 +883,7 @@ footer {
       align-items: center; }
       .m2 .description .descripcion {
         color: white;
-        font-family: 'Permanent Marker', cursive; }
+        font-family: "Permanent Marker", cursive; }
   /*Footer*/
   .f2 {
     top: 600px;
@@ -892,7 +892,7 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f2 .redes3 {
       position: absolute;
       top: 970px; } }
@@ -1055,7 +1055,7 @@ footer {
       align-items: center; }
       .m2 .description .descripcion {
         color: white;
-        font-family: 'Permanent Marker', cursive; }
+        font-family: "Permanent Marker", cursive; }
   /*Footer*/
   .f2 {
     top: 2500px;
@@ -1064,7 +1064,7 @@ footer {
       position: relative;
       top: 50px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f2 .redes3 {
       position: absolute;
       top: 2270px; } }
@@ -1227,7 +1227,7 @@ footer {
       align-items: center; }
       .m2 .description .descripcion {
         color: white;
-        font-family: 'Permanent Marker', cursive; }
+        font-family: "Permanent Marker", cursive; }
   /*Footer*/
   .f2 {
     top: 2500px;
@@ -1236,7 +1236,7 @@ footer {
       position: relative;
       top: 50px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f2 .redes3 {
       position: absolute;
       top: 2270px; } }
@@ -1283,7 +1283,7 @@ footer {
     justify-items: center; }
     .m3 h3 {
       color: white;
-      font-family: 'Permanent Marker', cursive;
+      font-family: "Permanent Marker", cursive;
       align-self: center; }
     .m3 .section {
       display: grid;
@@ -1302,7 +1302,7 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f3 .redes4 {
       position: absolute;
       top: 2070px; } }
@@ -1344,7 +1344,7 @@ footer {
     justify-items: center; }
     .m3 h3 {
       color: white;
-      font-family: 'Permanent Marker', cursive;
+      font-family: "Permanent Marker", cursive;
       align-self: center;
       justify-self: center; }
     .m3 .section {
@@ -1364,7 +1364,7 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f3 .redes4 {
       position: absolute;
       top: 2070px; } }
@@ -1395,7 +1395,7 @@ footer {
     grid-template-areas: "a1 a1" "a2 a3"; }
     .m3 h3 {
       color: white;
-      font-family: 'Permanent Marker', cursive;
+      font-family: "Permanent Marker", cursive;
       justify-self: center;
       grid-area: a1; }
     .m3 .section {
@@ -1413,7 +1413,7 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f3 .redes4 {
       position: absolute;
       top: 1470px; } }
@@ -1446,7 +1446,7 @@ footer {
     padding-left: 10px; }
     .m3 h3 {
       color: white;
-      font-family: 'Permanent Marker', cursive;
+      font-family: "Permanent Marker", cursive;
       justify-self: center;
       grid-area: a1;
       padding-right: 10px;
@@ -1466,7 +1466,7 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f3 .redes4 {
       position: absolute;
       top: 1470px; } }
@@ -1512,7 +1512,7 @@ footer {
       color: white;
       grid-area: a1;
       align-self: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .m4 .dattebayo {
       height: 100%;
       width: 100%;
@@ -1525,7 +1525,7 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f4 .redes5 {
       position: absolute;
       top: 1370px; } }
@@ -1568,7 +1568,7 @@ footer {
       color: white;
       grid-area: a1;
       align-self: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .m4 .dattebayo {
       height: 100%;
       width: 100%;
@@ -1581,7 +1581,7 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f4 .redes5 {
       position: absolute;
       top: 1270px; } }
@@ -1614,7 +1614,7 @@ footer {
       color: white;
       grid-area: a1;
       align-self: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .m4 .dattebayo {
       height: 100%;
       width: 100%;
@@ -1627,7 +1627,7 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f4 .redes5 {
       position: absolute;
       top: 1170px; } }
@@ -1660,7 +1660,7 @@ footer {
       color: white;
       grid-area: a1;
       align-self: center;
-      font-family: 'Permanent Marker', cursive;
+      font-family: "Permanent Marker", cursive;
       padding-right: 10px;
       padding-left: 10px; }
     .m4 .dattebayo {
@@ -1675,7 +1675,7 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: 'Permanent Marker', cursive; }
+      font-family: "Permanent Marker", cursive; }
     .f4 .redes5 {
       position: absolute;
       top: 1170px; } }
