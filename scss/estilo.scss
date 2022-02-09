@@ -5,10 +5,7 @@
 
 header{
     background-color: black;
-}
-nav{
-    background-color: orangered;
-}    
+}   
 main{
     background-color: black;
 }
@@ -52,10 +49,10 @@ header{
 
 /* Nav */
 nav{
-    height: 200px;  
     display: flex;
     flex-direction: row;
     flex-direction: row-reverse;
+    
 
     .red{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -133,11 +130,6 @@ nav{
         text-align: center;
         font-family: $fuentePermanent;
     }
-
-    .redes{
-        position: absolute;
-        top: 1290px;
-    }
 }
 
 }
@@ -166,7 +158,6 @@ header{
 
 /* Nav */
 nav{
-    height: 200px;  
     display: flex;
     flex-direction: row;
     flex-direction: row-reverse;
@@ -461,7 +452,6 @@ nav{
 /*Nav*/
 
 nav{
-    height: 200px;
     display: flex;
     flex-direction: row;
     flex-direction: row-reverse;
@@ -559,7 +549,6 @@ nav{
 
 /*Nav*/
 nav{
-    height: 200px;
     display: flex;
     flex-direction: row;
     flex-direction: row-reverse;
@@ -826,8 +815,6 @@ nav{
 /*Nav*/
 
 nav{
-    height: 200px;
-
     .red1{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         display: flex;
@@ -1077,8 +1064,6 @@ nav{
 /*Nav*/
 
 nav{
-    height: 200px;
-
     .red1{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         display: flex;
@@ -1798,8 +1783,6 @@ nav{
 /*Nav*/
 
 nav{
-    height: 200px;
-
     #red1{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         display: flex;
@@ -1894,8 +1877,6 @@ nav{
 /*Nav*/
 
 nav{
-    height: 200px;
-
     #red1{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         display: flex;
@@ -2154,8 +2135,6 @@ nav{
 /*Nav*/
 
 nav{
-    height: 200px;
-
     .red2{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         display: flex;
@@ -2245,8 +2224,6 @@ nav{
 /*Nav*/
 
 nav{
-    height: 200px;
-
     .red2{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         display: flex;

@@ -5,9 +5,6 @@
 header {
   background-color: black; }
 
-nav {
-  background-color: orangered; }
-
 main {
   background-color: black; }
 
@@ -33,7 +30,6 @@ footer {
       height: 100%; }
   /* Nav */
   nav {
-    height: 200px;
     display: flex;
     flex-direction: row;
     flex-direction: row-reverse; }
@@ -87,10 +83,7 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: "Permanent Marker", cursive; }
-    .f .redes {
-      position: absolute;
-      top: 1290px; } }
+      font-family: "Permanent Marker", cursive; } }
 
 @media only screen and (min-width: 600px) {
   /* Header */
@@ -107,7 +100,6 @@ footer {
       height: 100%; }
   /* Nav */
   nav {
-    height: 200px;
     display: flex;
     flex-direction: row;
     flex-direction: row-reverse; }
@@ -298,7 +290,6 @@ footer {
     height: 100%; }
   /*Nav*/
   nav {
-    height: 200px;
     display: flex;
     flex-direction: row;
     flex-direction: row-reverse; }
@@ -365,7 +356,6 @@ footer {
     height: 100%; }
   /*Nav*/
   nav {
-    height: 200px;
     display: flex;
     flex-direction: row;
     flex-direction: row-reverse; }
@@ -540,26 +530,24 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav {
-    height: 200px; }
-    nav .red1 {
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      justify-content: space-between;
-      justify-content: space-around; }
-      nav .red1 .home1 {
-        height: 40px; }
-      nav .red1 .contacto1 {
-        height: 40px; }
-      nav .red1 .historia1 {
-        height: 40px; }
-      nav .red1 .personajes1 {
-        height: 40px; }
-      nav .red1 .acercaDe1 {
-        height: 40px; }
+  nav .red1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around; }
+    nav .red1 .home1 {
+      height: 40px; }
+    nav .red1 .contacto1 {
+      height: 40px; }
+    nav .red1 .historia1 {
+      height: 40px; }
+    nav .red1 .personajes1 {
+      height: 40px; }
+    nav .red1 .acercaDe1 {
+      height: 40px; }
   /*Main*/
   .m2 {
     display: grid;
@@ -722,26 +710,24 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav {
-    height: 200px; }
-    nav .red1 {
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      justify-content: space-between;
-      justify-content: space-around; }
-      nav .red1 .home1 {
-        height: 40px; }
-      nav .red1 .contacto1 {
-        height: 40px; }
-      nav .red1 .historia1 {
-        height: 40px; }
-      nav .red1 .personajes1 {
-        height: 40px; }
-      nav .red1 .acercaDe1 {
-        height: 40px; }
+  nav .red1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around; }
+    nav .red1 .home1 {
+      height: 40px; }
+    nav .red1 .contacto1 {
+      height: 40px; }
+    nav .red1 .historia1 {
+      height: 40px; }
+    nav .red1 .personajes1 {
+      height: 40px; }
+    nav .red1 .acercaDe1 {
+      height: 40px; }
   /*Main*/
   .m2 {
     display: grid;
@@ -1253,26 +1239,24 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav {
-    height: 200px; }
-    nav #red1 {
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      justify-content: space-between;
-      justify-content: space-around; }
-      nav #red1 #home1 {
-        height: 40px; }
-      nav #red1 #contacto1 {
-        height: 40px; }
-      nav #red1 #historia1 {
-        height: 40px; }
-      nav #red1 #personajes1 {
-        height: 40px; }
-      nav #red1 #acercaDe1 {
-        height: 40px; }
+  nav #red1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around; }
+    nav #red1 #home1 {
+      height: 40px; }
+    nav #red1 #contacto1 {
+      height: 40px; }
+    nav #red1 #historia1 {
+      height: 40px; }
+    nav #red1 #personajes1 {
+      height: 40px; }
+    nav #red1 #acercaDe1 {
+      height: 40px; }
   /*Main*/
   .m3 {
     display: grid;
@@ -1314,26 +1298,24 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav {
-    height: 200px; }
-    nav #red1 {
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      justify-content: space-between;
-      justify-content: space-around; }
-      nav #red1 #home1 {
-        height: 40px; }
-      nav #red1 #contacto1 {
-        height: 40px; }
-      nav #red1 #historia1 {
-        height: 40px; }
-      nav #red1 #personajes1 {
-        height: 40px; }
-      nav #red1 #acercaDe1 {
-        height: 40px; }
+  nav #red1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around; }
+    nav #red1 #home1 {
+      height: 40px; }
+    nav #red1 #contacto1 {
+      height: 40px; }
+    nav #red1 #historia1 {
+      height: 40px; }
+    nav #red1 #personajes1 {
+      height: 40px; }
+    nav #red1 #acercaDe1 {
+      height: 40px; }
   /*Main*/
   .m3 {
     display: grid;
@@ -1479,26 +1461,24 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav {
-    height: 200px; }
-    nav .red2 {
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      justify-content: space-between;
-      justify-content: space-around; }
-      nav .red2 .home2 {
-        height: 40px; }
-      nav .red2 .contacto2 {
-        height: 40px; }
-      nav .red2 .historia2 {
-        height: 40px; }
-      nav .red2 .personajes2 {
-        height: 40px; }
-      nav .red2 .acercaDe2 {
-        height: 40px; }
+  nav .red2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around; }
+    nav .red2 .home2 {
+      height: 40px; }
+    nav .red2 .contacto2 {
+      height: 40px; }
+    nav .red2 .historia2 {
+      height: 40px; }
+    nav .red2 .personajes2 {
+      height: 40px; }
+    nav .red2 .acercaDe2 {
+      height: 40px; }
   /*Main*/
   .m4 {
     display: grid;
@@ -1537,26 +1517,24 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav {
-    height: 200px; }
-    nav .red2 {
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      justify-content: space-between;
-      justify-content: space-around; }
-      nav .red2 .home2 {
-        height: 40px; }
-      nav .red2 .contacto2 {
-        height: 40px; }
-      nav .red2 .historia2 {
-        height: 40px; }
-      nav .red2 .personajes2 {
-        height: 40px; }
-      nav .red2 .acercaDe2 {
-        height: 40px; }
+  nav .red2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around; }
+    nav .red2 .home2 {
+      height: 40px; }
+    nav .red2 .contacto2 {
+      height: 40px; }
+    nav .red2 .historia2 {
+      height: 40px; }
+    nav .red2 .personajes2 {
+      height: 40px; }
+    nav .red2 .acercaDe2 {
+      height: 40px; }
   /*Main*/
   .m4 {
     display: grid;
