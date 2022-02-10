@@ -18,38 +18,34 @@ footer{
 
 $colorTitulos: darkorange;
 $colorBlanco: white;
-$heightUl: 40px;
 $fuentePermanent: 'Permanent Marker', cursive;
 $altoPersonajes: 300px;
 $anchoPersonajes: 150px;
 $altoPersonajess: 500px;
 $anchoPersonajess: 300px;
-
-@mixin Propiedades($textalign, $height, $width) {
-    text-align: $textalign;
-    height: $height;
-    width: $width;
-}
+$textoAlineado: center;
 
 @mixin Propiedades2($height, $width){
     height: $height;
     width: $width;
 }
 
-/* HOME */
-
-@media only screen and (max-width: 600px){
-
-/* Header */
 header{
-    @include Propiedades(center, 100px, 100%);
+    @include Propiedades2(100px, 100%);
     color: $colorTitulos;
     font-family: $fuentePermanent;
+    text-align: $textoAlineado;
     
     h1{
         padding-top: 50px;
     }
 }
+
+//* HOME *//
+
+@media only screen and (max-width: 600px){
+
+/* Header */
 
 /* Nav */
     #navbar2{
@@ -62,32 +58,6 @@ header{
     }
     #divvv{
         grid-area: a3;
-    }
-    
-    .red{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        justify-content: center;
-        justify-content: space-between;
-        justify-content: space-around;    
-
-        .home{
-            height: $heightUl;
-        }
-        .contacto{
-            height: $heightUl;
-        }
-        .historia{
-            height: $heightUl;
-        }
-        .personajes{
-            height: $heightUl;
-        }
-        .acercaDe{
-            height: $heightUl;
-        }
     }
 }
 
@@ -119,7 +89,7 @@ header{
         display: grid;
         color: $colorBlanco;
         font-family: $fuentePermanent;
-        text-align: center; 
+        text-align: $textoAlineado; 
         
         #parrafo{
             align-self: center;
@@ -130,12 +100,12 @@ header{
 /* Footer */
 .f{
     top: 600px;
-    height: 240px;
+    @include Propiedades2(240px, 100%);
 
     h2{
         position: relative;
         top: 30px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
 }
@@ -156,16 +126,6 @@ header{
 @media only screen and (min-width: 600px){
 
 /* Header */
-header{
-    color: $colorTitulos;
-    text-align: center;
-    font-family: $fuentePermanent;
-    @include Propiedades2(100px, 100%);
-
-    h1{
-        padding-top: 50px;
-    }
-}
 
 /* Nav */
     #navbar2{
@@ -179,33 +139,6 @@ header{
         #divvv{
             grid-area: a3;
         }
-    
-    .red{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-between;
-        justify-content: space-around;   
-
-        .home{
-            height: $heightUl;
-        }
-        .contacto{
-            height: $heightUl;
-        }
-        .historia{
-            height: $heightUl;
-        }
-        .personajes{
-            height: $heightUl;
-        }
-        .acercaDe{
-            height: $heightUl;
-        }
-    }
-    
 }
 
 /* Main */
@@ -228,8 +161,7 @@ header{
         width: 100%;
     
         img{
-            height: 100%;
-            width: 100%;
+            @include Propiedades2(100%, 100%);
         }
     }
 
@@ -237,7 +169,7 @@ header{
         display: grid;
         color: $colorBlanco;
         font-family: $fuentePermanent;
-        text-align: center;  
+        text-align: $textoAlineado; 
         
         #parrafo{
             align-self: center;
@@ -248,12 +180,12 @@ header{
 /* Footer */
 .f{
     top: 600px;
-    height: 240px;
+    @include Propiedades2(240px, 100%);
 
     h2{
         position: relative;
         top: 30px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
 
@@ -261,15 +193,13 @@ header{
         transition: height 4s, width 4s;
     }
     .twitter :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
     .ig{
         transition: height 4s, width 4s;
     }
     .ig :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
 }
 }
@@ -277,16 +207,6 @@ header{
 @media only screen and (min-width: 768px){
 
 /* Header */
-header{
-    color: $colorTitulos;
-    text-align: center;
-    font-family: $fuentePermanent;
-    height: 100px;
-
-    h1{
-        padding-top: 50px;
-    }
-}
 
 /* Nav */
 #navbar2{
@@ -300,21 +220,12 @@ header{
     #divvv{
         grid-area: a2;
     }
-
-    .red{
-        height: 100px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        justify-content: space-evenly;    
-    }
 }
 
 /* Main */
 .m{
     display: grid;
-    height: 1000px;
+    @include Propiedades2(1000px, 100%);
     grid-template-columns: 100%;
     grid-template-rows: 300px 350px 250px;
     row-gap: 15px;
@@ -323,23 +234,21 @@ header{
         width: 100%;
     
         iframe{
-            height: 100%;
-            width: 100%;
+            @include Propiedades2(100%, 100%);
         }
     }
     .imagen{
         width: 100%;
     
         img{
-            height: 100%;
-            width: 100%;
+            @include Propiedades2(100%, 100%);
         }
     }
     .info{
         display: grid;
         color: $colorBlanco;
         font-family: $fuentePermanent;
-        text-align: center;   
+        text-align: $textoAlineado;   
         
         #parrafo{
             align-self: center;
@@ -350,12 +259,12 @@ header{
 /* Footer */
 .f{
     top: 600px;
-    height: 240px;
+    @include Propiedades2(240px, 100%);
 
     h2{
         position: relative;
         top: 30px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
 
@@ -363,15 +272,13 @@ header{
         transition: height 4s, width 4s;
     }
     .twitter :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
     .ig{
         transition: height 4s, width 4s;
     }
     .ig :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
 }
 
@@ -380,16 +287,6 @@ header{
 @media only screen and (min-width: 992px){
 
 /* Header */
-header{
-    color: $colorTitulos;
-    text-align: center;
-    font-family: $fuentePermanent;
-    height: 100px;
-
-    h1{
-        padding-top: 50px;
-    }
-}
 
 /* Nav */
 #navbar2{
@@ -403,21 +300,13 @@ header{
     #divvv{
         grid-area: a2;
     }
-    .red{
-        height: 100px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        justify-content: space-evenly;    
-    }
 }
 
 /* Main */
 .m{
     display: flex;
     display: grid;
-    height: 1200px;
+    @include Propiedades2(1200px, 100%);
     grid-template-columns: 100%;
     grid-template-rows: 400px 600px 100px;
     row-gap: 33px;
@@ -426,23 +315,21 @@ header{
     width: 100%;
 
     iframe{
-        height: 100%;
-        width: 100%;
+        @include Propiedades2(100%, 100%);
     }
 }
 .imagen{
     width: 100%;
 
     img{
-        height: 100%;
-        width: 100%;
+        @include Propiedades2(100%, 100%);
     }
 }
 .info{
     display: grid;
     color: $colorBlanco;
     font-family: $fuentePermanent;
-    text-align: center;  
+    text-align: $textoAlineado;  
 
     #parrafo{
         align-self: center;
@@ -452,12 +339,12 @@ header{
 /* Footer */
 .f{
     top: 600px;
-    height: 250px;
+    @include Propiedades2(250px, 100%);
 
     h2{
         position: relative;
         top: 30px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
 
@@ -465,34 +352,26 @@ header{
         transition: height 4s, width 4s;
     }
     .twitter :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
     .ig{
         transition: height 4s, width 4s;
     }
     .ig :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
+    
     }
 }
 
 }
 
 
-/*HISTORIA*/
+//*HISTORIA*//
 
 
 @media only screen and (max-width: 600px){
 
 /*Header*/
-
-.logg{
-    position:absolute;
-}
-.loguito{
-    height: 100%;
-}
 
 /*Nav*/
 
@@ -507,39 +386,13 @@ header{
     #divvv{
         grid-area: a3;
     }
-
-    #red{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-between;
-        justify-content: space-around;    
-
-        #home{
-            height: $heightUl;
-        }
-        #contacto{
-            height: $heightUl;
-        }
-        #historia{
-            height: $heightUl;
-        }
-        #personajes{
-            height: $heightUl;
-        }
-        #acercaDe{
-            height: $heightUl;
-        }
-    }
 }
 
 /*Main*/
 
 .m1{
     display: grid;
-    height: 800px;
+    @include Propiedades2(800px, 100%);
     grid-template-columns: 100%;
     grid-template-rows: 450px 300px;
     align-content: center;
@@ -548,21 +401,19 @@ header{
     #parrafos{
         display: grid;
         align-items: center;
-        width: 100%;
-        height: 100%;
+        @include Propiedades2(100%, 100%);
         align-self: center;
         justify-self: center;
         color: $colorBlanco;
         display: grid;
         font-family: $fuentePermanent;
-        text-align: center; 
+        text-align: $textoAlineado; 
     }
     #video{
         width: 100%;
     
         iframe{
-            width: 100%;
-            height: 100%;
+            @include Propiedades2(100%, 100%);
         }
     }
 }
@@ -571,12 +422,12 @@ header{
 
 .f1{
     top: 600px;
-    height: 240px;
+    @include Propiedades2(240px, 100%);
 
     h2{
         position: relative;
         top: 30px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
 
@@ -584,15 +435,13 @@ header{
         transition: height 4s, width 4s;
     }
     .twitter :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
     .ig{
         transition: height 4s, width 4s;
     }
     .ig :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
 }
 
@@ -602,13 +451,6 @@ header{
 
 /*Header*/
 
-.logg{
-    position:absolute;
-}
-.loguito{
-    height: 100%;
-}
-
 /*Nav*/
 #navbar2{
     display: grid;
@@ -621,39 +463,13 @@ header{
     #divvv{
         grid-area: a3;
     }
-
-    #red{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-between;
-        justify-content: space-around;    
-
-        #home{
-            height: $heightUl;
-        }
-        #contacto{
-            height: $heightUl;
-        }
-        #historia{
-            height: $heightUl;
-        }
-        #personajes{
-            height: $heightUl;
-        }
-        #acercaDe{
-            height: $heightUl;
-        }
-    }
 }
 
 /*Main*/
 
 .m1{
     display: grid;
-    height: 800px;
+    @include Propiedades2(800px, 100%);
     grid-template-columns: 100%;
     grid-template-rows: 350px 300px;
     align-content: center;
@@ -662,22 +478,20 @@ header{
     #parrafos{
         display: grid;
         align-items: center;
-        width: 100%;
-        height: 100%;
+        @include Propiedades2(100%, 100%);
         align-self: center;
         justify-self: center;
         color: $colorBlanco;
         display: grid;
         font-family: $fuentePermanent;
-        text-align: center; 
+        text-align: $textoAlineado;
     }
     
     #video{
         width: 100%;
     
         iframe{
-            width: 100%;
-            height: 100%;
+            @include Propiedades2(100%, 100%);
         }
     }
 }
@@ -686,12 +500,12 @@ header{
 
 .f1{
     top: 600px;
-    height: 240px;
+    @include Propiedades2(240px, 100%);
 
     h2{
         position: relative;
         top: 30px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
 
@@ -699,15 +513,13 @@ header{
         transition: height 4s, width 4s;
     }
     .twitter :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
     .ig{
         transition: height 4s, width 4s;
     }
     .ig :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
 }
 
@@ -716,13 +528,6 @@ header{
 @media only screen and (min-width: 768px){
 
 /*Header*/
-
-.logg{
-    position:absolute;
-}
-.loguito{
-    height: 100%;
-}
 
 /*Nav*/
 
@@ -736,24 +541,14 @@ header{
     }
     #divvv{
         grid-area: a2;
-    }
-
-    #red{
-        height: 100px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        justify-content: space-evenly;    
-    }
-    
+    } 
 }
 
 /*Main*/
 
 .m1{
     display: grid;
-    height: 800px;
+    @include Propiedades2(800px, 100%);
     grid-template-columns: 100%;
     grid-template-rows: 300px 400px;
     align-content: center;
@@ -761,13 +556,12 @@ header{
 
     #parrafos{
         display: grid;
-        width: 100%;
-        height: 100%;
+        @include Propiedades2(100%, 100%);
         align-self: center;
         justify-self: center;
         color: $colorBlanco;
         font-family: $fuentePermanent;
-        text-align: center; 
+        text-align: $textoAlineado;
         align-items: center;
     }
     
@@ -775,8 +569,7 @@ header{
         width: 100%;
     
         iframe{
-            width: 100%;
-            height: 100%;
+            @include Propiedades2(100%, 100%);
         }
     }
 }
@@ -785,12 +578,12 @@ header{
 
 .f1{
     top: 600px;
-    height: 240px;
+    @include Propiedades2(240px, 100%);
 
     h2{
         position: relative;
         top: 30px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
 
@@ -798,15 +591,13 @@ header{
         transition: height 4s, width 4s;
     }
     .twitter :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
     .ig{
         transition: height 4s, width 4s;
     }
     .ig :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
 }
 
@@ -815,13 +606,6 @@ header{
 @media only screen and (min-width: 992px){
 
 /*Header*/
-
-.logg{
-    position:absolute;
-}
-.loguito{
-    height: 100%;
-}
 
 /*Nav*/
 
@@ -836,22 +620,13 @@ header{
     #divvv{
         grid-area: a2;
     }
-
-    #red{
-        height: 100px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        justify-content: space-evenly;    
-    }
 }
 
 /*Main*/
 
 .m1{
     display: grid;
-    height: 800px;
+    @include Propiedades2(800px, 100%);
     grid-template-columns: 100%;
     grid-template-rows: 300px 400px;
     align-content: center;
@@ -859,13 +634,12 @@ header{
 
     #parrafos{
         display: grid;
-        width: 100%;
-        height: 100%;
+        @include Propiedades2(100%, 100%);
         align-self: center;
         justify-self: center;
         color: $colorBlanco;
         font-family: $fuentePermanent;
-        text-align: center; 
+        text-align: $textoAlineado; 
         align-items: center;
         padding-left: 30px;
         padding-right: 30px;
@@ -875,8 +649,7 @@ header{
         width: 100%;
     
         iframe{
-            width: 100%;
-            height: 100%;
+            @include Propiedades2(100%, 100%);
         }
     }
 }
@@ -885,12 +658,12 @@ header{
 
 .f1{
     top: 600px;
-    height: 240px;
+    @include Propiedades2(240px, 100%);
 
     h2{
         position: relative;
         top: 30px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
 
@@ -898,34 +671,25 @@ header{
         transition: height 4s, width 4s;
     }
     .twitter :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
     .ig{
         transition: height 4s, width 4s;
     }
     .ig :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
 }
 
 }
 
 
-/*PERSONAJES*/
+//*PERSONAJES*//
 
 
 @media only screen and (max-width: 600px){
 
 /*Header*/
-
-.logg{
-    position:absolute;
-}
-.loguito{
-    height: 100%;
-}
 
 /*Nav*/
 #navbar2{
@@ -939,46 +703,20 @@ header{
         #divvv{
             grid-area: a3;
         }
-    .red1{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-between;
-        justify-content: space-around; 
-        
-        .home1{
-            height: $heightUl;
-        }
-        .contacto1{
-            height: $heightUl;
-        }
-        .historia1{
-            height: $heightUl;
-        }
-        .personajes1{
-            height: $heightUl;
-        }
-        .acercaDe1{
-            height: $heightUl;
-        }
-    }
 }
 
 /*Main*/
 
 .m2{
     display: grid;
-    height: 2070px;
+    @include Propiedades2(2070px, 100%);
     grid-template-columns: 100%;
     grid-template-rows: 1630px 100px;
     align-content: center;
     row-gap: 150px;
 
     .characters{
-        height: 100%;
-        width: 100%;
+        @include Propiedades2(100%, 100%);
         display: grid;
         justify-items: center;
         align-items: center;
@@ -1001,8 +739,7 @@ header{
                             "Jiraiya";
     
                             .Naruto{
-                                height: 100%;
-                                width: 50%;
+                                @include Propiedades2(100%, 50%);
                                 grid-area: Naruto;
                                 transition: height 2s, width 2s;
                             }
@@ -1011,8 +748,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Sasuke{
-                                height: 100%;
-                                width: 50%;
+                                @include Propiedades2(100%, 50%);
                                 grid-area: Sasuke;
                                 transition: height 2s, width 2s;
                             }
@@ -1021,8 +757,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Sakura{
-                                height: 100%;
-                                width: 50%;
+                                @include Propiedades2(100%, 50%);
                                 grid-area: Sakura;
                                 transition: height 2s, width 2s;
                             }
@@ -1031,8 +766,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Kakashi{
-                                height: 100%;
-                                width: 50%;
+                                @include Propiedades2(100%, 50%);
                                 grid-area: Kakashi;
                                 transition: height 2s, width 2s;
                             }
@@ -1041,8 +775,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Itachi{
-                                height: 100%;
-                                width: 50%;
+                                @include Propiedades2(100%, 50%);
                                 grid-area: Itachi;
                                 transition: height 2s, width 2s;
                             }
@@ -1051,8 +784,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Minato{
-                                height: 100%;
-                                width: 50%;
+                                @include Propiedades2(100%, 50%);
                                 grid-area: Minato;
                                 transition: height 2s, width 2s;
                             }
@@ -1061,8 +793,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Obito{
-                                height: 100%;
-                                width: 50%;
+                                @include Propiedades2(100%, 50%);
                                 grid-area: Obito;
                                 transition: height 2s, width 2s;
                             }
@@ -1071,8 +802,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Madara{
-                                height: 100%;
-                                width: 51%;
+                                @include Propiedades2(100%, 51%);
                                 grid-area: Madara;
                                 transition: height 2s, width 2s;
                             }
@@ -1081,8 +811,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Hashirama{
-                                height: 100%;
-                                width: 50%;
+                                @include Propiedades2(100%, 50%);
                                 grid-area: Hashirama;
                                 transition: height 2s, width 2s;
                             }
@@ -1091,8 +820,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Tobirama{
-                                height: 100%;
-                                width: 50%;
+                                @include Propiedades2(100%, 50%);
                                 grid-area: Tobirama;
                                 transition: height 2s, width 2s;
                             }
@@ -1101,8 +829,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Sarutobi{
-                                height: 100%;
-                                width: 50%;
+                                @include Propiedades2(100%, 50%);
                                 grid-area: Sarutobi;
                                 transition: height 2s, width 2s;
                             }
@@ -1111,8 +838,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Pain{
-                                height: 100%;
-                                width: 50%;
+                                @include Propiedades2(100%, 50%);
                                 grid-area: Pain;
                                 transition: height 2s, width 2s;
                             }
@@ -1121,8 +847,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Tsunade{
-                                height: 100%;
-                                width: 50%;
+                                @include Propiedades2(100%, 50%);
                                 grid-area: Tsunade;
                                 transition: height 2s, width 2s;
                             }
@@ -1131,8 +856,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Orochimaru{
-                                height: 100%;
-                                width: 50%;
+                                @include Propiedades2(100%, 50%);
                                 grid-area: Orochimaru;
                                 transition: height 2s, width 2s;
                             }
@@ -1141,8 +865,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Jiraiya{
-                                height: 100%;
-                                width: 50%;
+                                @include Propiedades2(100%, 50%);
                                 grid-area: Jiraiya;
                                 transition: height 2s, width 2s;
                             }
@@ -1169,27 +892,25 @@ header{
 
 .f2{
     top: 600px;
-    height: 240px;
+    @include Propiedades2(240px, 100%);
 
     h2{
         position: relative;
         top: 30px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
     .twitter{
         transition: height 4s, width 4s;
     }
     .twitter :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
     .ig{
         transition: height 4s, width 4s;
     }
     .ig :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
 } 
 
@@ -1198,13 +919,6 @@ header{
 @media only screen and (min-width: 600px){
 
 /*Header*/
-
-.logg{
-    position:absolute;
-}
-.loguito{
-    height: 100%;
-}
 
 /*Nav*/
 
@@ -1219,49 +933,20 @@ header{
         #divvv{
         grid-area: a3;
         }
-
-        .red1{
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            justify-content: space-between;
-            justify-content: space-around;   
-            
-            .home1{
-                height: $heightUl;
-            }
-            .contacto1{
-                height: $heightUl;
-            }
-            .historia1{
-                height: $heightUl;
-            }
-            .personajes1{
-                height: $heightUl;
-            }
-            .acercaDe1{
-                height: $heightUl;
-            }    
-        }
-    
-    
     }
 
 /*Main*/
 
 .m2{
     display: grid;
-    height: 400px;
+    @include Propiedades2(400px, 100%);
     grid-template-columns: 100%;
     grid-template-rows: 300px 50px;
     align-content: center;
     row-gap: 30px;
     
     .characters{
-        height: 100%;
-        width: 100%;
+        @include Propiedades2(100%, 100%);
         display: grid;
         grid-template-columns: 20% 20% 20% 20% 20%;
         grid-template-rows: 90px 90px 90px;
@@ -1270,8 +955,7 @@ header{
                              "Sarutobi Pain Tsunade Orochimaru Jiraiya";
     
                              .Naruto{
-                                height: 90%;
-                                width: 70%;
+                                @include Propiedades2(90%, 70%);
                                 grid-area: Naruto;
                                 transition: height 2s, width 2s;
                             }
@@ -1280,8 +964,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Sasuke{
-                                height: 90%;
-                                width: 70%;
+                                @include Propiedades2(90%, 70%);
                                 grid-area: Sasuke;
                                 transition: height 2s, width 2s;
                             }
@@ -1290,8 +973,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Sakura{
-                                height: 90%;
-                                width: 70%;
+                                @include Propiedades2(90%, 70%);
                                 grid-area: Sakura;
                                 transition: height 2s, width 2s;
                             }
@@ -1300,8 +982,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Kakashi{
-                                height: 90%;
-                                width: 70%;
+                                @include Propiedades2(90%, 70%);
                                 grid-area: Kakashi;
                                 transition: height 2s, width 2s;
                             }
@@ -1310,8 +991,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Itachi{
-                                height: 90%;
-                                width: 70%;
+                                @include Propiedades2(90%, 70%);
                                 grid-area: Itachi;
                                 transition: height 2s, width 2s;
                             }
@@ -1320,8 +1000,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Minato{
-                                height: 90%;
-                                width: 70%;
+                                @include Propiedades2(90%, 70%);
                                 grid-area: Minato;
                                 transition: height 2s, width 2s;
                             }
@@ -1330,8 +1009,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Obito{
-                                height: 90%;
-                                width: 70%;
+                                @include Propiedades2(90%, 70%);
                                 grid-area: Obito;
                                 transition: height 2s, width 2s;
                             }
@@ -1340,8 +1018,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Madara{
-                                height: 90%;
-                                width: 70%;
+                                @include Propiedades2(90%, 70%);
                                 grid-area: Madara;
                                 transition: height 2s, width 2s;
                             }
@@ -1350,8 +1027,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Hashirama{
-                                height: 90%;
-                                width: 70%;
+                                @include Propiedades2(90%, 70%);
                                 grid-area: Hashirama;
                                 transition: height 2s, width 2s;
                             }
@@ -1360,8 +1036,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Tobirama{
-                                height: 90%;
-                                width: 70%;
+                                @include Propiedades2(90%, 70%);
                                 grid-area: Tobirama;
                                 transition: height 2s, width 2s;
                             }
@@ -1370,8 +1045,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Sarutobi{
-                                height: 90%;
-                                width: 70%;
+                                @include Propiedades2(90%, 70%);
                                 grid-area: Sarutobi;
                                 transition: height 2s, width 2s;
                             }
@@ -1380,8 +1054,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Pain{
-                                height: 90%;
-                                width: 70%;
+                                @include Propiedades2(90%, 70%);
                                 grid-area: Pain;
                                 transition: height 2s, width 2s;
                             }
@@ -1390,8 +1063,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Tsunade{
-                                height: 90%;
-                                width: 70%;
+                                @include Propiedades2(90%, 70%);
                                 grid-area: Tsunade;
                                 transition: height 2s, width 2s;
                             }
@@ -1400,8 +1072,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Orochimaru{
-                                height: 90%;
-                                width: 70%;
+                                @include Propiedades2(90%, 70%);
                                 grid-area: Orochimaru;
                                 transition: height 2s, width 2s;
                             }
@@ -1410,8 +1081,7 @@ header{
                                 width: $anchoPersonajes;
                             }
                             .Jiraiya{
-                                height: 90%;
-                                width: 70%;
+                                @include Propiedades2(90%, 70%);
                                 grid-area: Jiraiya;
                                 transition: height 2s, width 2s;
                             }
@@ -1437,12 +1107,12 @@ header{
 
 .f2{
     top: 600px;
-    height: 240px;
+    @include Propiedades2(240px, 100%);
 
     h2{
         position: relative;
         top: 30px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
 
@@ -1450,15 +1120,13 @@ header{
         transition: height 4s, width 4s;
     }
     .twitter :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
     .ig{
         transition: height 4s, width 4s;
     }
     .ig :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }  
 }
 
@@ -1467,13 +1135,6 @@ header{
 @media only screen and (min-width: 768px){
 
 /*Header*/
-
-.logg{
-    position:absolute;
-}
-.loguito{
-    height: 100%;
-}
 
 /*Nav*/
 
@@ -1488,30 +1149,20 @@ header{
         #divvv{
         grid-area: a2;
         }
-
-    .red1{
-        height: 100px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        justify-content: space-evenly;    
-    }
 }
 
 /*Main*/
 
 .m2{
     display: grid;
-    height: 1800px;
+    @include Propiedades2(1800px, 100%);
     grid-template-columns: 100%;
     grid-template-rows: 1700px 50px;
     align-content: center;
     row-gap: 30px;
 
     .characters{
-        height: 110%;
-        width: 100%;
+        @include Propiedades2(110%, 100%);
         display: grid;
         grid-template-columns: 20% 20% 20% 20% 20%;
         grid-template-rows: 1fr 1fr 1fr;
@@ -1520,8 +1171,7 @@ header{
                              "Sarutobi Pain Tsunade Orochimaru Jiraiya";
     
                             .Naruto{
-                                height: 70%;
-                                width: 100%;
+                                @include Propiedades2(70%, 100%);
                                 grid-area: Naruto;
                                 transition: height 2s, width 2s;
                             }
@@ -1530,8 +1180,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Sasuke{
-                                height: 70%;
-                                width: 100%;
+                                @include Propiedades2(70%, 100%);
                                 grid-area: Sasuke;
                                 transition: height 2s, width 2s;
                             }
@@ -1540,8 +1189,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Sakura{
-                                height: 70%;
-                                width: 100%;
+                                @include Propiedades2(70%, 100%);
                                 grid-area: Sakura;
                                 transition: height 2s, width 2s;
                             }
@@ -1550,8 +1198,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Kakashi{
-                                height: 70%;
-                                width: 100%;
+                                @include Propiedades2(70%, 100%);
                                 grid-area: Kakashi;
                                 transition: height 2s, width 2s;
                             }
@@ -1560,8 +1207,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Itachi{
-                                height: 70%;
-                                width: 100%;
+                                @include Propiedades2(70%, 100%);
                                 grid-area: Itachi;
                                 transition: height 2s, width 2s;
                             }
@@ -1570,8 +1216,7 @@ header{
                                 width: 250px;
                             }
                             .Minato{
-                                height: 70%;
-                                width: 100%;
+                                @include Propiedades2(70%, 100%);
                                 grid-area: Minato;
                                 transition: height 2s, width 2s;
                             }
@@ -1580,8 +1225,7 @@ header{
                                 width: 300px;
                             }
                             .Obito{
-                                height: 70%;
-                                width: 100%;
+                                @include Propiedades2(70%, 100%);
                                 grid-area: Obito;
                                 transition: height 2s, width 2s;
                             }
@@ -1590,8 +1234,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Madara{
-                                height: 70%;
-                                width: 100%;
+                                @include Propiedades2(70%, 100%);
                                 grid-area: Madara;
                                 transition: height 2s, width 2s;
                             }
@@ -1600,8 +1243,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Hashirama{
-                                height: 70%;
-                                width: 100%;
+                                @include Propiedades2(70%, 100%);
                                 grid-area: Hashirama;
                                 transition: height 2s, width 2s;
                             }
@@ -1610,8 +1252,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Tobirama{
-                                height: 70%;
-                                width: 100%;
+                                @include Propiedades2(70%, 100%);
                                 grid-area: Tobirama;
                                 transition: height 2s, width 2s;
                             }
@@ -1620,8 +1261,7 @@ header{
                                 width: 250px;
                             }
                             .Sarutobi{
-                                height: 70%;
-                                width: 100%;
+                                @include Propiedades2(70%, 100%);
                                 grid-area: Sarutobi;
                                 transition: height 2s, width 2s;
                             }
@@ -1630,8 +1270,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Pain{
-                                height: 70%;
-                                width: 100%;
+                                @include Propiedades2(70%, 100%);
                                 grid-area: Pain;
                                 transition: height 2s, width 2s;
                             }
@@ -1640,8 +1279,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Tsunade{
-                                height: 70%;
-                                width: 100%;
+                                @include Propiedades2(70%, 100%);
                                 grid-area: Tsunade;
                                 transition: height 2s, width 2s;
                             }
@@ -1650,8 +1288,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Orochimaru{
-                                height: 70%;
-                                width: 100%;
+                                @include Propiedades2(70%, 100%);
                                 grid-area: Orochimaru;
                                 transition: height 2s, width 2s;
                             }
@@ -1660,8 +1297,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Jiraiya{
-                                height: 70%;
-                                width: 100%;
+                                @include Propiedades2(70%, 100%);
                                 grid-area: Jiraiya;
                                 transition: height 2s, width 2s;
                             }
@@ -1687,12 +1323,12 @@ header{
 
 .f2{
     top: 2500px;
-    height: 240px;
+    @include Propiedades2(240px, 100%);
 
     h2{
         position: relative;
         top: 50px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
 
@@ -1700,15 +1336,13 @@ header{
         transition: height 4s, width 4s;
     }
     .twitter :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
     .ig{
         transition: height 4s, width 4s;
     }
     .ig :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
 }
 
@@ -1717,13 +1351,6 @@ header{
 @media only screen and (min-width: 992px){
 
 /*Header*/
-
-.logg{
-    position:absolute;
-}
-.loguito{
-    height: 100%;
-}
 
 /*Nav*/
 
@@ -1738,15 +1365,6 @@ header{
         #divvv{
         grid-area: a2;
         }
-
-    .red1{
-        height: 100px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        justify-content: space-evenly;    
-    }
 }
 
 
@@ -1754,15 +1372,14 @@ header{
 
 .m2{
     display: grid;
-    height: 1800px;
+    @include Propiedades2(1800px, 100%);
     grid-template-columns: 100%;
     grid-template-rows: 1700px 50px;
     align-content: center;
     row-gap: 30px;
 
     .characters{
-        height: 100%;
-        width: 100%;
+        @include Propiedades2(100%, 100%);
         display: grid;
         grid-template-columns: 20% 20% 20% 20% 20%;
         grid-template-rows: 1fr 1fr 1fr;
@@ -1771,8 +1388,7 @@ header{
                              "Sarutobi Pain Tsunade Orochimaru Jiraiya";
     
                              .Naruto{
-                                height: 80%;
-                                width: 100%;
+                                @include Propiedades2(80%, 100%);
                                 grid-area: Naruto;
                                 transition: height 2s, width 2s;
                             }
@@ -1781,8 +1397,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Sasuke{
-                                height: 80%;
-                                width: 100%;
+                                @include Propiedades2(80%, 100%);
                                 grid-area: Sasuke;
                                 transition: height 2s, width 2s;
                             }
@@ -1791,8 +1406,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Sakura{
-                                height: 80%;
-                                width: 100%;
+                                @include Propiedades2(80%, 100%);
                                 grid-area: Sakura;
                                 transition: height 2s, width 2s;
                             }
@@ -1801,8 +1415,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Kakashi{
-                                height: 80%;
-                                width: 100%;
+                                @include Propiedades2(80%, 100%);
                                 grid-area: Kakashi;
                                 transition: height 2s, width 2s;
                             }
@@ -1811,8 +1424,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Itachi{
-                                height: 80%;
-                                width: 90%;
+                                @include Propiedades2(80%, 90%);
                                 grid-area: Itachi;
                                 transition: height 2s, width 2s;
                             }
@@ -1821,8 +1433,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Minato{
-                                height: 80%;
-                                width: 90%;
+                                @include Propiedades2(80%, 90%);
                                 grid-area: Minato;
                                 transition: height 2s, width 2s;
                             }
@@ -1831,8 +1442,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Obito{
-                                height: 80%;
-                                width: 100%;
+                                @include Propiedades2(80%, 100%);
                                 grid-area: Obito;
                                 transition: height 2s, width 2s;
                             }
@@ -1841,8 +1451,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Madara{
-                                height: 80%;
-                                width: 90%;
+                                @include Propiedades2(80%, 90%);
                                 grid-area: Madara;
                                 transition: height 2s, width 2s;
                             }
@@ -1851,8 +1460,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Hashirama{
-                                height: 80%;
-                                width: 100%;
+                                @include Propiedades2(80%, 100%);
                                 grid-area: Hashirama;
                                 transition: height 2s, width 2s;
                             }
@@ -1861,8 +1469,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Tobirama{
-                                height: 80%;
-                                width: 100%;
+                                @include Propiedades2(80%, 100%);
                                 grid-area: Tobirama;
                                 transition: height 2s, width 2s;
                             }
@@ -1871,8 +1478,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Sarutobi{
-                                height: 80%;
-                                width: 100%;
+                                @include Propiedades2(80%, 100%);
                                 grid-area: Sarutobi;
                                 transition: height 2s, width 2s;
                             }
@@ -1881,8 +1487,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Pain{
-                                height: 80%;
-                                width: 100%;
+                                @include Propiedades2(80%, 100%);
                                 grid-area: Pain;
                                 transition: height 2s, width 2s;
                             }
@@ -1891,8 +1496,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Tsunade{
-                                height: 80%;
-                                width: 100%;
+                                @include Propiedades2(80%, 100%);
                                 grid-area: Tsunade;
                                 transition: height 2s, width 2s;
                             }
@@ -1901,8 +1505,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Orochimaru{
-                                height: 80%;
-                                width: 90%;
+                                @include Propiedades2(80%, 90%);
                                 grid-area: Orochimaru;
                                 transition: height 2s, width 2s;
                             }
@@ -1911,8 +1514,7 @@ header{
                                 width: $anchoPersonajess;
                             }
                             .Jiraiya{
-                                height: 80%;
-                                width: 100%;
+                                @include Propiedades2(80%, 100%);
                                 grid-area: Jiraiya;
                                 transition: height 2s, width 2s;
                             }
@@ -1938,12 +1540,12 @@ header{
 
 .f2{
     top: 2500px;
-    height: 240px;
+    @include Propiedades2(240px, 100%);
 
     h2{
         position: relative;
         top: 50px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
 
@@ -1951,22 +1553,20 @@ header{
         transition: height 4s, width 4s;
     }
     .twitter :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
     .ig{
         transition: height 4s, width 4s;
     }
     .ig :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
 }
 
 }
 
 
-/*CONTACTO*/
+//*CONTACTO*//
 
 .form2{
     display: grid;
@@ -1976,13 +1576,6 @@ header{
 @media only screen and (max-width: 600px){
 
 /*Header*/
-
-.logg{
-    position:absolute;
-}
-.loguito{
-    height: 100%;
-}
 
 /*Nav*/
 
@@ -1997,38 +1590,13 @@ header{
         #divvv{
         grid-area: a3;
         }
-    #red1{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-between;
-        justify-content: space-around;    
-    
-        #home1{
-            height: $heightUl;
-        }
-        #contacto1{
-            height: $heightUl;
-        }
-        #historia1{
-            height: $heightUl;
-        }
-        #personajes1{
-            height: $heightUl;
-        }
-        #acercaDe1{
-            height: $heightUl;
-        }
-    }
 }
 
 /*Main*/
 
 .m3{
     display: grid;
-    height: 1500px;
+    @include Propiedades2(1500px, 100%);
     grid-template-columns: 100%;
     grid-template-rows: 250px 500px 450px;
     row-gap: 15px;
@@ -2051,8 +1619,7 @@ header{
     }
     
     .kakashi3{
-        height: 100%;
-        width: 100%;
+        @include Propiedades2(100%, 100%);
     }  
 }
 
@@ -2060,12 +1627,12 @@ header{
 
 .f3{
     top: 600px;
-    height: 240px;
+    @include Propiedades2(240px, 100%);
 
     h2{
         position: relative;
         top: 30px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
 
@@ -2073,15 +1640,13 @@ header{
         transition: height 4s, width 4s;
     }
     .twitter :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
     .ig{
         transition: height 4s, width 4s;
     }
     .ig :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
 }
 
@@ -2090,13 +1655,6 @@ header{
 @media only screen and (min-width: 600px){
 
 /*Header*/
-
-.logg{
-    position:absolute;
-}
-.loguito{
-    height: 100%;
-}
 
 /*Nav*/
 
@@ -2110,39 +1668,14 @@ header{
         }
         #divvv{
         grid-area: a3;
-        }
-    #red1{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-between;
-        justify-content: space-around;   
-        
-        #home1{
-            height: $heightUl;
-        }
-        #contacto1{
-            height: $heightUl;
-        }
-        #historia1{
-            height: $heightUl;
-        }
-        #personajes1{
-            height: $heightUl;
-        }
-        #acercaDe1{
-            height: $heightUl;
-        }
-    }    
+        } 
 }
 
 /*Main*/
 
 .m3{
     display: grid;
-    height: 1500px;
+    @include Propiedades2(1500px, 100%);
     grid-template-columns: 100%;
     grid-template-rows: 250px 500px 450px;
     row-gap: 15px;
@@ -2166,8 +1699,7 @@ header{
     }
 
     .kakashi3{
-        height: 100%;
-        width: 100%;
+        @include Propiedades2(100%, 100%);
     }
     
 }
@@ -2176,12 +1708,12 @@ header{
 
 .f3{
     top: 600px;
-    height: 240px;
+    @include Propiedades2(240px, 100%);
 
     h2{
         position: relative;
         top: 30px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
 
@@ -2189,15 +1721,13 @@ header{
         transition: height 4s, width 4s;
     }
     .twitter :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
     .ig{
         transition: height 4s, width 4s;
     }
     .ig :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
 }
 
@@ -2206,13 +1736,6 @@ header{
 @media only screen and (min-width: 768px){
 
 /*Header*/
-
-.logg{
-    position:absolute;
-}
-.loguito{
-    height: 100%;
-}
 
 /*Nav*/
 
@@ -2227,22 +1750,13 @@ header{
         #divvv{
         grid-area: a2;
         }
-
-    #red1{
-        height: 100px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        justify-content: space-evenly;    
-    }
 }
 
 /*Main*/
 
 .m3{
     display: grid;
-    height: 1000px;
+    @include Propiedades2(1000px, 100%);
     grid-template-columns: 50% 50%;
     grid-template-rows: 45% 45%;
     grid-template-areas: "a1 a1"
@@ -2261,29 +1775,34 @@ header{
     }
 
     .kakashi3{
-        height: 100%;
-        width: 100%;
+        @include Propiedades2(100%, 100%);
         grid-area: a3;
     }
 } 
-
 
 /*Footer*/
 
 .f3{
     top: 600px;
-    height: 240px;
+    @include Propiedades2(240px, 100%);
 
     h2{
         position: relative;
         top: 30px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
-
-    .redes4{
-        position: absolute;
-        top: 1470px;
+    .twitter{
+        transition: height 4s, width 4s;
+    }
+    .twitter :hover{
+        @include Propiedades2(50px, 50px);
+    }
+    .ig{
+        transition: height 4s, width 4s;
+    }
+    .ig :hover{
+        @include Propiedades2(50px, 50px);
     }
 }
 
@@ -2292,13 +1811,6 @@ header{
 @media only screen and (min-width: 992px){
 
 /*Header*/
-
-.logg{
-    position:absolute;
-}
-.loguito{
-    height: 100%;
-}
 
 /*Nav*/
 
@@ -2313,22 +1825,13 @@ header{
         #divvv{
         grid-area: a2;
         }
-
-    #red1{
-        height: 100px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        justify-content: space-evenly;    
-    }
 }
 
 /*Main*/
 
 .m3{
     display: grid;
-    height: 1000px;
+    @include Propiedades2(1000px, 100%);
     grid-template-columns: 50% 50%;
     grid-template-rows: 45% 45%;
     grid-template-areas: "a1 a1"
@@ -2350,8 +1853,7 @@ header{
         align-self: flex-end;
     }
     .kakashi3{
-        height: 100%;
-        width: 100%;
+        @include Propiedades2(100%, 100%);
         grid-area: a3;
     }
 }
@@ -2360,12 +1862,12 @@ header{
 
 .f3{
     top: 600px;
-    height: 240px;
+    @include Propiedades2(240px, 100%);
 
     h2{
         position: relative;
         top: 30px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
 
@@ -2373,34 +1875,25 @@ header{
         transition: height 4s, width 4s;
     }
     .twitter :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
     .ig{
         transition: height 4s, width 4s;
     }
     .ig :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
 } 
 
 }
 
 
-/*ACERCA DE*/
+//*ACERCA DE*//
 
 
 @media only screen and (max-width: 600px){
 
 /*Header*/
-
-.logg{
-    position:absolute;
-}
-.loguito{
-    height: 100%;
-}
 
 /*Nav*/
 
@@ -2415,38 +1908,13 @@ header{
         #divvv{
         grid-area: a3;
         }
-    .red2{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-between;
-        justify-content: space-around;   
-        
-        .home2{
-            height: $heightUl;
-        }
-        .contacto2{
-            height: $heightUl;
-        }
-        .historia2{
-            height: $heightUl;
-        }
-        .personajes2{
-            height: $heightUl;
-        }
-        .acercaDe2{
-            height: $heightUl;
-        }
-    }
 }
 
 /*Main*/
 
 .m4{
     display: grid;
-    height: 800px;
+    @include Propiedades2(800px, 100%);
     grid-template-columns: 100%;
     row-gap: 25px;
     grid-template-rows: 350px 350px;
@@ -2462,8 +1930,7 @@ header{
     }   
     
     #dattebayo{
-        height: 100%;
-        width: 100%;
+        @include Propiedades2(100%, 100%);
         grid-area: a2;
     }
                     
@@ -2473,12 +1940,12 @@ header{
 
 .f4{
     top: 600px;
-    height: 240px;
+    @include Propiedades2(240px, 100%);
 
     h2{
         position: relative;
         top: 30px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
 
@@ -2486,15 +1953,13 @@ header{
         transition: height 4s, width 4s;
     }
     .twitter :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
     .ig{
         transition: height 4s, width 4s;
     }
     .ig :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
 }
 
@@ -2503,13 +1968,6 @@ header{
 @media only screen and (min-width: 600px){
 
 /*Header*/
-
-.logg{
-    position:absolute;
-}
-.loguito{
-    height: 100%;
-}
 
 /*Nav*/
 
@@ -2524,38 +1982,13 @@ header{
         #divvv{
         grid-area: a3;
         }
-    .red2{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-between;
-        justify-content: space-around;    
-    
-        .home2{
-            height: $heightUl;
-        }
-        .contacto2{
-            height: $heightUl;
-        }
-        .historia2{
-            height: $heightUl;
-        }
-        .personajes2{
-            height: $heightUl;
-        }
-        .acercaDe2{
-            height: $heightUl;
-        }
-    }
 }
 
 /*Main*/
 
 .m4{
     display: grid;
-    height: 700px;
+    @include Propiedades2(700px, 100%);
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
     grid-template-areas: "a1"
@@ -2569,8 +2002,7 @@ header{
     }
 
     #dattebayo{
-        height: 100%;
-        width: 100%;
+        @include Propiedades2(100%, 100%);
         grid-area: a2;
     }
 }
@@ -2579,12 +2011,12 @@ header{
 
 .f4{
     top: 600px;
-    height: 240px;
+    @include Propiedades2(240px, 100%);
 
     h2{
         position: relative;
         top: 30px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
 
@@ -2592,15 +2024,13 @@ header{
         transition: height 4s, width 4s;
     }
     .twitter :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
     .ig{
         transition: height 4s, width 4s;
     }
     .ig :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
 }
 
@@ -2609,13 +2039,6 @@ header{
 @media only screen and (min-width: 768px){
 
 /*Header*/
-
-.logg{
-    position:absolute;
-}
-.loguito{
-    height: 100%;
-}
 
 /*Nav*/
 
@@ -2630,22 +2053,13 @@ header{
         #divvv{
         grid-area: a2;
         }
-
-    .red2{
-        height: 100px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        justify-content: space-evenly;    
-    }
 }
 
 /*Main*/
 
 .m4{
     display: grid;
-    height: 700px;
+    @include Propiedades2(700px, 100%);
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
     grid-template-areas: "a1"
@@ -2659,8 +2073,7 @@ header{
     }
 
     #dattebayo{
-        height: 100%;
-        width: 100%;
+        @include Propiedades2(100%, 100%);
         grid-area: a2;
     }
 }
@@ -2669,12 +2082,12 @@ header{
 
 .f4{
     top: 600px;
-    height: 240px;
+    @include Propiedades2(240px, 100%);
 
     h2{
         position: relative;
         top: 30px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
 
@@ -2682,15 +2095,13 @@ header{
         transition: height 4s, width 4s;
     }
     .twitter :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
     .ig{
         transition: height 4s, width 4s;
     }
     .ig :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
 }
 
@@ -2699,13 +2110,6 @@ header{
 @media only screen and (min-width: 992px){
 
 /*Header*/
-
-.logg{
-    position:absolute;
-}
-.loguito{
-    height: 100%;
-}
 
 /*Nav*/
 
@@ -2720,22 +2124,13 @@ header{
         #divvv{
         grid-area: a2;
         }
-
-    .red2{
-        height: 100px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        justify-content: space-evenly;    
-    }
 }
 
 /*Main*/
 
 .m4{
     display: grid;
-    height: 700px;
+    @include Propiedades2(700px, 100%);
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
     grid-template-areas: "a1"
@@ -2751,8 +2146,7 @@ header{
     }
 
     #dattebayo{
-        height: 100%;
-        width: 100%;
+        @include Propiedades2(100%, 100%);
         grid-area: a2;
     }
 } 
@@ -2761,12 +2155,12 @@ header{
 
 .f4{
     top: 600px;
-    height: 240px;
+    @include Propiedades2(240px, 100%);
 
     h2{
         position: relative;
         top: 30px;
-        text-align: center;
+        text-align: $textoAlineado;
         font-family: $fuentePermanent;
     }
 
@@ -2774,15 +2168,13 @@ header{
         transition: height 4s, width 4s;
     }
     .twitter :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
     .ig{
         transition: height 4s, width 4s;
     }
     .ig :hover{
-        height: 50px;
-        width: 50px;
+        @include Propiedades2(50px, 50px);
     }
 }
 }
