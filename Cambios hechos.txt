@@ -1,0 +1,6 @@
+Aplique mixin en anchos y altos
+No pude aplicar extend porque me salta error en CMD
+Puse keywords en las secciones
+Puse descripcion en cada seccion
+Directorio organizado
+Title puesto
