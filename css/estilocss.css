@@ -18,22 +18,24 @@ footer {
 @media only screen and (max-width: 600px) {
   /* Header */
   header {
-    color: darkorange;
     text-align: center;
-    font-family: "Permanent Marker", cursive;
-    height: 200px; }
+    height: 100px;
+    width: 100%;
+    color: darkorange;
+    font-family: "Permanent Marker", cursive; }
     header h1 {
-      padding-top: 150px; }
-    header .logg {
-      position: absolute; }
-    header .loguito {
-      height: 100%; }
+      padding-top: 50px; }
   /* Nav */
-  nav {
-    display: flex;
-    flex-direction: row;
-    flex-direction: row-reverse; }
-    nav .red {
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 15% 35%;
+    grid-template-areas: "a1 a2 a3"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a3; }
+    #navbar2 .red {
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       display: flex;
       flex-direction: column;
@@ -41,20 +43,21 @@ footer {
       justify-content: center;
       justify-content: space-between;
       justify-content: space-around; }
-      nav .red .home {
+      #navbar2 .red .home {
         height: 40px; }
-      nav .red .contacto {
+      #navbar2 .red .contacto {
         height: 40px; }
-      nav .red .historia {
+      #navbar2 .red .historia {
         height: 40px; }
-      nav .red .personajes {
+      #navbar2 .red .personajes {
         height: 40px; }
-      nav .red .acercaDe {
+      #navbar2 .red .acercaDe {
         height: 40px; }
   /* Main */
   .m {
-    display: grid;
     height: 800px;
+    width: 100%;
+    display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 250px 250px 250px;
     row-gap: 15px; }
@@ -83,7 +86,17 @@ footer {
       position: relative;
       top: 30px;
       text-align: center;
-      font-family: "Permanent Marker", cursive; } }
+      font-family: "Permanent Marker", cursive; }
+  .twitter {
+    transition: height 4s, width 4s; }
+  .twitter :hover {
+    height: 50px;
+    width: 50px; }
+  .ig {
+    transition: height 4s, width 4s; }
+  .ig :hover {
+    height: 50px;
+    width: 50px; } }
 
 @media only screen and (min-width: 600px) {
   /* Header */
@@ -91,19 +104,21 @@ footer {
     color: darkorange;
     text-align: center;
     font-family: "Permanent Marker", cursive;
-    height: 200px; }
+    height: 100px;
+    width: 100%; }
     header h1 {
-      padding-top: 150px; }
-    header .logg {
-      position: absolute; }
-    header .loguito {
-      height: 100%; }
+      padding-top: 50px; }
   /* Nav */
-  nav {
-    display: flex;
-    flex-direction: row;
-    flex-direction: row-reverse; }
-    nav .red {
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 15% 35%;
+    grid-template-areas: "a1 a2 a3"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a3; }
+    #navbar2 .red {
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       display: flex;
       flex-direction: column;
@@ -111,20 +126,21 @@ footer {
       justify-content: center;
       justify-content: space-between;
       justify-content: space-around; }
-      nav .red .home {
+      #navbar2 .red .home {
         height: 40px; }
-      nav .red .contacto {
+      #navbar2 .red .contacto {
         height: 40px; }
-      nav .red .historia {
+      #navbar2 .red .historia {
         height: 40px; }
-      nav .red .personajes {
+      #navbar2 .red .personajes {
         height: 40px; }
-      nav .red .acercaDe {
+      #navbar2 .red .acercaDe {
         height: 40px; }
   /* Main */
   .m {
     display: grid;
     height: 1000px;
+    width: 100%;
     grid-template-columns: 100%;
     grid-template-rows: 300px 350px 250px;
     row-gap: 15px; }
@@ -154,9 +170,16 @@ footer {
       top: 30px;
       text-align: center;
       font-family: "Permanent Marker", cursive; }
-    .f .redes {
-      position: absolute;
-      top: 1490px; } }
+    .f .twitter {
+      transition: height 4s, width 4s; }
+    .f .twitter :hover {
+      height: 50px;
+      width: 50px; }
+    .f .ig {
+      transition: height 4s, width 4s; }
+    .f .ig :hover {
+      height: 50px;
+      width: 50px; } }
 
 @media only screen and (min-width: 768px) {
   /* Header */
@@ -164,18 +187,20 @@ footer {
     color: darkorange;
     text-align: center;
     font-family: "Permanent Marker", cursive;
-    height: 200px; }
+    height: 100px; }
     header h1 {
-      padding-top: 150px; }
-    header .logg {
-      position: absolute; }
-    header .loguito {
-      height: 100%; }
+      padding-top: 50px; }
   /* Nav */
-  nav {
-    height: 100px;
-    width: 100%; }
-    nav .red {
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "a1 a2"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a2; }
+    #navbar2 .red {
       height: 100px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       display: flex;
@@ -215,9 +240,16 @@ footer {
       top: 30px;
       text-align: center;
       font-family: "Permanent Marker", cursive; }
-    .f .redes {
-      position: absolute;
-      top: 1390px; } }
+    .f .twitter {
+      transition: height 4s, width 4s; }
+    .f .twitter :hover {
+      height: 50px;
+      width: 50px; }
+    .f .ig {
+      transition: height 4s, width 4s; }
+    .f .ig :hover {
+      height: 50px;
+      width: 50px; } }
 
 @media only screen and (min-width: 992px) {
   /* Header */
@@ -225,18 +257,20 @@ footer {
     color: darkorange;
     text-align: center;
     font-family: "Permanent Marker", cursive;
-    height: 200px; }
+    height: 100px; }
     header h1 {
-      padding-top: 150px; }
-    header .logg {
-      position: absolute; }
-    header .loguito {
-      height: 100%; }
+      padding-top: 50px; }
   /* Nav */
-  nav {
-    height: 100px;
-    width: 100%; }
-    nav .red {
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a1 a2"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a2; }
+    #navbar2 .red {
       height: 100px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       display: flex;
@@ -271,15 +305,22 @@ footer {
   /* Footer */
   .f {
     top: 600px;
-    height: 240px; }
+    height: 250px; }
     .f h2 {
       position: relative;
       top: 30px;
       text-align: center;
       font-family: "Permanent Marker", cursive; }
-    .f .redes {
-      position: absolute;
-      top: 1590px; } }
+    .f .twitter {
+      transition: height 4s, width 4s; }
+    .f .twitter :hover {
+      height: 50px;
+      width: 50px; }
+    .f .ig {
+      transition: height 4s, width 4s; }
+    .f .ig :hover {
+      height: 50px;
+      width: 50px; } }
 
 /*HISTORIA*/
 @media only screen and (max-width: 600px) {
@@ -289,11 +330,16 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav {
-    display: flex;
-    flex-direction: row;
-    flex-direction: row-reverse; }
-    nav #red {
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 15% 35%;
+    grid-template-areas: "a1 a2 a3"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a3; }
+    #navbar2 #red {
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       display: flex;
       flex-direction: column;
@@ -301,15 +347,15 @@ footer {
       justify-content: center;
       justify-content: space-between;
       justify-content: space-around; }
-      nav #red #home {
+      #navbar2 #red #home {
         height: 40px; }
-      nav #red #contacto {
+      #navbar2 #red #contacto {
         height: 40px; }
-      nav #red #historia {
+      #navbar2 #red #historia {
         height: 40px; }
-      nav #red #personajes {
+      #navbar2 #red #personajes {
         height: 40px; }
-      nav #red #acercaDe {
+      #navbar2 #red #acercaDe {
         height: 40px; }
   /*Main*/
   .m1 {
@@ -344,9 +390,16 @@ footer {
       top: 30px;
       text-align: center;
       font-family: "Permanent Marker", cursive; }
-    .f1 #redes2 {
-      position: absolute;
-      top: 1290px; } }
+    .f1 .twitter {
+      transition: height 4s, width 4s; }
+    .f1 .twitter :hover {
+      height: 50px;
+      width: 50px; }
+    .f1 .ig {
+      transition: height 4s, width 4s; }
+    .f1 .ig :hover {
+      height: 50px;
+      width: 50px; } }
 
 @media only screen and (min-width: 600px) {
   /*Header*/
@@ -355,11 +408,16 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav {
-    display: flex;
-    flex-direction: row;
-    flex-direction: row-reverse; }
-    nav #red {
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 15% 35%;
+    grid-template-areas: "a1 a2 a3"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a3; }
+    #navbar2 #red {
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       display: flex;
       flex-direction: column;
@@ -367,15 +425,15 @@ footer {
       justify-content: center;
       justify-content: space-between;
       justify-content: space-around; }
-      nav #red #home {
+      #navbar2 #red #home {
         height: 40px; }
-      nav #red #contacto {
+      #navbar2 #red #contacto {
         height: 40px; }
-      nav #red #historia {
+      #navbar2 #red #historia {
         height: 40px; }
-      nav #red #personajes {
+      #navbar2 #red #personajes {
         height: 40px; }
-      nav #red #acercaDe {
+      #navbar2 #red #acercaDe {
         height: 40px; }
   /*Main*/
   .m1 {
@@ -410,9 +468,16 @@ footer {
       top: 30px;
       text-align: center;
       font-family: "Permanent Marker", cursive; }
-    .f1 #redes2 {
-      position: absolute;
-      top: 1290px; } }
+    .f1 .twitter {
+      transition: height 4s, width 4s; }
+    .f1 .twitter :hover {
+      height: 50px;
+      width: 50px; }
+    .f1 .ig {
+      transition: height 4s, width 4s; }
+    .f1 .ig :hover {
+      height: 50px;
+      width: 50px; } }
 
 @media only screen and (min-width: 768px) {
   /*Header*/
@@ -421,10 +486,16 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav {
-    height: 100px;
-    width: 100%; }
-    nav #red {
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "a1 a2"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a2; }
+    #navbar2 #red {
       height: 100px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       display: flex;
@@ -463,9 +534,16 @@ footer {
       top: 30px;
       text-align: center;
       font-family: "Permanent Marker", cursive; }
-    .f1 #redes2 {
-      position: absolute;
-      top: 1190px; } }
+    .f1 .twitter {
+      transition: height 4s, width 4s; }
+    .f1 .twitter :hover {
+      height: 50px;
+      width: 50px; }
+    .f1 .ig {
+      transition: height 4s, width 4s; }
+    .f1 .ig :hover {
+      height: 50px;
+      width: 50px; } }
 
 @media only screen and (min-width: 992px) {
   /*Header*/
@@ -474,10 +552,16 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav {
-    height: 100px;
-    width: 100%; }
-    nav #red {
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a1 a2"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a2; }
+    #navbar2 #red {
       height: 100px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       display: flex;
@@ -518,9 +602,16 @@ footer {
       top: 30px;
       text-align: center;
       font-family: "Permanent Marker", cursive; }
-    .f1 #redes2 {
-      position: absolute;
-      top: 1190px; } }
+    .f1 .twitter {
+      transition: height 4s, width 4s; }
+    .f1 .twitter :hover {
+      height: 50px;
+      width: 50px; }
+    .f1 .ig {
+      transition: height 4s, width 4s; }
+    .f1 .ig :hover {
+      height: 50px;
+      width: 50px; } }
 
 /*PERSONAJES*/
 @media only screen and (max-width: 600px) {
@@ -530,154 +621,165 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav .red1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-    justify-content: space-around; }
-    nav .red1 .home1 {
-      height: 40px; }
-    nav .red1 .contacto1 {
-      height: 40px; }
-    nav .red1 .historia1 {
-      height: 40px; }
-    nav .red1 .personajes1 {
-      height: 40px; }
-    nav .red1 .acercaDe1 {
-      height: 40px; }
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 15% 35%;
+    grid-template-areas: "a1 a2 a3"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a3; }
+    #navbar2 .red1 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around; }
+      #navbar2 .red1 .home1 {
+        height: 40px; }
+      #navbar2 .red1 .contacto1 {
+        height: 40px; }
+      #navbar2 .red1 .historia1 {
+        height: 40px; }
+      #navbar2 .red1 .personajes1 {
+        height: 40px; }
+      #navbar2 .red1 .acercaDe1 {
+        height: 40px; }
   /*Main*/
   .m2 {
     display: grid;
-    height: 1170px;
+    height: 2070px;
     grid-template-columns: 100%;
-    grid-template-rows: 1030px 100px;
+    grid-template-rows: 1630px 100px;
     align-content: center;
-    row-gap: 30px; }
+    row-gap: 150px; }
     .m2 .characters {
       height: 100%;
       width: 100%;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 100px 100x 100px 100px 100px;
-      grid-template-areas: "Naruto Sasuke Sakura" "Kakashi Itachi Minato"  "Obito Madara Hashirama" "Tobirama Sarutobi Pain"  "Tsunade Orochimaru Jiraiya"; }
+      justify-items: center;
+      align-items: center;
+      grid-template-columns: 1fr;
+      grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+      grid-template-areas: "Naruto" "Sasuke" "Sakura" "Kakashi" "Itachi" "Minato"  "Obito" "Madara" "Hashirama" "Tobirama" "Sarutobi" "Pain"  "Tsunade" "Orochimaru" "Jiraiya"; }
       .m2 .characters .Naruto {
-        height: 80%;
-        width: 70%;
+        height: 100%;
+        width: 50%;
         grid-area: Naruto;
         transition: height 2s, width 2s; }
       .m2 .characters .Naruto :hover {
         height: 300px;
         width: 150px; }
       .m2 .characters .Sasuke {
-        height: 80%;
-        width: 70%;
+        height: 100%;
+        width: 50%;
         grid-area: Sasuke;
         transition: height 2s, width 2s; }
       .m2 .characters .Sasuke :hover {
         height: 300px;
         width: 150px; }
       .m2 .characters .Sakura {
-        height: 80%;
-        width: 70%;
+        height: 100%;
+        width: 50%;
         grid-area: Sakura;
         transition: height 2s, width 2s; }
       .m2 .characters .Sakura :hover {
         height: 300px;
         width: 150px; }
       .m2 .characters .Kakashi {
-        height: 80%;
-        width: 70%;
+        height: 100%;
+        width: 50%;
         grid-area: Kakashi;
         transition: height 2s, width 2s; }
       .m2 .characters .Kakashi :hover {
         height: 300px;
         width: 150px; }
       .m2 .characters .Itachi {
-        height: 80%;
-        width: 75%;
+        height: 100%;
+        width: 50%;
         grid-area: Itachi;
         transition: height 2s, width 2s; }
       .m2 .characters .Itachi :hover {
         height: 300px;
         width: 150px; }
       .m2 .characters .Minato {
-        height: 80%;
-        width: 70%;
+        height: 100%;
+        width: 50%;
         grid-area: Minato;
         transition: height 2s, width 2s; }
       .m2 .characters .Minato :hover {
         height: 300px;
         width: 150px; }
       .m2 .characters .Obito {
-        height: 80%;
-        width: 80%;
+        height: 100%;
+        width: 50%;
         grid-area: Obito;
         transition: height 2s, width 2s; }
       .m2 .characters .Obito:hover {
         height: 300px;
         width: 150px; }
       .m2 .characters .Madara {
-        height: 80%;
-        width: 70%;
+        height: 100%;
+        width: 51%;
         grid-area: Madara;
         transition: height 2s, width 2s; }
       .m2 .characters .Madara :hover {
         height: 300px;
         width: 150px; }
       .m2 .characters .Hashirama {
-        height: 80%;
-        width: 70%;
+        height: 100%;
+        width: 50%;
         grid-area: Hashirama;
         transition: height 2s, width 2s; }
       .m2 .characters .Hashirama :hover {
         height: 300px;
         width: 150px; }
       .m2 .characters .Tobirama {
-        height: 80%;
-        width: 70%;
+        height: 100%;
+        width: 50%;
         grid-area: Tobirama;
         transition: height 2s, width 2s; }
       .m2 .characters .Tobirama :hover {
         height: 300px;
         width: 150px; }
       .m2 .characters .Sarutobi {
-        height: 80%;
-        width: 70%;
+        height: 100%;
+        width: 50%;
         grid-area: Sarutobi;
         transition: height 2s, width 2s; }
       .m2 .characters .Sarutobi :hover {
         height: 300px;
         width: 150px; }
       .m2 .characters .Pain {
-        height: 80%;
-        width: 80%;
+        height: 100%;
+        width: 50%;
         grid-area: Pain;
         transition: height 2s, width 2s; }
       .m2 .characters .Pain :hover {
         height: 300px;
         width: 150px; }
       .m2 .characters .Tsunade {
-        height: 80%;
-        width: 70%;
+        height: 100%;
+        width: 50%;
         grid-area: Tsunade;
         transition: height 2s, width 2s; }
       .m2 .characters .Tsunade :hover {
         height: 300px;
         width: 150px; }
       .m2 .characters .Orochimaru {
-        height: 80%;
-        width: 70%;
+        height: 100%;
+        width: 50%;
         grid-area: Orochimaru;
         transition: height 2s, width 2s; }
       .m2 .characters .Orochimaru :hover {
         height: 300px;
         width: 150px; }
       .m2 .characters .Jiraiya {
-        height: 80%;
-        width: 70%;
+        height: 100%;
+        width: 50%;
         grid-area: Jiraiya;
         transition: height 2s, width 2s; }
       .m2 .characters .Jiraiya :hover {
@@ -699,9 +801,16 @@ footer {
       top: 30px;
       text-align: center;
       font-family: "Permanent Marker", cursive; }
-    .f2 .redes3 {
-      position: absolute;
-      top: 1700px; } }
+    .f2 .twitter {
+      transition: height 4s, width 4s; }
+    .f2 .twitter :hover {
+      height: 50px;
+      width: 50px; }
+    .f2 .ig {
+      transition: height 4s, width 4s; }
+    .f2 .ig :hover {
+      height: 50px;
+      width: 50px; } }
 
 @media only screen and (min-width: 600px) {
   /*Header*/
@@ -710,24 +819,33 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav .red1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-    justify-content: space-around; }
-    nav .red1 .home1 {
-      height: 40px; }
-    nav .red1 .contacto1 {
-      height: 40px; }
-    nav .red1 .historia1 {
-      height: 40px; }
-    nav .red1 .personajes1 {
-      height: 40px; }
-    nav .red1 .acercaDe1 {
-      height: 40px; }
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 15% 35%;
+    grid-template-areas: "a1 a2 a3"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a3; }
+    #navbar2 .red1 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around; }
+      #navbar2 .red1 .home1 {
+        height: 40px; }
+      #navbar2 .red1 .contacto1 {
+        height: 40px; }
+      #navbar2 .red1 .historia1 {
+        height: 40px; }
+      #navbar2 .red1 .personajes1 {
+        height: 40px; }
+      #navbar2 .red1 .acercaDe1 {
+        height: 40px; }
   /*Main*/
   .m2 {
     display: grid;
@@ -879,9 +997,16 @@ footer {
       top: 30px;
       text-align: center;
       font-family: "Permanent Marker", cursive; }
-    .f2 .redes3 {
-      position: absolute;
-      top: 970px; } }
+    .f2 .twitter {
+      transition: height 4s, width 4s; }
+    .f2 .twitter :hover {
+      height: 50px;
+      width: 50px; }
+    .f2 .ig {
+      transition: height 4s, width 4s; }
+    .f2 .ig :hover {
+      height: 50px;
+      width: 50px; } }
 
 @media only screen and (min-width: 768px) {
   /*Header*/
@@ -890,10 +1015,16 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav {
-    height: 100px;
-    width: 100%; }
-    nav .red1 {
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "a1 a2"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a2; }
+    #navbar2 .red1 {
       height: 100px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       display: flex;
@@ -1051,9 +1182,16 @@ footer {
       top: 50px;
       text-align: center;
       font-family: "Permanent Marker", cursive; }
-    .f2 .redes3 {
-      position: absolute;
-      top: 2270px; } }
+    .f2 .twitter {
+      transition: height 4s, width 4s; }
+    .f2 .twitter :hover {
+      height: 50px;
+      width: 50px; }
+    .f2 .ig {
+      transition: height 4s, width 4s; }
+    .f2 .ig :hover {
+      height: 50px;
+      width: 50px; } }
 
 @media only screen and (min-width: 992px) {
   /*Header*/
@@ -1062,10 +1200,16 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav {
-    height: 100px;
-    width: 100%; }
-    nav .red1 {
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a1 a2"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a2; }
+    #navbar2 .red1 {
       height: 100px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       display: flex;
@@ -1223,9 +1367,16 @@ footer {
       top: 50px;
       text-align: center;
       font-family: "Permanent Marker", cursive; }
-    .f2 .redes3 {
-      position: absolute;
-      top: 2270px; } }
+    .f2 .twitter {
+      transition: height 4s, width 4s; }
+    .f2 .twitter :hover {
+      height: 50px;
+      width: 50px; }
+    .f2 .ig {
+      transition: height 4s, width 4s; }
+    .f2 .ig :hover {
+      height: 50px;
+      width: 50px; } }
 
 /*CONTACTO*/
 .form2 {
@@ -1239,24 +1390,33 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav #red1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-    justify-content: space-around; }
-    nav #red1 #home1 {
-      height: 40px; }
-    nav #red1 #contacto1 {
-      height: 40px; }
-    nav #red1 #historia1 {
-      height: 40px; }
-    nav #red1 #personajes1 {
-      height: 40px; }
-    nav #red1 #acercaDe1 {
-      height: 40px; }
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 15% 35%;
+    grid-template-areas: "a1 a2 a3"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a3; }
+    #navbar2 #red1 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around; }
+      #navbar2 #red1 #home1 {
+        height: 40px; }
+      #navbar2 #red1 #contacto1 {
+        height: 40px; }
+      #navbar2 #red1 #historia1 {
+        height: 40px; }
+      #navbar2 #red1 #personajes1 {
+        height: 40px; }
+      #navbar2 #red1 #acercaDe1 {
+        height: 40px; }
   /*Main*/
   .m3 {
     display: grid;
@@ -1287,9 +1447,16 @@ footer {
       top: 30px;
       text-align: center;
       font-family: "Permanent Marker", cursive; }
-    .f3 .redes4 {
-      position: absolute;
-      top: 2070px; } }
+    .f3 .twitter {
+      transition: height 4s, width 4s; }
+    .f3 .twitter :hover {
+      height: 50px;
+      width: 50px; }
+    .f3 .ig {
+      transition: height 4s, width 4s; }
+    .f3 .ig :hover {
+      height: 50px;
+      width: 50px; } }
 
 @media only screen and (min-width: 600px) {
   /*Header*/
@@ -1298,24 +1465,33 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav #red1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-    justify-content: space-around; }
-    nav #red1 #home1 {
-      height: 40px; }
-    nav #red1 #contacto1 {
-      height: 40px; }
-    nav #red1 #historia1 {
-      height: 40px; }
-    nav #red1 #personajes1 {
-      height: 40px; }
-    nav #red1 #acercaDe1 {
-      height: 40px; }
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 15% 35%;
+    grid-template-areas: "a1 a2 a3"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a3; }
+    #navbar2 #red1 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around; }
+      #navbar2 #red1 #home1 {
+        height: 40px; }
+      #navbar2 #red1 #contacto1 {
+        height: 40px; }
+      #navbar2 #red1 #historia1 {
+        height: 40px; }
+      #navbar2 #red1 #personajes1 {
+        height: 40px; }
+      #navbar2 #red1 #acercaDe1 {
+        height: 40px; }
   /*Main*/
   .m3 {
     display: grid;
@@ -1347,9 +1523,16 @@ footer {
       top: 30px;
       text-align: center;
       font-family: "Permanent Marker", cursive; }
-    .f3 .redes4 {
-      position: absolute;
-      top: 2070px; } }
+    .f3 .twitter {
+      transition: height 4s, width 4s; }
+    .f3 .twitter :hover {
+      height: 50px;
+      width: 50px; }
+    .f3 .ig {
+      transition: height 4s, width 4s; }
+    .f3 .ig :hover {
+      height: 50px;
+      width: 50px; } }
 
 @media only screen and (min-width: 768px) {
   /*Header*/
@@ -1358,10 +1541,16 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav {
-    height: 100px;
-    width: 100%; }
-    nav #red1 {
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "a1 a2"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a2; }
+    #navbar2 #red1 {
       height: 100px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       display: flex;
@@ -1407,10 +1596,16 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav {
-    height: 100px;
-    width: 100%; }
-    nav #red1 {
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a1 a2"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a2; }
+    #navbar2 #red1 {
       height: 100px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       display: flex;
@@ -1449,9 +1644,16 @@ footer {
       top: 30px;
       text-align: center;
       font-family: "Permanent Marker", cursive; }
-    .f3 .redes4 {
-      position: absolute;
-      top: 1470px; } }
+    .f3 .twitter {
+      transition: height 4s, width 4s; }
+    .f3 .twitter :hover {
+      height: 50px;
+      width: 50px; }
+    .f3 .ig {
+      transition: height 4s, width 4s; }
+    .f3 .ig :hover {
+      height: 50px;
+      width: 50px; } }
 
 /*ACERCA DE*/
 @media only screen and (max-width: 600px) {
@@ -1461,24 +1663,33 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav .red2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-    justify-content: space-around; }
-    nav .red2 .home2 {
-      height: 40px; }
-    nav .red2 .contacto2 {
-      height: 40px; }
-    nav .red2 .historia2 {
-      height: 40px; }
-    nav .red2 .personajes2 {
-      height: 40px; }
-    nav .red2 .acercaDe2 {
-      height: 40px; }
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 15% 35%;
+    grid-template-areas: "a1 a2 a3"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a3; }
+    #navbar2 .red2 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around; }
+      #navbar2 .red2 .home2 {
+        height: 40px; }
+      #navbar2 .red2 .contacto2 {
+        height: 40px; }
+      #navbar2 .red2 .historia2 {
+        height: 40px; }
+      #navbar2 .red2 .personajes2 {
+        height: 40px; }
+      #navbar2 .red2 .acercaDe2 {
+        height: 40px; }
   /*Main*/
   .m4 {
     display: grid;
@@ -1493,7 +1704,7 @@ footer {
       grid-area: a1;
       align-self: center;
       font-family: "Permanent Marker", cursive; }
-    .m4 .dattebayo {
+    .m4 #dattebayo {
       height: 100%;
       width: 100%;
       grid-area: a2; }
@@ -1506,9 +1717,16 @@ footer {
       top: 30px;
       text-align: center;
       font-family: "Permanent Marker", cursive; }
-    .f4 .redes5 {
-      position: absolute;
-      top: 1370px; } }
+    .f4 .twitter {
+      transition: height 4s, width 4s; }
+    .f4 .twitter :hover {
+      height: 50px;
+      width: 50px; }
+    .f4 .ig {
+      transition: height 4s, width 4s; }
+    .f4 .ig :hover {
+      height: 50px;
+      width: 50px; } }
 
 @media only screen and (min-width: 600px) {
   /*Header*/
@@ -1517,24 +1735,33 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav .red2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-    justify-content: space-around; }
-    nav .red2 .home2 {
-      height: 40px; }
-    nav .red2 .contacto2 {
-      height: 40px; }
-    nav .red2 .historia2 {
-      height: 40px; }
-    nav .red2 .personajes2 {
-      height: 40px; }
-    nav .red2 .acercaDe2 {
-      height: 40px; }
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 15% 35%;
+    grid-template-areas: "a1 a2 a3"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a3; }
+    #navbar2 .red2 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around; }
+      #navbar2 .red2 .home2 {
+        height: 40px; }
+      #navbar2 .red2 .contacto2 {
+        height: 40px; }
+      #navbar2 .red2 .historia2 {
+        height: 40px; }
+      #navbar2 .red2 .personajes2 {
+        height: 40px; }
+      #navbar2 .red2 .acercaDe2 {
+        height: 40px; }
   /*Main*/
   .m4 {
     display: grid;
@@ -1547,7 +1774,7 @@ footer {
       grid-area: a1;
       align-self: center;
       font-family: "Permanent Marker", cursive; }
-    .m4 .dattebayo {
+    .m4 #dattebayo {
       height: 100%;
       width: 100%;
       grid-area: a2; }
@@ -1560,9 +1787,16 @@ footer {
       top: 30px;
       text-align: center;
       font-family: "Permanent Marker", cursive; }
-    .f4 .redes5 {
-      position: absolute;
-      top: 1270px; } }
+    .f4 .twitter {
+      transition: height 4s, width 4s; }
+    .f4 .twitter :hover {
+      height: 50px;
+      width: 50px; }
+    .f4 .ig {
+      transition: height 4s, width 4s; }
+    .f4 .ig :hover {
+      height: 50px;
+      width: 50px; } }
 
 @media only screen and (min-width: 768px) {
   /*Header*/
@@ -1571,10 +1805,16 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav {
-    height: 100px;
-    width: 100%; }
-    nav .red2 {
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "a1 a2"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a2; }
+    #navbar2 .red2 {
       height: 100px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       display: flex;
@@ -1593,7 +1833,7 @@ footer {
       grid-area: a1;
       align-self: center;
       font-family: "Permanent Marker", cursive; }
-    .m4 .dattebayo {
+    .m4 #dattebayo {
       height: 100%;
       width: 100%;
       grid-area: a2; }
@@ -1606,9 +1846,16 @@ footer {
       top: 30px;
       text-align: center;
       font-family: "Permanent Marker", cursive; }
-    .f4 .redes5 {
-      position: absolute;
-      top: 1170px; } }
+    .f4 .twitter {
+      transition: height 4s, width 4s; }
+    .f4 .twitter :hover {
+      height: 50px;
+      width: 50px; }
+    .f4 .ig {
+      transition: height 4s, width 4s; }
+    .f4 .ig :hover {
+      height: 50px;
+      width: 50px; } }
 
 @media only screen and (min-width: 992px) {
   /*Header*/
@@ -1617,10 +1864,16 @@ footer {
   .loguito {
     height: 100%; }
   /*Nav*/
-  nav {
-    height: 100px;
-    width: 100%; }
-    nav .red2 {
+  #navbar2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a1 a2"; }
+    #navbar2 .logg {
+      grid-area: a1; }
+    #navbar2 #divvv {
+      grid-area: a2; }
+    #navbar2 .red2 {
       height: 100px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       display: flex;
@@ -1641,7 +1894,7 @@ footer {
       font-family: "Permanent Marker", cursive;
       padding-right: 10px;
       padding-left: 10px; }
-    .m4 .dattebayo {
+    .m4 #dattebayo {
       height: 100%;
       width: 100%;
       grid-area: a2; }
@@ -1654,6 +1907,13 @@ footer {
       top: 30px;
       text-align: center;
       font-family: "Permanent Marker", cursive; }
-    .f4 .redes5 {
-      position: absolute;
-      top: 1170px; } }
+    .f4 .twitter {
+      transition: height 4s, width 4s; }
+    .f4 .twitter :hover {
+      height: 50px;
+      width: 50px; }
+    .f4 .ig {
+      transition: height 4s, width 4s; }
+    .f4 .ig :hover {
+      height: 50px;
+      width: 50px; } }

@@ -25,35 +25,45 @@ $anchoPersonajes: 150px;
 $altoPersonajess: 500px;
 $anchoPersonajess: 300px;
 
+@mixin Propiedades($textalign, $height, $width) {
+    text-align: $textalign;
+    height: $height;
+    width: $width;
+}
+
+@mixin Propiedades2($height, $width){
+    height: $height;
+    width: $width;
+}
+
 /* HOME */
 
 @media only screen and (max-width: 600px){
 
 /* Header */
 header{
+    @include Propiedades(center, 100px, 100%);
     color: $colorTitulos;
-    text-align: center;
     font-family: $fuentePermanent;
-    height: 200px;
     
     h1{
-        padding-top: 150px;
-    }
-    .logg{
-        position:absolute;
-    }
-    .loguito{
-        height: 100%;
+        padding-top: 50px;
     }
 }
 
 /* Nav */
-nav{
-    display: flex;
-    flex-direction: row;
-    flex-direction: row-reverse;
+    #navbar2{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 15% 35%;
+    grid-template-areas: "a1 a2 a3";
+    .logg{
+        grid-area: a1;
+    }
+    #divvv{
+        grid-area: a3;
+    }
     
-
     .red{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         display: flex;
@@ -83,8 +93,8 @@ nav{
 
 /* Main */
 .m{
+    @include Propiedades2(800px, 100%);
     display: grid;
-    height: 800px;
     grid-template-columns: 100%;
     grid-template-rows: 250px 250px 250px;
     row-gap: 15px;
@@ -93,8 +103,7 @@ nav{
         width: 100%;
     
         iframe{
-            height: 100%;
-            width: 100%;
+            @include Propiedades2(100%, 100%);
         }
     }
     
@@ -102,8 +111,7 @@ nav{
         width: 100%;
         
         img{
-            height: 100%;
-            width: 100%;
+            @include Propiedades2(100%, 100%);
         }
     }
     
@@ -131,7 +139,18 @@ nav{
         font-family: $fuentePermanent;
     }
 }
-
+.twitter{
+    transition: height 4s, width 4s;
+}
+.twitter :hover{
+    @include Propiedades2(50px, 50px);
+}
+.ig{
+    transition: height 4s, width 4s;
+}
+.ig :hover{
+    @include Propiedades2(50px, 50px);
+}
 }
 
 @media only screen and (min-width: 600px){
@@ -141,27 +160,26 @@ header{
     color: $colorTitulos;
     text-align: center;
     font-family: $fuentePermanent;
-    height: 200px;
+    @include Propiedades2(100px, 100%);
 
     h1{
-        padding-top: 150px;
-    }
-
-    .logg{
-        position:absolute;
-    }
-
-    .loguito{
-        height: 100%;
+        padding-top: 50px;
     }
 }
 
 /* Nav */
-nav{
-    display: flex;
-    flex-direction: row;
-    flex-direction: row-reverse;
-
+    #navbar2{
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 50% 15% 35%;
+        grid-template-areas: "a1 a2 a3";
+        .logg{
+            grid-area: a1;
+        }
+        #divvv{
+            grid-area: a3;
+        }
+    
     .red{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         display: flex;
@@ -193,7 +211,7 @@ nav{
 /* Main */
 .m{
     display: grid;
-    height: 1000px;
+    @include Propiedades2(1000px, 100%);
     grid-template-columns: 100%;
     grid-template-rows: 300px 350px 250px;
     row-gap: 15px;
@@ -202,8 +220,7 @@ nav{
         width: 100%;
     
         iframe{
-            height: 100%;
-            width: 100%;
+            @include Propiedades2(100%, 100%);
         }
     } 
 
@@ -240,12 +257,21 @@ nav{
         font-family: $fuentePermanent;
     }
 
-    .redes{
-        position: absolute;
-        top: 1490px;
+    .twitter{
+        transition: height 4s, width 4s;
+    }
+    .twitter :hover{
+        height: 50px;
+        width: 50px;
+    }
+    .ig{
+        transition: height 4s, width 4s;
+    }
+    .ig :hover{
+        height: 50px;
+        width: 50px;
     }
 }
-
 }
 
 @media only screen and (min-width: 768px){
@@ -255,25 +281,25 @@ header{
     color: $colorTitulos;
     text-align: center;
     font-family: $fuentePermanent;
-    height: 200px;
+    height: 100px;
 
     h1{
-        padding-top: 150px;
-    }
-
-    .logg{
-        position:absolute;
-    }
-
-    .loguito{
-        height: 100%;
+        padding-top: 50px;
     }
 }
 
 /* Nav */
-nav{
-    height: 100px;
-    width: 100%;
+#navbar2{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "a1 a2";
+    .logg{
+        grid-area: a1;
+    }
+    #divvv{
+        grid-area: a2;
+    }
 
     .red{
         height: 100px;
@@ -333,9 +359,19 @@ nav{
         font-family: $fuentePermanent;
     }
 
-    .redes{
-        position: absolute;
-        top: 1390px;
+    .twitter{
+        transition: height 4s, width 4s;
+    }
+    .twitter :hover{
+        height: 50px;
+        width: 50px;
+    }
+    .ig{
+        transition: height 4s, width 4s;
+    }
+    .ig :hover{
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -348,26 +384,25 @@ header{
     color: $colorTitulos;
     text-align: center;
     font-family: $fuentePermanent;
-    height: 200px;
+    height: 100px;
 
     h1{
-        padding-top: 150px;
-    }
-
-    .logg{
-        position:absolute;
-    }
-
-    .loguito{
-        height: 100%;
+        padding-top: 50px;
     }
 }
 
 /* Nav */
-nav{
-    height: 100px;
-    width: 100%;
-
+#navbar2{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a1 a2";
+    .logg{
+        grid-area: a1;
+    }
+    #divvv{
+        grid-area: a2;
+    }
     .red{
         height: 100px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -417,7 +452,7 @@ nav{
 /* Footer */
 .f{
     top: 600px;
-    height: 240px;
+    height: 250px;
 
     h2{
         position: relative;
@@ -426,9 +461,19 @@ nav{
         font-family: $fuentePermanent;
     }
 
-    .redes{
-        position: absolute;
-        top: 1590px;
+    .twitter{
+        transition: height 4s, width 4s;
+    }
+    .twitter :hover{
+        height: 50px;
+        width: 50px;
+    }
+    .ig{
+        transition: height 4s, width 4s;
+    }
+    .ig :hover{
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -451,10 +496,17 @@ nav{
 
 /*Nav*/
 
-nav{
-    display: flex;
-    flex-direction: row;
-    flex-direction: row-reverse;
+#navbar2{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 15% 35%;
+    grid-template-areas: "a1 a2 a3";
+    .logg{
+        grid-area: a1;
+    }
+    #divvv{
+        grid-area: a3;
+    }
 
     #red{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -528,9 +580,19 @@ nav{
         font-family: $fuentePermanent;
     }
 
-    #redes2{
-        position: absolute;
-        top: 1290px;
+    .twitter{
+        transition: height 4s, width 4s;
+    }
+    .twitter :hover{
+        height: 50px;
+        width: 50px;
+    }
+    .ig{
+        transition: height 4s, width 4s;
+    }
+    .ig :hover{
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -548,10 +610,17 @@ nav{
 }
 
 /*Nav*/
-nav{
-    display: flex;
-    flex-direction: row;
-    flex-direction: row-reverse;
+#navbar2{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 15% 35%;
+    grid-template-areas: "a1 a2 a3";
+    .logg{
+        grid-area: a1;
+    }
+    #divvv{
+        grid-area: a3;
+    }
 
     #red{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -626,9 +695,19 @@ nav{
         font-family: $fuentePermanent;
     }
 
-    #redes2{
-        position: absolute;
-        top: 1290px;
+    .twitter{
+        transition: height 4s, width 4s;
+    }
+    .twitter :hover{
+        height: 50px;
+        width: 50px;
+    }
+    .ig{
+        transition: height 4s, width 4s;
+    }
+    .ig :hover{
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -647,9 +726,17 @@ nav{
 
 /*Nav*/
 
-nav{
-    height: 100px;
-    width: 100%;
+#navbar2{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "a1 a2";
+    .logg{
+        grid-area: a1;
+    }
+    #divvv{
+        grid-area: a2;
+    }
 
     #red{
         height: 100px;
@@ -707,9 +794,19 @@ nav{
         font-family: $fuentePermanent;
     }
 
-    #redes2{
-        position: absolute;
-        top: 1190px;
+    .twitter{
+        transition: height 4s, width 4s;
+    }
+    .twitter :hover{
+        height: 50px;
+        width: 50px;
+    }
+    .ig{
+        transition: height 4s, width 4s;
+    }
+    .ig :hover{
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -728,9 +825,17 @@ nav{
 
 /*Nav*/
 
-nav{
-    height: 100px;
-    width: 100%;
+#navbar2{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a1 a2";
+    .logg{
+        grid-area: a1;
+    }
+    #divvv{
+        grid-area: a2;
+    }
 
     #red{
         height: 100px;
@@ -789,9 +894,19 @@ nav{
         font-family: $fuentePermanent;
     }
 
-    #redes2{
-        position: absolute;
-        top: 1190px;
+    .twitter{
+        transition: height 4s, width 4s;
+    }
+    .twitter :hover{
+        height: 50px;
+        width: 50px;
+    }
+    .ig{
+        transition: height 4s, width 4s;
+    }
+    .ig :hover{
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -813,8 +928,17 @@ nav{
 }
 
 /*Nav*/
-
-nav{
+#navbar2{
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 30% 15% 35%;
+        grid-template-areas: "a1 a2 a3";
+        .logg{
+            grid-area: a1;
+        }
+        #divvv{
+            grid-area: a3;
+        }
     .red1{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         display: flex;
@@ -846,27 +970,39 @@ nav{
 
 .m2{
     display: grid;
-    height: 1170px;
+    height: 2070px;
     grid-template-columns: 100%;
-    grid-template-rows: 1030px 100px;
+    grid-template-rows: 1630px 100px;
     align-content: center;
-    row-gap: 30px;
+    row-gap: 150px;
 
     .characters{
         height: 100%;
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 100px 100x 100px 100px 100px;
-        grid-template-areas: "Naruto Sasuke Sakura"
-                             "Kakashi Itachi Minato" 
-                             "Obito Madara Hashirama"
-                             "Tobirama Sarutobi Pain" 
-                             "Tsunade Orochimaru Jiraiya";
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+        grid-template-areas:"Naruto"
+                            "Sasuke"
+                            "Sakura"
+                            "Kakashi"
+                            "Itachi"
+                            "Minato" 
+                            "Obito"
+                            "Madara"
+                            "Hashirama"
+                            "Tobirama"
+                            "Sarutobi"
+                            "Pain" 
+                            "Tsunade"
+                            "Orochimaru"
+                            "Jiraiya";
     
                             .Naruto{
-                                height: 80%;
-                                width: 70%;
+                                height: 100%;
+                                width: 50%;
                                 grid-area: Naruto;
                                 transition: height 2s, width 2s;
                             }
@@ -875,8 +1011,8 @@ nav{
                                 width: $anchoPersonajes;
                             }
                             .Sasuke{
-                                height: 80%;
-                                width: 70%;
+                                height: 100%;
+                                width: 50%;
                                 grid-area: Sasuke;
                                 transition: height 2s, width 2s;
                             }
@@ -885,8 +1021,8 @@ nav{
                                 width: $anchoPersonajes;
                             }
                             .Sakura{
-                                height: 80%;
-                                width: 70%;
+                                height: 100%;
+                                width: 50%;
                                 grid-area: Sakura;
                                 transition: height 2s, width 2s;
                             }
@@ -895,8 +1031,8 @@ nav{
                                 width: $anchoPersonajes;
                             }
                             .Kakashi{
-                                height: 80%;
-                                width: 70%;
+                                height: 100%;
+                                width: 50%;
                                 grid-area: Kakashi;
                                 transition: height 2s, width 2s;
                             }
@@ -905,8 +1041,8 @@ nav{
                                 width: $anchoPersonajes;
                             }
                             .Itachi{
-                                height: 80%;
-                                width: 75%;
+                                height: 100%;
+                                width: 50%;
                                 grid-area: Itachi;
                                 transition: height 2s, width 2s;
                             }
@@ -915,8 +1051,8 @@ nav{
                                 width: $anchoPersonajes;
                             }
                             .Minato{
-                                height: 80%;
-                                width: 70%;
+                                height: 100%;
+                                width: 50%;
                                 grid-area: Minato;
                                 transition: height 2s, width 2s;
                             }
@@ -925,8 +1061,8 @@ nav{
                                 width: $anchoPersonajes;
                             }
                             .Obito{
-                                height: 80%;
-                                width: 80%;
+                                height: 100%;
+                                width: 50%;
                                 grid-area: Obito;
                                 transition: height 2s, width 2s;
                             }
@@ -935,8 +1071,8 @@ nav{
                                 width: $anchoPersonajes;
                             }
                             .Madara{
-                                height: 80%;
-                                width: 70%;
+                                height: 100%;
+                                width: 51%;
                                 grid-area: Madara;
                                 transition: height 2s, width 2s;
                             }
@@ -945,8 +1081,8 @@ nav{
                                 width: $anchoPersonajes;
                             }
                             .Hashirama{
-                                height: 80%;
-                                width: 70%;
+                                height: 100%;
+                                width: 50%;
                                 grid-area: Hashirama;
                                 transition: height 2s, width 2s;
                             }
@@ -955,8 +1091,8 @@ nav{
                                 width: $anchoPersonajes;
                             }
                             .Tobirama{
-                                height: 80%;
-                                width: 70%;
+                                height: 100%;
+                                width: 50%;
                                 grid-area: Tobirama;
                                 transition: height 2s, width 2s;
                             }
@@ -965,8 +1101,8 @@ nav{
                                 width: $anchoPersonajes;
                             }
                             .Sarutobi{
-                                height: 80%;
-                                width: 70%;
+                                height: 100%;
+                                width: 50%;
                                 grid-area: Sarutobi;
                                 transition: height 2s, width 2s;
                             }
@@ -975,8 +1111,8 @@ nav{
                                 width: $anchoPersonajes;
                             }
                             .Pain{
-                                height: 80%;
-                                width: 80%;
+                                height: 100%;
+                                width: 50%;
                                 grid-area: Pain;
                                 transition: height 2s, width 2s;
                             }
@@ -985,8 +1121,8 @@ nav{
                                 width: $anchoPersonajes;
                             }
                             .Tsunade{
-                                height: 80%;
-                                width: 70%;
+                                height: 100%;
+                                width: 50%;
                                 grid-area: Tsunade;
                                 transition: height 2s, width 2s;
                             }
@@ -995,8 +1131,8 @@ nav{
                                 width: $anchoPersonajes;
                             }
                             .Orochimaru{
-                                height: 80%;
-                                width: 70%;
+                                height: 100%;
+                                width: 50%;
                                 grid-area: Orochimaru;
                                 transition: height 2s, width 2s;
                             }
@@ -1005,8 +1141,8 @@ nav{
                                 width: $anchoPersonajes;
                             }
                             .Jiraiya{
-                                height: 80%;
-                                width: 70%;
+                                height: 100%;
+                                width: 50%;
                                 grid-area: Jiraiya;
                                 transition: height 2s, width 2s;
                             }
@@ -1041,10 +1177,19 @@ nav{
         text-align: center;
         font-family: $fuentePermanent;
     }
-
-    .redes3{
-        position: absolute;
-        top: 1700px;
+    .twitter{
+        transition: height 4s, width 4s;
+    }
+    .twitter :hover{
+        height: 50px;
+        width: 50px;
+    }
+    .ig{
+        transition: height 4s, width 4s;
+    }
+    .ig :hover{
+        height: 50px;
+        width: 50px;
     }
 } 
 
@@ -1063,33 +1208,46 @@ nav{
 
 /*Nav*/
 
-nav{
-    .red1{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-between;
-        justify-content: space-around;   
-        
-        .home1{
-            height: $heightUl;
+#navbar2{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 15% 35%;
+    grid-template-areas: "a1 a2 a3";
+        .logg{
+        grid-area: a1;
         }
-        .contacto1{
-            height: $heightUl;
+        #divvv{
+        grid-area: a3;
         }
-        .historia1{
-            height: $heightUl;
+
+        .red1{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-around;   
+            
+            .home1{
+                height: $heightUl;
+            }
+            .contacto1{
+                height: $heightUl;
+            }
+            .historia1{
+                height: $heightUl;
+            }
+            .personajes1{
+                height: $heightUl;
+            }
+            .acercaDe1{
+                height: $heightUl;
+            }    
         }
-        .personajes1{
-            height: $heightUl;
-        }
-        .acercaDe1{
-            height: $heightUl;
-        }    
+    
+    
     }
-}
 
 /*Main*/
 
@@ -1288,10 +1446,20 @@ nav{
         font-family: $fuentePermanent;
     }
 
-    .redes3{
-        position: absolute;
-        top: 970px;
-    }    
+    .twitter{
+        transition: height 4s, width 4s;
+    }
+    .twitter :hover{
+        height: 50px;
+        width: 50px;
+    }
+    .ig{
+        transition: height 4s, width 4s;
+    }
+    .ig :hover{
+        height: 50px;
+        width: 50px;
+    }  
 }
 
 }
@@ -1309,9 +1477,17 @@ nav{
 
 /*Nav*/
 
-nav{
-    height: 100px;
-    width: 100%;
+#navbar2{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "a1 a2";
+        .logg{
+        grid-area: a1;
+        }
+        #divvv{
+        grid-area: a2;
+        }
 
     .red1{
         height: 100px;
@@ -1520,9 +1696,19 @@ nav{
         font-family: $fuentePermanent;
     }
 
-    .redes3{
-        position: absolute;
-        top: 2270px;
+    .twitter{
+        transition: height 4s, width 4s;
+    }
+    .twitter :hover{
+        height: 50px;
+        width: 50px;
+    }
+    .ig{
+        transition: height 4s, width 4s;
+    }
+    .ig :hover{
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -1541,9 +1727,17 @@ nav{
 
 /*Nav*/
 
-nav{
-    height: 100px;
-    width: 100%;
+#navbar2{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a1 a2";
+        .logg{
+        grid-area: a1;
+        }
+        #divvv{
+        grid-area: a2;
+        }
 
     .red1{
         height: 100px;
@@ -1753,9 +1947,19 @@ nav{
         font-family: $fuentePermanent;
     }
 
-    .redes3{
-        position: absolute;
-        top: 2270px;
+    .twitter{
+        transition: height 4s, width 4s;
+    }
+    .twitter :hover{
+        height: 50px;
+        width: 50px;
+    }
+    .ig{
+        transition: height 4s, width 4s;
+    }
+    .ig :hover{
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -1782,7 +1986,17 @@ nav{
 
 /*Nav*/
 
-nav{
+#navbar2{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 15% 35%;
+    grid-template-areas: "a1 a2 a3";
+        .logg{
+        grid-area: a1;
+        }
+        #divvv{
+        grid-area: a3;
+        }
     #red1{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         display: flex;
@@ -1855,9 +2069,19 @@ nav{
         font-family: $fuentePermanent;
     }
 
-    .redes4{
-        position: absolute;
-        top: 2070px;
+    .twitter{
+        transition: height 4s, width 4s;
+    }
+    .twitter :hover{
+        height: 50px;
+        width: 50px;
+    }
+    .ig{
+        transition: height 4s, width 4s;
+    }
+    .ig :hover{
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -1876,7 +2100,17 @@ nav{
 
 /*Nav*/
 
-nav{
+#navbar2{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 15% 35%;
+    grid-template-areas: "a1 a2 a3";
+        .logg{
+        grid-area: a1;
+        }
+        #divvv{
+        grid-area: a3;
+        }
     #red1{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         display: flex;
@@ -1951,9 +2185,19 @@ nav{
         font-family: $fuentePermanent;
     }
 
-    .redes4{
-        position: absolute;
-        top: 2070px;
+    .twitter{
+        transition: height 4s, width 4s;
+    }
+    .twitter :hover{
+        height: 50px;
+        width: 50px;
+    }
+    .ig{
+        transition: height 4s, width 4s;
+    }
+    .ig :hover{
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -1972,9 +2216,17 @@ nav{
 
 /*Nav*/
 
-nav{
-    height: 100px;
-    width: 100%;
+#navbar2{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "a1 a2";
+        .logg{
+        grid-area: a1;
+        }
+        #divvv{
+        grid-area: a2;
+        }
 
     #red1{
         height: 100px;
@@ -2050,9 +2302,17 @@ nav{
 
 /*Nav*/
 
-nav{
-    height: 100px;
-    width: 100%;
+#navbar2{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a1 a2";
+        .logg{
+        grid-area: a1;
+        }
+        #divvv{
+        grid-area: a2;
+        }
 
     #red1{
         height: 100px;
@@ -2109,9 +2369,19 @@ nav{
         font-family: $fuentePermanent;
     }
 
-    .redes4{
-        position: absolute;
-        top: 1470px;
+    .twitter{
+        transition: height 4s, width 4s;
+    }
+    .twitter :hover{
+        height: 50px;
+        width: 50px;
+    }
+    .ig{
+        transition: height 4s, width 4s;
+    }
+    .ig :hover{
+        height: 50px;
+        width: 50px;
     }
 } 
 
@@ -2134,7 +2404,17 @@ nav{
 
 /*Nav*/
 
-nav{
+#navbar2{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 15% 35%;
+    grid-template-areas: "a1 a2 a3";
+        .logg{
+        grid-area: a1;
+        }
+        #divvv{
+        grid-area: a3;
+        }
     .red2{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         display: flex;
@@ -2181,7 +2461,7 @@ nav{
         font-family: $fuentePermanent;
     }   
     
-    .dattebayo{
+    #dattebayo{
         height: 100%;
         width: 100%;
         grid-area: a2;
@@ -2202,9 +2482,19 @@ nav{
         font-family: $fuentePermanent;
     }
 
-    .redes5{
-        position: absolute;
-        top: 1370px;
+    .twitter{
+        transition: height 4s, width 4s;
+    }
+    .twitter :hover{
+        height: 50px;
+        width: 50px;
+    }
+    .ig{
+        transition: height 4s, width 4s;
+    }
+    .ig :hover{
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -2223,7 +2513,17 @@ nav{
 
 /*Nav*/
 
-nav{
+#navbar2{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 15% 35%;
+    grid-template-areas: "a1 a2 a3";
+        .logg{
+        grid-area: a1;
+        }
+        #divvv{
+        grid-area: a3;
+        }
     .red2{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         display: flex;
@@ -2268,7 +2568,7 @@ nav{
         font-family: $fuentePermanent;
     }
 
-    .dattebayo{
+    #dattebayo{
         height: 100%;
         width: 100%;
         grid-area: a2;
@@ -2288,9 +2588,19 @@ nav{
         font-family: $fuentePermanent;
     }
 
-    .redes5{
-        position: absolute;
-        top: 1270px;
+    .twitter{
+        transition: height 4s, width 4s;
+    }
+    .twitter :hover{
+        height: 50px;
+        width: 50px;
+    }
+    .ig{
+        transition: height 4s, width 4s;
+    }
+    .ig :hover{
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -2309,9 +2619,17 @@ nav{
 
 /*Nav*/
 
-nav{
-    height: 100px;
-    width: 100%;
+#navbar2{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "a1 a2";
+        .logg{
+        grid-area: a1;
+        }
+        #divvv{
+        grid-area: a2;
+        }
 
     .red2{
         height: 100px;
@@ -2340,7 +2658,7 @@ nav{
         font-family: $fuentePermanent;
     }
 
-    .dattebayo{
+    #dattebayo{
         height: 100%;
         width: 100%;
         grid-area: a2;
@@ -2360,9 +2678,19 @@ nav{
         font-family: $fuentePermanent;
     }
 
-    .redes5{
-        position: absolute;
-        top: 1170px;
+    .twitter{
+        transition: height 4s, width 4s;
+    }
+    .twitter :hover{
+        height: 50px;
+        width: 50px;
+    }
+    .ig{
+        transition: height 4s, width 4s;
+    }
+    .ig :hover{
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -2381,9 +2709,17 @@ nav{
 
 /*Nav*/
 
-nav{
-    height: 100px;
-    width: 100%;
+#navbar2{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a1 a2";
+        .logg{
+        grid-area: a1;
+        }
+        #divvv{
+        grid-area: a2;
+        }
 
     .red2{
         height: 100px;
@@ -2414,7 +2750,7 @@ nav{
         padding-left: 10px;  
     }
 
-    .dattebayo{
+    #dattebayo{
         height: 100%;
         width: 100%;
         grid-area: a2;
@@ -2434,10 +2770,19 @@ nav{
         font-family: $fuentePermanent;
     }
 
-    .redes5{
-        position: absolute;
-        top: 1170px;
+    .twitter{
+        transition: height 4s, width 4s;
+    }
+    .twitter :hover{
+        height: 50px;
+        width: 50px;
+    }
+    .ig{
+        transition: height 4s, width 4s;
+    }
+    .ig :hover{
+        height: 50px;
+        width: 50px;
     }
 }
-
 }
