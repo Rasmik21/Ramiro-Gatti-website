@@ -2,17 +2,14 @@
   margin: 0;
   padding: 0; }
 
-header {
-  background-color: black; }
-
 main {
-  background-color: black; }
+  background-image: url(../img/fondo1.jpg); }
 
 ul {
   list-style-type: none; }
 
 footer {
-  background-color: orangered; }
+  background-image: url(../img/footer.jpg); }
 
 header {
   height: 100px;
@@ -25,6 +22,8 @@ header {
 
 @media only screen and (max-width: 600px) {
   /* Header */
+  .header {
+    background-image: url(../img/banner1.png); }
   /* Nav */
   #navbar2 {
     display: grid;
@@ -66,6 +65,7 @@ header {
     height: 240px;
     width: 100%; }
     .f h2 {
+      color: black;
       position: relative;
       top: 30px;
       text-align: center;
@@ -83,6 +83,8 @@ header {
 
 @media only screen and (min-width: 600px) {
   /* Header */
+  .header {
+    background-image: url(../img/banner1.png); }
   /* Nav */
   #navbar2 {
     display: grid;
@@ -124,6 +126,7 @@ header {
     height: 240px;
     width: 100%; }
     .f h2 {
+      color: black;
       position: relative;
       top: 30px;
       text-align: center;
@@ -141,6 +144,8 @@ header {
 
 @media only screen and (min-width: 768px) {
   /* Header */
+  .header {
+    background-image: url(../img/banner1.png); }
   /* Nav */
   #navbar2 {
     display: grid;
@@ -182,6 +187,7 @@ header {
     height: 240px;
     width: 100%; }
     .f h2 {
+      color: black;
       position: relative;
       top: 30px;
       text-align: center;
@@ -199,6 +205,8 @@ header {
 
 @media only screen and (min-width: 992px) {
   /* Header */
+  .header {
+    background-image: url(../img/banner1.png); }
   /* Nav */
   #navbar2 {
     display: grid;
@@ -211,7 +219,6 @@ header {
       grid-area: a2; }
   /* Main */
   .m {
-    display: flex;
     display: grid;
     height: 1200px;
     width: 100%;
@@ -241,6 +248,7 @@ header {
     height: 250px;
     width: 100%; }
     .f h2 {
+      color: black;
       position: relative;
       top: 30px;
       text-align: center;
@@ -258,6 +266,8 @@ header {
 
 @media only screen and (max-width: 600px) {
   /*Header*/
+  #header {
+    background-image: url(../img/banner3.png); }
   /*Nav*/
   #navbar2 {
     display: grid;
@@ -299,6 +309,7 @@ header {
     height: 240px;
     width: 100%; }
     .f1 h2 {
+      color: black;
       position: relative;
       top: 30px;
       text-align: center;
@@ -316,6 +327,8 @@ header {
 
 @media only screen and (min-width: 600px) {
   /*Header*/
+  #header {
+    background-image: url(../img/banner3.png); }
   /*Nav*/
   #navbar2 {
     display: grid;
@@ -357,6 +370,7 @@ header {
     height: 240px;
     width: 100%; }
     .f1 h2 {
+      color: black;
       position: relative;
       top: 30px;
       text-align: center;
@@ -374,6 +388,8 @@ header {
 
 @media only screen and (min-width: 768px) {
   /*Header*/
+  #header {
+    background-image: url(../img/banner3.png); }
   /*Nav*/
   #navbar2 {
     display: grid;
@@ -414,6 +430,7 @@ header {
     height: 240px;
     width: 100%; }
     .f1 h2 {
+      color: black;
       position: relative;
       top: 30px;
       text-align: center;
@@ -431,6 +448,8 @@ header {
 
 @media only screen and (min-width: 992px) {
   /*Header*/
+  #header {
+    background-image: url(../img/banner3.png); }
   /*Nav*/
   #navbar2 {
     display: grid;
@@ -473,6 +492,7 @@ header {
     height: 240px;
     width: 100%; }
     .f1 h2 {
+      color: black;
       position: relative;
       top: 30px;
       text-align: center;
@@ -490,6 +510,8 @@ header {
 
 @media only screen and (max-width: 600px) {
   /*Header*/
+  .headerr {
+    background-image: url(../img/banner2.jfif); }
   /*Nav*/
   #navbar2 {
     display: grid;
@@ -651,6 +673,7 @@ header {
     height: 240px;
     width: 100%; }
     .f2 h2 {
+      color: black;
       position: relative;
       top: 30px;
       text-align: center;
@@ -668,6 +691,8 @@ header {
 
 @media only screen and (min-width: 600px) {
   /*Header*/
+  .headerr {
+    background-image: url(../img/banner2.jfif); }
   /*Nav*/
   #navbar2 {
     display: grid;
@@ -827,6 +852,7 @@ header {
     height: 240px;
     width: 100%; }
     .f2 h2 {
+      color: black;
       position: relative;
       top: 30px;
       text-align: center;
@@ -844,6 +870,8 @@ header {
 
 @media only screen and (min-width: 768px) {
   /*Header*/
+  .headerr {
+    background-image: url(../img/banner2.jfif); }
   /*Nav*/
   #navbar2 {
     display: grid;
@@ -1003,6 +1031,7 @@ header {
     height: 240px;
     width: 100%; }
     .f2 h2 {
+      color: black;
       position: relative;
       top: 50px;
       text-align: center;
@@ -1020,6 +1049,8 @@ header {
 
 @media only screen and (min-width: 992px) {
   /*Header*/
+  .headerr {
+    background-image: url(../img/banner2.jfif); }
   /*Nav*/
   #navbar2 {
     display: grid;
@@ -1179,6 +1210,7 @@ header {
     height: 240px;
     width: 100%; }
     .f2 h2 {
+      color: black;
       position: relative;
       top: 50px;
       text-align: center;
@@ -1200,6 +1232,8 @@ header {
 
 @media only screen and (max-width: 600px) {
   /*Header*/
+  #headerr {
+    background-image: url(../img/banner4.jfif); }
   /*Nav*/
   #navbar2 {
     display: grid;
@@ -1212,6 +1246,7 @@ header {
       grid-area: a3; }
   /*Main*/
   .m3 {
+    background-image: url(../img/fondo1.jpg);
     display: grid;
     height: 1500px;
     width: 100%;
@@ -1238,6 +1273,7 @@ header {
     height: 240px;
     width: 100%; }
     .f3 h2 {
+      color: black;
       position: relative;
       top: 30px;
       text-align: center;
@@ -1255,6 +1291,8 @@ header {
 
 @media only screen and (min-width: 600px) {
   /*Header*/
+  #headerr {
+    background-image: url(../img/banner4.jfif); }
   /*Nav*/
   #navbar2 {
     display: grid;
@@ -1294,6 +1332,7 @@ header {
     height: 240px;
     width: 100%; }
     .f3 h2 {
+      color: black;
       position: relative;
       top: 30px;
       text-align: center;
@@ -1311,6 +1350,8 @@ header {
 
 @media only screen and (min-width: 768px) {
   /*Header*/
+  #headerr {
+    background-image: url(../img/banner4.jfif); }
   /*Nav*/
   #navbar2 {
     display: grid;
@@ -1347,6 +1388,7 @@ header {
     height: 240px;
     width: 100%; }
     .f3 h2 {
+      color: black;
       position: relative;
       top: 30px;
       text-align: center;
@@ -1364,6 +1406,8 @@ header {
 
 @media only screen and (min-width: 992px) {
   /*Header*/
+  #headerr {
+    background-image: url(../img/banner4.jfif); }
   /*Nav*/
   #navbar2 {
     display: grid;
@@ -1404,6 +1448,7 @@ header {
     height: 240px;
     width: 100%; }
     .f3 h2 {
+      color: black;
       position: relative;
       top: 30px;
       text-align: center;
@@ -1421,6 +1466,8 @@ header {
 
 @media only screen and (max-width: 600px) {
   /*Header*/
+  .headder {
+    background-image: url(../img/banner5.jpg); }
   /*Nav*/
   #navbar2 {
     display: grid;
@@ -1456,6 +1503,7 @@ header {
     height: 240px;
     width: 100%; }
     .f4 h2 {
+      color: black;
       position: relative;
       top: 30px;
       text-align: center;
@@ -1473,6 +1521,8 @@ header {
 
 @media only screen and (min-width: 600px) {
   /*Header*/
+  .headder {
+    background-image: url(../img/banner5.jpg); }
   /*Nav*/
   #navbar2 {
     display: grid;
@@ -1506,6 +1556,7 @@ header {
     height: 240px;
     width: 100%; }
     .f4 h2 {
+      color: black;
       position: relative;
       top: 30px;
       text-align: center;
@@ -1523,6 +1574,8 @@ header {
 
 @media only screen and (min-width: 768px) {
   /*Header*/
+  .headder {
+    background-image: url(../img/banner5.jpg); }
   /*Nav*/
   #navbar2 {
     display: grid;
@@ -1556,6 +1609,7 @@ header {
     height: 240px;
     width: 100%; }
     .f4 h2 {
+      color: black;
       position: relative;
       top: 30px;
       text-align: center;
@@ -1573,6 +1627,8 @@ header {
 
 @media only screen and (min-width: 992px) {
   /*Header*/
+  .headder {
+    background-image: url(../img/banner5.jpg); }
   /*Nav*/
   #navbar2 {
     display: grid;
@@ -1608,6 +1664,7 @@ header {
     height: 240px;
     width: 100%; }
     .f4 h2 {
+      color: black;
       position: relative;
       top: 30px;
       text-align: center;

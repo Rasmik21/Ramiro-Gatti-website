@@ -3,17 +3,15 @@
     padding: 0;
 }
 
-header{
-    background-color: black;
-}   
+   
 main{
-    background-color: black;
+    background-image: url(../img/fondo1.jpg);
 }
 ul{
     list-style-type: none;   
 }
 footer{
-    background-color: orangered;
+    background-image: url(../img/footer.jpg);
 }
 
 $colorTitulos: darkorange;
@@ -46,7 +44,9 @@ header{
 @media only screen and (max-width: 600px){
 
 /* Header */
-
+.header{
+    background-image: url(../img/banner1.png);
+}
 /* Nav */
     #navbar2{
     display: grid;
@@ -103,6 +103,7 @@ header{
     @include Propiedades2(240px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 30px;
         text-align: $textoAlineado;
@@ -126,7 +127,9 @@ header{
 @media only screen and (min-width: 600px){
 
 /* Header */
-
+.header{
+    background-image: url(../img/banner1.png);
+}
 /* Nav */
     #navbar2{
         display: grid;
@@ -183,6 +186,7 @@ header{
     @include Propiedades2(240px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 30px;
         text-align: $textoAlineado;
@@ -207,7 +211,9 @@ header{
 @media only screen and (min-width: 768px){
 
 /* Header */
-
+.header{
+    background-image: url(../img/banner1.png);
+}
 /* Nav */
 #navbar2{
     display: grid;
@@ -262,6 +268,7 @@ header{
     @include Propiedades2(240px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 30px;
         text-align: $textoAlineado;
@@ -287,7 +294,9 @@ header{
 @media only screen and (min-width: 992px){
 
 /* Header */
-
+.header{
+    background-image: url(../img/banner1.png);
+}
 /* Nav */
 #navbar2{
     display: grid;
@@ -304,7 +313,6 @@ header{
 
 /* Main */
 .m{
-    display: flex;
     display: grid;
     @include Propiedades2(1200px, 100%);
     grid-template-columns: 100%;
@@ -342,6 +350,7 @@ header{
     @include Propiedades2(250px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 30px;
         text-align: $textoAlineado;
@@ -372,7 +381,9 @@ header{
 @media only screen and (max-width: 600px){
 
 /*Header*/
-
+#header{
+    background-image: url(../img/banner3.png);
+}
 /*Nav*/
 
 #navbar2{
@@ -425,6 +436,7 @@ header{
     @include Propiedades2(240px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 30px;
         text-align: $textoAlineado;
@@ -450,7 +462,9 @@ header{
 @media only screen and (min-width: 600px){
 
 /*Header*/
-
+#header{
+    background-image: url(../img/banner3.png);
+}
 /*Nav*/
 #navbar2{
     display: grid;
@@ -503,6 +517,7 @@ header{
     @include Propiedades2(240px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 30px;
         text-align: $textoAlineado;
@@ -528,7 +543,9 @@ header{
 @media only screen and (min-width: 768px){
 
 /*Header*/
-
+#header{
+    background-image: url(../img/banner3.png);
+}
 /*Nav*/
 
 #navbar2{
@@ -581,6 +598,7 @@ header{
     @include Propiedades2(240px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 30px;
         text-align: $textoAlineado;
@@ -606,7 +624,9 @@ header{
 @media only screen and (min-width: 992px){
 
 /*Header*/
-
+#header{
+    background-image: url(../img/banner3.png);
+}
 /*Nav*/
 
 #navbar2{
@@ -661,6 +681,7 @@ header{
     @include Propiedades2(240px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 30px;
         text-align: $textoAlineado;
@@ -690,7 +711,9 @@ header{
 @media only screen and (max-width: 600px){
 
 /*Header*/
-
+.headerr{
+    background-image: url(../img/banner2.jfif);
+}
 /*Nav*/
 #navbar2{
         display: grid;
@@ -895,6 +918,7 @@ header{
     @include Propiedades2(240px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 30px;
         text-align: $textoAlineado;
@@ -919,7 +943,9 @@ header{
 @media only screen and (min-width: 600px){
 
 /*Header*/
-
+.headerr{
+    background-image: url(../img/banner2.jfif);
+}
 /*Nav*/
 
 #navbar2{
@@ -1110,6 +1136,7 @@ header{
     @include Propiedades2(240px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 30px;
         text-align: $textoAlineado;
@@ -1135,7 +1162,9 @@ header{
 @media only screen and (min-width: 768px){
 
 /*Header*/
-
+.headerr{
+    background-image: url(../img/banner2.jfif);
+}
 /*Nav*/
 
 #navbar2{
@@ -1326,6 +1355,7 @@ header{
     @include Propiedades2(240px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 50px;
         text-align: $textoAlineado;
@@ -1351,7 +1381,9 @@ header{
 @media only screen and (min-width: 992px){
 
 /*Header*/
-
+.headerr{
+    background-image: url(../img/banner2.jfif);
+}
 /*Nav*/
 
 #navbar2{
@@ -1543,6 +1575,7 @@ header{
     @include Propiedades2(240px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 50px;
         text-align: $textoAlineado;
@@ -1576,7 +1609,9 @@ header{
 @media only screen and (max-width: 600px){
 
 /*Header*/
-
+#headerr{
+    background-image: url(../img/banner4.jfif);
+}
 /*Nav*/
 
 #navbar2{
@@ -1595,6 +1630,7 @@ header{
 /*Main*/
 
 .m3{
+    background-image: url(../img/fondo1.jpg);
     display: grid;
     @include Propiedades2(1500px, 100%);
     grid-template-columns: 100%;
@@ -1630,6 +1666,7 @@ header{
     @include Propiedades2(240px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 30px;
         text-align: $textoAlineado;
@@ -1655,7 +1692,9 @@ header{
 @media only screen and (min-width: 600px){
 
 /*Header*/
-
+#headerr{
+    background-image: url(../img/banner4.jfif);
+}
 /*Nav*/
 
 #navbar2{
@@ -1711,6 +1750,7 @@ header{
     @include Propiedades2(240px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 30px;
         text-align: $textoAlineado;
@@ -1736,7 +1776,9 @@ header{
 @media only screen and (min-width: 768px){
 
 /*Header*/
-
+#headerr{
+    background-image: url(../img/banner4.jfif);
+}
 /*Nav*/
 
 #navbar2{
@@ -1787,6 +1829,7 @@ header{
     @include Propiedades2(240px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 30px;
         text-align: $textoAlineado;
@@ -1811,7 +1854,9 @@ header{
 @media only screen and (min-width: 992px){
 
 /*Header*/
-
+#headerr{
+    background-image: url(../img/banner4.jfif);
+}
 /*Nav*/
 
 #navbar2{
@@ -1865,6 +1910,7 @@ header{
     @include Propiedades2(240px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 30px;
         text-align: $textoAlineado;
@@ -1894,7 +1940,9 @@ header{
 @media only screen and (max-width: 600px){
 
 /*Header*/
-
+.headder{
+    background-image: url(../img/banner5.jpg);
+}
 /*Nav*/
 
 #navbar2{
@@ -1943,6 +1991,7 @@ header{
     @include Propiedades2(240px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 30px;
         text-align: $textoAlineado;
@@ -1968,7 +2017,9 @@ header{
 @media only screen and (min-width: 600px){
 
 /*Header*/
-
+.headder{
+    background-image: url(../img/banner5.jpg);
+}
 /*Nav*/
 
 #navbar2{
@@ -2014,6 +2065,7 @@ header{
     @include Propiedades2(240px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 30px;
         text-align: $textoAlineado;
@@ -2039,7 +2091,9 @@ header{
 @media only screen and (min-width: 768px){
 
 /*Header*/
-
+.headder{
+    background-image: url(../img/banner5.jpg);
+}
 /*Nav*/
 
 #navbar2{
@@ -2085,6 +2139,7 @@ header{
     @include Propiedades2(240px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 30px;
         text-align: $textoAlineado;
@@ -2110,7 +2165,9 @@ header{
 @media only screen and (min-width: 992px){
 
 /*Header*/
-
+.headder{
+    background-image: url(../img/banner5.jpg);
+}
 /*Nav*/
 
 #navbar2{
@@ -2158,6 +2215,7 @@ header{
     @include Propiedades2(240px, 100%);
 
     h2{
+        color: black;
         position: relative;
         top: 30px;
         text-align: $textoAlineado;
