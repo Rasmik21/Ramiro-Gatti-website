@@ -4,3 +4,5 @@ Puse keywords en las secciones
 Puse descripcion en cada seccion
 Directorio organizado
 Title puesto
+Se le agregó fondo de imagen al header, al main (falta retocar) y al footer.
+Se cambiaron los colores de algunos textos
