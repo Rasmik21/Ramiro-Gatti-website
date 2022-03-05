@@ -9,7 +9,7 @@ ul{
     list-style-type: none;   
 }
 footer{
-    background-image: url(../img/footer.jpg);
+    background-color: rgba(22, 21, 21, 0.925);
 }
 
 $colorTitulos: darkorange;
@@ -428,33 +428,7 @@ header{
 
 /*Main*/
 
-.m1{
-    display: grid;
-    @include Propiedades2(800px, 100%);
-    grid-template-columns: 100%;
-    grid-template-rows: 450px 300px;
-    align-content: center;
-    row-gap: 30px;
 
-    #parrafos{
-        display: grid;
-        align-items: center;
-        @include Propiedades2(100%, 100%);
-        align-self: center;
-        justify-self: center;
-        color: $colorBlanco;
-        display: grid;
-        font-family: $fuentePermanent;
-        text-align: $textoAlineado; 
-    }
-    #video{
-        width: 100%;
-    
-        iframe{
-            @include Propiedades2(100%, 100%);
-        }
-    }
-}
 
 /*Footer*/
 
@@ -508,34 +482,7 @@ header{
 
 /*Main*/
 
-.m1{
-    display: grid;
-    @include Propiedades2(800px, 100%);
-    grid-template-columns: 100%;
-    grid-template-rows: 350px 300px;
-    align-content: center;
-    row-gap: 30px;
 
-    #parrafos{
-        display: grid;
-        align-items: center;
-        @include Propiedades2(100%, 100%);
-        align-self: center;
-        justify-self: center;
-        color: $colorBlanco;
-        display: grid;
-        font-family: $fuentePermanent;
-        text-align: $textoAlineado;
-    }
-    
-    #video{
-        width: 100%;
-    
-        iframe{
-            @include Propiedades2(100%, 100%);
-        }
-    }
-}
 
 /*Footer*/
 
@@ -590,33 +537,7 @@ header{
 
 /*Main*/
 
-.m1{
-    display: grid;
-    @include Propiedades2(800px, 100%);
-    grid-template-columns: 100%;
-    grid-template-rows: 300px 400px;
-    align-content: center;
-    row-gap: 30px;
 
-    #parrafos{
-        display: grid;
-        @include Propiedades2(100%, 100%);
-        align-self: center;
-        justify-self: center;
-        color: $colorBlanco;
-        font-family: $fuentePermanent;
-        text-align: $textoAlineado;
-        align-items: center;
-    }
-    
-    #video{
-        width: 100%;
-    
-        iframe{
-            @include Propiedades2(100%, 100%);
-        }
-    }
-}
 
 /*Footer*/
 
@@ -671,36 +592,15 @@ header{
 
 /*Main*/
 
-.m1{
-    display: grid;
-    @include Propiedades2(800px, 100%);
-    grid-template-columns: 100%;
-    grid-template-rows: 300px 400px;
-    align-content: center;
-    row-gap: 30px;
-
+#parraph{
+    display: flex;
+    flex-direction: row;
     #parrafos{
-        display: grid;
-        @include Propiedades2(100%, 100%);
-        align-self: center;
-        justify-self: center;
-        color: $colorBlanco;
-        font-family: $fuentePermanent;
-        text-align: $textoAlineado; 
-        align-items: center;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    
-    #video{
-        width: 100%;
-    
-        iframe{
-            @include Propiedades2(100%, 100%);
-        }
-    }
-}
+        justify-content: center;
 
+    }
+
+}
 /*Footer*/
 
 .f1{
