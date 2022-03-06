@@ -42,11 +42,11 @@ header{
 @media only screen and (max-width: 600px){
 
 /* Header */
-.header{
+#headerrr{
     background-image: url(../img/banner1.png);
 }
 /* Nav */
-    #navbar2{
+    #navbar1{
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 50% 15% 35%;
@@ -68,6 +68,7 @@ header{
     row-gap: 15px;
 
     .video{
+        height: 100%;
         width: 100%;
     
         iframe{
@@ -75,7 +76,7 @@ header{
         }
     }
     
-    .imagen{
+    #imagen{
         width: 100%;
         
         img{
@@ -96,69 +97,68 @@ header{
 }
 
 /* Footer */
-.f{
-    top: 600px;
-    height: 400px;
+#f{
+    height: 700px;
+    width: 100%;
+    
+    #divs{
+    height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    grid-template-areas: "a1 a1"
-                         "a5 a5"
-                         "a2 a3"
-                         "a4 a3";
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
 
-    h2{
-        color: black;
-        position: relative;
-        top: 15px;
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-        grid-area: a1;
-    }
-    h5{
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-        grid-area: a5;
-        color: white;
-        padding-top: 20px;
-    }
+                        h5{
+                            grid-area: a1;
+                            width: 100%;
+                        }
+                        #formis{
+                            width: 100%;
+                            grid-area: a4;
+                        }
+                        .twitterr{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twitterr :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .igg{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .igg :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .fbb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .fbb :hover{
+                            @include Propiedades2(50px, 50px);
+                            
+                        }
+    }  
 }
-.twitter{
-    transition: height 4s, width 4s;
-    top: 70px;
-    position: relative;
-    
-}
-.twitter :hover{
-    @include Propiedades2(50px, 50px);
-}
-.ig{
-    transition: height 4s, width 4s;
-    top: 70px;
-    position: relative;
-}
-.ig :hover{
-    @include Propiedades2(50px, 50px);
-}
-#formis{
-    height: 100px;
-    width: 100%;
-    grid-area: a3;
-    position: relative;
-    top: 70px;
-    padding-right: 30px;
-}
+
 }
 
 @media only screen and (min-width: 600px){
 
 /* Header */
-.header{
+#headerrr{
     background-image: url(../img/banner1.png);
 }
 /* Nav */
-    #navbar2{
+    #navbar1{
         display: grid;
         grid-template-rows: 100%;
         grid-template-columns: 50% 15% 35%;
@@ -187,7 +187,7 @@ header{
         }
     } 
 
-    .imagen{
+    #imagen{
         width: 100%;
     
         img{
@@ -208,41 +208,67 @@ header{
 }
 
 /* Footer */
-.f{
-    top: 600px;
-    @include Propiedades2(240px, 100%);
+#f{
+    height: 700px;
+    width: 100%;
+    
+    #divs{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
 
-    h2{
-        color: black;
-        position: relative;
-        top: 30px;
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-    }
-
-    .twitter{
-        transition: height 4s, width 4s;
-    }
-    .twitter :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .ig{
-        transition: height 4s, width 4s;
-    }
-    .ig :hover{
-        @include Propiedades2(50px, 50px);
-    }
+                        h5{
+                            grid-area: a1;
+                            width: 100%;
+                        }
+                        #formis{
+                            width: 100%;
+                            grid-area: a4;
+                        }
+                        .twitterr{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twitterr :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .igg{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .igg :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .fbb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .fbb :hover{
+                            @include Propiedades2(50px, 50px);
+                            
+                        }
+    }  
 }
 }
 
 @media only screen and (min-width: 768px){
 
 /* Header */
-.header{
+#headerrr{
     background-image: url(../img/banner1.png);
 }
 /* Nav */
-#navbar2{
+#navbar1{
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 20% 80%;
@@ -270,7 +296,7 @@ header{
             @include Propiedades2(100%, 100%);
         }
     }
-    .imagen{
+    #imagen{
         width: 100%;
     
         img{
@@ -290,28 +316,36 @@ header{
 }
 
 /* Footer */
-.f{
+#f{
     top: 600px;
     @include Propiedades2(240px, 100%);
 
-    h2{
-        color: black;
-        position: relative;
-        top: 15px;
+    h5{
         text-align: $textoAlineado;
         font-family: $fuentePermanent;
+        color: white;
+        position: relative;
+        padding-top: 20px;
     }
 
-    .twitter{
+    .twitterr{
         transition: height 4s, width 4s;
     }
-    .twitter :hover{
+    .twitterr :hover{
         @include Propiedades2(50px, 50px);
     }
-    .ig{
+    .igg{
         transition: height 4s, width 4s;
     }
-    .ig :hover{
+    .igg :hover{
+        @include Propiedades2(50px, 50px);
+    }
+    .fbb{
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5;
+    }
+    .fbb :hover{
         @include Propiedades2(50px, 50px);
     }
 }
@@ -321,11 +355,11 @@ header{
 @media only screen and (min-width: 992px){
 
 /* Header */
-.header{
+#headerrr{
     background-image: url(../img/banner1.png);
 }
 /* Nav */
-#navbar2{
+#navbar1{
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 50% 50%;
@@ -353,7 +387,7 @@ header{
         @include Propiedades2(100%, 100%);
     }
 }
-.imagen{
+#imagen{
     width: 100%;
 
     img{
@@ -372,30 +406,38 @@ header{
 }
 
 /* Footer */
-.f{
+#f{
     top: 600px;
     @include Propiedades2(250px, 100%);
 
-    h2{
-        color: black;
-        position: relative;
-        top: 15px;
-        text-align: $textoAlineado;
+    h5{
+        
         font-family: $fuentePermanent;
+        color: white;
+        position: relative;
+        padding-top: 20px;
     }
 
-    .twitter{
+    .twitterr{
         transition: height 4s, width 4s;
     }
-    .twitter :hover{
+    .twitterr :hover{
         @include Propiedades2(50px, 50px);
     }
-    .ig{
+    .igg{
         transition: height 4s, width 4s;
     }
-    .ig :hover{
+    .igg :hover{
         @include Propiedades2(50px, 50px);
     
+    }
+    .fbb{
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5;
+    }
+    .fbb :hover{
+        @include Propiedades2(50px, 50px);
     }
 }
 
@@ -433,29 +475,55 @@ header{
 /*Footer*/
 
 .f1{
-    top: 600px;
-    @include Propiedades2(240px, 100%);
+    height: 700px;
+    width: 100%;
+    
+    #divvs{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
 
-    h2{
-        color: black;
-        position: relative;
-        top: 15px;
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-    }
-
-    .twitter{
-        transition: height 4s, width 4s;
-    }
-    .twitter :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .ig{
-        transition: height 4s, width 4s;
-    }
-    .ig :hover{
-        @include Propiedades2(50px, 50px);
-    }
+                        h5{
+                            grid-area: a1;
+                            width: 100%;
+                        }
+                        #formiss{
+                            width: 100%;
+                            grid-area: a4;
+                        }
+                        .twiitter{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twiitter :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .iig{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .iig :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .ffb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .ffb :hover{
+                            @include Propiedades2(50px, 50px);
+                            
+                        }
+    }  
 }
 
 }
@@ -483,33 +551,57 @@ header{
 /*Main*/
 
 
-
 /*Footer*/
 
 .f1{
-    top: 600px;
-    @include Propiedades2(240px, 100%);
+    height: 700px;
+    width: 100%;
+    
+    #divvs{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
 
-    h2{
-        color: black;
-        position: relative;
-        top: 30px;
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-    }
-
-    .twitter{
-        transition: height 4s, width 4s;
-    }
-    .twitter :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .ig{
-        transition: height 4s, width 4s;
-    }
-    .ig :hover{
-        @include Propiedades2(50px, 50px);
-    }
+                        h5{
+                            grid-area: a1;
+                            width: 100%;
+                        }
+                        #formiss{
+                            width: 100%;
+                            grid-area: a4;
+                        }
+                        .twiitter{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twiitter :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .iig{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .iig :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .ffb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .ffb :hover{
+                            @include Propiedades2(50px, 50px); 
+                        }
+    }  
 }
 
 }
@@ -544,14 +636,6 @@ header{
 .f1{
     top: 600px;
     @include Propiedades2(240px, 100%);
-
-    h2{
-        color: black;
-        position: relative;
-        top: 15px;
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-    }
 
     .twitter{
         transition: height 4s, width 4s;
@@ -607,14 +691,6 @@ header{
     top: 600px;
     @include Propiedades2(240px, 100%);
 
-    h2{
-        color: black;
-        position: relative;
-        top: 15px;
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-    }
-
     .twitter{
         transition: height 4s, width 4s;
     }
@@ -642,7 +718,7 @@ header{
     background-image: url(../img/banner2.jfif);
 }
 /*Nav*/
-#navbar2{
+#navbar3{
         display: grid;
         grid-template-rows: 100%;
         grid-template-columns: 30% 15% 35%;
@@ -659,9 +735,9 @@ header{
 
 .m2{
     display: grid;
-    @include Propiedades2(2070px, 100%);
+    @include Propiedades2(1570px, 100%);
     grid-template-columns: 100%;
-    grid-template-rows: 1630px 100px;
+    grid-template-rows: 1230px 100px;
     align-content: center;
     row-gap: 150px;
 
@@ -824,45 +900,60 @@ header{
                                 width: $anchoPersonajes;
                             }                                        
     }
-    
-    .description{
-        display: grid;
-        justify-items: center;
-        align-items: center;
-    
-        .descripcion{
-            color: $colorBlanco;
-            font-family: $fuentePermanent;
-        }
-}
-
 }
 
 /*Footer*/
 
 .f2{
-    top: 600px;
-    @include Propiedades2(240px, 100%);
+    height: 700px;
+    width: 100%;
+    
+    #divvss{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
 
-    h2{
-        color: black;
-        position: relative;
-        top: 15px;
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-    }
-    .twitter{
-        transition: height 4s, width 4s;
-    }
-    .twitter :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .ig{
-        transition: height 4s, width 4s;
-    }
-    .ig :hover{
-        @include Propiedades2(50px, 50px);
-    }
+                        h5{
+                            grid-area: a1;
+                            width: 100%;
+                        }
+                        #formiiss{
+                            width: 100%;
+                            grid-area: a4;
+                        }
+                        .twiitterr{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twiitterr :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .iigg{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .iigg :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .ffbb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .ffbb :hover{
+                            @include Propiedades2(50px, 50px);
+                            
+                        }
+    }  
 } 
 
 }
@@ -875,7 +966,7 @@ header{
 }
 /*Nav*/
 
-#navbar2{
+#navbar3{
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 30% 15% 35%;
@@ -1043,46 +1134,61 @@ header{
                                 width: $anchoPersonajes;
                             }
     }
-    
-    .description{
-        display: grid;
-        justify-items: center;
-        align-items: center;
-    
-        .descripcion{
-            color: $colorBlanco;
-            font-family: $fuentePermanent;
-        }
-    }
 }
 
 /*Footer*/
 
 .f2{
-    top: 600px;
-    @include Propiedades2(240px, 100%);
+    height: 700px;
+    width: 100%;
+    
+    #divvss{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
 
-    h2{
-        color: black;
-        position: relative;
-        top: 30px;
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-    }
-
-    .twitter{
-        transition: height 4s, width 4s;
-    }
-    .twitter :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .ig{
-        transition: height 4s, width 4s;
-    }
-    .ig :hover{
-        @include Propiedades2(50px, 50px);
+                        h5{
+                            grid-area: a1;
+                            width: 100%;
+                        }
+                        #formiiss{
+                            width: 100%;
+                            grid-area: a4;
+                        }
+                        .twiitterr{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twiitterr :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .iigg{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .iigg :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .ffbb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .ffbb :hover{
+                            @include Propiedades2(50px, 50px);
+                            
+                        }
     }  
-}
+} 
 
 }
 
@@ -1094,7 +1200,7 @@ header{
 }
 /*Nav*/
 
-#navbar2{
+#navbar3{
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 20% 80%;
@@ -1261,18 +1367,7 @@ header{
                                 height: 400px;
                                 width: 250px;
                             }
-    }
-    
-    .description{
-        display: grid;
-        justify-items: center;
-        align-items: center;
-    
-        .descripcion{
-            color: $colorBlanco;
-            font-family: $fuentePermanent;
-        }
-    }   
+    }  
 }
 
 /*Footer*/
@@ -1280,14 +1375,6 @@ header{
 .f2{
     top: 2500px;
     @include Propiedades2(240px, 100%);
-
-    h2{
-        color: black;
-        position: relative;
-        top: 20px;
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-    }
 
     .twitter{
         transition: height 4s, width 4s;
@@ -1313,7 +1400,7 @@ header{
 }
 /*Nav*/
 
-#navbar2{
+#navbar3{
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 50% 50%;
@@ -1481,18 +1568,7 @@ header{
                                 height: $altoPersonajess;
                                 width: $anchoPersonajess;
                             }
-    }
-    
-    .description{
-        display: grid;
-        justify-items: center;
-        align-items: center;
-    
-        .descripcion{
-            color: $colorBlanco;
-            font-family: $fuentePermanent;
-        }
-    }   
+    }  
 }
 
 /*Footer*/
@@ -1500,14 +1576,6 @@ header{
 .f2{
     top: 2500px;
     @include Propiedades2(240px, 100%);
-
-    h2{
-        color: black;
-        position: relative;
-        top: 20px;
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-    }
 
     .twitter{
         transition: height 4s, width 4s;
@@ -1541,7 +1609,7 @@ header{
 }
 /*Nav*/
 
-#navbar2{
+#navbar4{
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 30% 15% 35%;
@@ -1556,14 +1624,14 @@ header{
 
 /*Main*/
 
-.m3{
-    background-image: url(../img/fondo1.jpg);
+#m3{
     display: grid;
     @include Propiedades2(1500px, 100%);
     grid-template-columns: 100%;
     grid-template-rows: 250px 500px 450px;
     row-gap: 15px;
-    justify-items: center;
+    align-items: center;
+    
 
     h3{
         color: $colorBlanco;
@@ -1581,38 +1649,64 @@ header{
         }
     }
     
-    .kakashi3{
-        @include Propiedades2(100%, 100%);
+    #kakashi3{
+        @include Propiedades2(300px, 100%);
     }  
 }
 
 /*Footer*/
 
 .f3{
-    top: 600px;
-    @include Propiedades2(240px, 100%);
+    height: 700px;
+    width: 100%;
+    
+    #diivs{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
 
-    h2{
-        color: black;
-        position: relative;
-        top: 15px;
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-    }
-
-    .twitter{
-        transition: height 4s, width 4s;
-    }
-    .twitter :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .ig{
-        transition: height 4s, width 4s;
-    }
-    .ig :hover{
-        @include Propiedades2(50px, 50px);
-    }
-}
+                        h5{
+                            grid-area: a1;
+                            width: 100%;
+                        }
+                        #formiis{
+                            width: 100%;
+                            grid-area: a4;
+                        }
+                        .twwitter{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twwitter :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .iggg{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .iggg :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .fbbb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .fbbb :hover{
+                            @include Propiedades2(50px, 50px);
+                            
+                        }
+    }  
+} 
 
 }
 
@@ -1624,7 +1718,7 @@ header{
 }
 /*Nav*/
 
-#navbar2{
+#navbar4{
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 30% 15% 35%;
@@ -1639,13 +1733,14 @@ header{
 
 /*Main*/
 
-.m3{
+#m3{
     display: grid;
     @include Propiedades2(1500px, 100%);
     grid-template-columns: 100%;
     grid-template-rows: 250px 500px 450px;
     row-gap: 15px;
     justify-items: center;
+    align-items: center;
 
     h3{
         color: $colorBlanco;
@@ -1664,7 +1759,7 @@ header{
         }
     }
 
-    .kakashi3{
+    #kakashi3{
         @include Propiedades2(100%, 100%);
     }
     
@@ -1673,30 +1768,56 @@ header{
 /*Footer*/
 
 .f3{
-    top: 600px;
-    @include Propiedades2(240px, 100%);
+    height: 700px;
+    width: 100%;
+    
+    #diivs{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
 
-    h2{
-        color: black;
-        position: relative;
-        top: 30px;
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-    }
-
-    .twitter{
-        transition: height 4s, width 4s;
-    }
-    .twitter :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .ig{
-        transition: height 4s, width 4s;
-    }
-    .ig :hover{
-        @include Propiedades2(50px, 50px);
-    }
-}
+                        h5{
+                            grid-area: a1;
+                            width: 100%;
+                        }
+                        #formiis{
+                            width: 100%;
+                            grid-area: a4;
+                        }
+                        .twwitter{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twwitter :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .iggg{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .iggg :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .fbbb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .fbbb :hover{
+                            @include Propiedades2(50px, 50px);
+                            
+                        }
+    }  
+} 
 
 }
 
@@ -1708,7 +1829,7 @@ header{
 }
 /*Nav*/
 
-#navbar2{
+#navbar4{
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 20% 80%;
@@ -1723,7 +1844,7 @@ header{
 
 /*Main*/
 
-.m3{
+#m3{
     display: grid;
     @include Propiedades2(1000px, 100%);
     grid-template-columns: 50% 50%;
@@ -1743,7 +1864,7 @@ header{
         align-self: flex-end;
     }
 
-    .kakashi3{
+    #kakashi3{
         @include Propiedades2(100%, 100%);
         grid-area: a3;
     }
@@ -1755,13 +1876,6 @@ header{
     top: 600px;
     @include Propiedades2(240px, 100%);
 
-    h2{
-        color: black;
-        position: relative;
-        top: 15px;
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-    }
     .twitter{
         transition: height 4s, width 4s;
     }
@@ -1786,7 +1900,7 @@ header{
 }
 /*Nav*/
 
-#navbar2{
+#navbar4{
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 50% 50%;
@@ -1801,7 +1915,7 @@ header{
 
 /*Main*/
 
-.m3{
+#m3{
     display: grid;
     @include Propiedades2(1000px, 100%);
     grid-template-columns: 50% 50%;
@@ -1824,7 +1938,7 @@ header{
         grid-area: a2;
         align-self: flex-end;
     }
-    .kakashi3{
+    #kakashi3{
         @include Propiedades2(100%, 100%);
         grid-area: a3;
     }
@@ -1835,14 +1949,6 @@ header{
 .f3{
     top: 600px;
     @include Propiedades2(240px, 100%);
-
-    h2{
-        color: black;
-        position: relative;
-        top: 15px;
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-    }
 
     .twitter{
         transition: height 4s, width 4s;
@@ -1867,12 +1973,12 @@ header{
 @media only screen and (max-width: 600px){
 
 /*Header*/
-.headder{
+#headder{
     background-image: url(../img/banner5.jpg);
 }
 /*Nav*/
 
-#navbar2{
+#navbar5{
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 30% 15% 35%;
@@ -1914,42 +2020,68 @@ header{
 /*Footer*/
 
 .f4{
-    top: 600px;
-    @include Propiedades2(240px, 100%);
+    height: 700px;
+    width: 100%;
+    
+    #diivvs{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
 
-    h2{
-        color: black;
-        position: relative;
-        top: 15px;
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-    }
-
-    .twitter{
-        transition: height 4s, width 4s;
-    }
-    .twitter :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .ig{
-        transition: height 4s, width 4s;
-    }
-    .ig :hover{
-        @include Propiedades2(50px, 50px);
-    }
-}
+                        h5{
+                            grid-area: a1;
+                            width: 100%;
+                        }
+                        #formmiis{
+                            width: 100%;
+                            grid-area: a4;
+                        }
+                        .twwiitter{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twwiitter :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .iiggg{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .iiggg :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .ffbbb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .ffbbb :hover{
+                            @include Propiedades2(50px, 50px);
+                            
+                        }
+    }  
+} 
 
 }
 
 @media only screen and (min-width: 600px){
 
 /*Header*/
-.headder{
+#headder{
     background-image: url(../img/banner5.jpg);
 }
 /*Nav*/
 
-#navbar2{
+#navbar5{
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 30% 15% 35%;
@@ -1988,42 +2120,68 @@ header{
 /*Footer*/
 
 .f4{
-    top: 600px;
-    @include Propiedades2(240px, 100%);
+    height: 700px;
+    width: 100%;
+    
+    #diivvs{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
 
-    h2{
-        color: black;
-        position: relative;
-        top: 30px;
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-    }
-
-    .twitter{
-        transition: height 4s, width 4s;
-    }
-    .twitter :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .ig{
-        transition: height 4s, width 4s;
-    }
-    .ig :hover{
-        @include Propiedades2(50px, 50px);
-    }
-}
+                        h5{
+                            grid-area: a1;
+                            width: 100%;
+                        }
+                        #formmiis{
+                            width: 100%;
+                            grid-area: a4;
+                        }
+                        .twwiitter{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twwiitter :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .iiggg{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .iiggg :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .ffbbb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .ffbbb :hover{
+                            @include Propiedades2(50px, 50px);
+                            
+                        }
+    }  
+} 
 
 }
 
 @media only screen and (min-width: 768px){
 
 /*Header*/
-.headder{
+#headder{
     background-image: url(../img/banner5.jpg);
 }
 /*Nav*/
 
-#navbar2{
+#navbar5{
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 20% 80%;
@@ -2065,14 +2223,6 @@ header{
     top: 600px;
     @include Propiedades2(240px, 100%);
 
-    h2{
-        color: black;
-        position: relative;
-        top: 15px;
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-    }
-
     .twitter{
         transition: height 4s, width 4s;
     }
@@ -2092,12 +2242,12 @@ header{
 @media only screen and (min-width: 992px){
 
 /*Header*/
-.headder{
+#headder{
     background-image: url(../img/banner5.jpg);
 }
 /*Nav*/
 
-#navbar2{
+#navbar5{
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 50% 50%;
@@ -2140,14 +2290,6 @@ header{
 .f4{
     top: 600px;
     @include Propiedades2(240px, 100%);
-
-    h2{
-        color: black;
-        position: relative;
-        top: 15px;
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-    }
 
     .twitter{
         transition: height 4s, width 4s;

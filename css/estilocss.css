@@ -22,17 +22,17 @@ header {
 
 @media only screen and (max-width: 600px) {
   /* Header */
-  .header {
+  #headerrr {
     background-image: url(../img/banner1.png); }
   /* Nav */
-  #navbar2 {
+  #navbar1 {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 50% 15% 35%;
     grid-template-areas: "a1 a2 a3"; }
-    #navbar2 .logg {
+    #navbar1 .logg {
       grid-area: a1; }
-    #navbar2 #divvv {
+    #navbar1 #divvv {
       grid-area: a3; }
   /* Main */
   .m {
@@ -43,13 +43,14 @@ header {
     grid-template-rows: 250px 250px 250px;
     row-gap: 15px; }
     .m .video {
+      height: 100%;
       width: 100%; }
       .m .video iframe {
         height: 100%;
         width: 100%; }
-    .m .imagen {
+    .m #imagen {
       width: 100%; }
-      .m .imagen img {
+      .m #imagen img {
         height: 100%;
         width: 100%; }
     .m .info {
@@ -60,62 +61,59 @@ header {
       .m .info #parrafo {
         align-self: center; }
   /* Footer */
-  .f {
-    top: 600px;
-    height: 400px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    grid-template-areas: "a1 a1" "a5 a5" "a2 a3" "a4 a3"; }
-    .f h2 {
-      color: black;
-      position: relative;
-      top: 15px;
+  #f {
+    height: 700px;
+    width: 100%; }
+    #f #divs {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      align-items: center;
       text-align: center;
-      font-family: "Permanent Marker", cursive;
-      grid-area: a1; }
-    .f h5 {
-      text-align: center;
-      font-family: "Permanent Marker", cursive;
-      grid-area: a5;
-      color: white;
-      padding-top: 20px; }
-  .twitter {
-    transition: height 4s, width 4s;
-    top: 70px;
-    position: relative; }
-  .twitter :hover {
-    height: 50px;
-    width: 50px; }
-  .ig {
-    transition: height 4s, width 4s;
-    top: 70px;
-    position: relative; }
-  .ig :hover {
-    height: 50px;
-    width: 50px; }
-  #formis {
-    height: 100px;
-    width: 100%;
-    grid-area: a3;
-    position: relative;
-    top: 70px;
-    padding-right: 30px; } }
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      #f #divs h5 {
+        grid-area: a1;
+        width: 100%; }
+      #f #divs #formis {
+        width: 100%;
+        grid-area: a4; }
+      #f #divs .twitterr {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      #f #divs .twitterr :hover {
+        height: 50px;
+        width: 50px; }
+      #f #divs .igg {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      #f #divs .igg :hover {
+        height: 50px;
+        width: 50px; }
+      #f #divs .fbb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      #f #divs .fbb :hover {
+        height: 50px;
+        width: 50px; } }
 
 @media only screen and (min-width: 600px) {
   /* Header */
-  .header {
+  #headerrr {
     background-image: url(../img/banner1.png); }
   /* Nav */
-  #navbar2 {
+  #navbar1 {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 50% 15% 35%;
     grid-template-areas: "a1 a2 a3"; }
-    #navbar2 .logg {
+    #navbar1 .logg {
       grid-area: a1; }
-    #navbar2 #divvv {
+    #navbar1 #divvv {
       grid-area: a3; }
   /* Main */
   .m {
@@ -130,9 +128,9 @@ header {
       .m .video iframe {
         height: 100%;
         width: 100%; }
-    .m .imagen {
+    .m #imagen {
       width: 100%; }
-      .m .imagen img {
+      .m #imagen img {
         height: 100%;
         width: 100%; }
     .m .info {
@@ -143,40 +141,59 @@ header {
       .m .info #parrafo {
         align-self: center; }
   /* Footer */
-  .f {
-    top: 600px;
-    height: 240px;
+  #f {
+    height: 700px;
     width: 100%; }
-    .f h2 {
-      color: black;
-      position: relative;
-      top: 30px;
+    #f #divs {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      align-items: center;
       text-align: center;
-      font-family: "Permanent Marker", cursive; }
-    .f .twitter {
-      transition: height 4s, width 4s; }
-    .f .twitter :hover {
-      height: 50px;
-      width: 50px; }
-    .f .ig {
-      transition: height 4s, width 4s; }
-    .f .ig :hover {
-      height: 50px;
-      width: 50px; } }
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      #f #divs h5 {
+        grid-area: a1;
+        width: 100%; }
+      #f #divs #formis {
+        width: 100%;
+        grid-area: a4; }
+      #f #divs .twitterr {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      #f #divs .twitterr :hover {
+        height: 50px;
+        width: 50px; }
+      #f #divs .igg {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      #f #divs .igg :hover {
+        height: 50px;
+        width: 50px; }
+      #f #divs .fbb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      #f #divs .fbb :hover {
+        height: 50px;
+        width: 50px; } }
 
 @media only screen and (min-width: 768px) {
   /* Header */
-  .header {
+  #headerrr {
     background-image: url(../img/banner1.png); }
   /* Nav */
-  #navbar2 {
+  #navbar1 {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 20% 80%;
     grid-template-areas: "a1 a2"; }
-    #navbar2 .logg {
+    #navbar1 .logg {
       grid-area: a1; }
-    #navbar2 #divvv {
+    #navbar1 #divvv {
       grid-area: a2; }
   /* Main */
   .m {
@@ -191,9 +208,9 @@ header {
       .m .video iframe {
         height: 100%;
         width: 100%; }
-    .m .imagen {
+    .m #imagen {
       width: 100%; }
-      .m .imagen img {
+      .m #imagen img {
         height: 100%;
         width: 100%; }
     .m .info {
@@ -204,40 +221,47 @@ header {
       .m .info #parrafo {
         align-self: center; }
   /* Footer */
-  .f {
+  #f {
     top: 600px;
     height: 240px;
     width: 100%; }
-    .f h2 {
-      color: black;
-      position: relative;
-      top: 15px;
+    #f h5 {
       text-align: center;
-      font-family: "Permanent Marker", cursive; }
-    .f .twitter {
+      font-family: "Permanent Marker", cursive;
+      color: white;
+      position: relative;
+      padding-top: 20px; }
+    #f .twitterr {
       transition: height 4s, width 4s; }
-    .f .twitter :hover {
+    #f .twitterr :hover {
       height: 50px;
       width: 50px; }
-    .f .ig {
+    #f .igg {
       transition: height 4s, width 4s; }
-    .f .ig :hover {
+    #f .igg :hover {
+      height: 50px;
+      width: 50px; }
+    #f .fbb {
+      transition: height 4s, width 4s;
+      width: 100%;
+      grid-area: a5; }
+    #f .fbb :hover {
       height: 50px;
       width: 50px; } }
 
 @media only screen and (min-width: 992px) {
   /* Header */
-  .header {
+  #headerrr {
     background-image: url(../img/banner1.png); }
   /* Nav */
-  #navbar2 {
+  #navbar1 {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 50% 50%;
     grid-template-areas: "a1 a2"; }
-    #navbar2 .logg {
+    #navbar1 .logg {
       grid-area: a1; }
-    #navbar2 #divvv {
+    #navbar1 #divvv {
       grid-area: a2; }
   /* Main */
   .m {
@@ -252,9 +276,9 @@ header {
     .video iframe {
       height: 100%;
       width: 100%; }
-  .imagen {
+  #imagen {
     width: 100%; }
-    .imagen img {
+    #imagen img {
       height: 100%;
       width: 100%; }
   .info {
@@ -265,24 +289,30 @@ header {
     .info #parrafo {
       align-self: center; }
   /* Footer */
-  .f {
+  #f {
     top: 600px;
     height: 250px;
     width: 100%; }
-    .f h2 {
-      color: black;
+    #f h5 {
+      font-family: "Permanent Marker", cursive;
+      color: white;
       position: relative;
-      top: 15px;
-      text-align: center;
-      font-family: "Permanent Marker", cursive; }
-    .f .twitter {
+      padding-top: 20px; }
+    #f .twitterr {
       transition: height 4s, width 4s; }
-    .f .twitter :hover {
+    #f .twitterr :hover {
       height: 50px;
       width: 50px; }
-    .f .ig {
+    #f .igg {
       transition: height 4s, width 4s; }
-    .f .ig :hover {
+    #f .igg :hover {
+      height: 50px;
+      width: 50px; }
+    #f .fbb {
+      transition: height 4s, width 4s;
+      width: 100%;
+      grid-area: a5; }
+    #f .fbb :hover {
       height: 50px;
       width: 50px; } }
 
@@ -301,51 +331,46 @@ header {
     #navbar2 #divvv {
       grid-area: a3; }
   /*Main*/
-  .m1 {
-    display: grid;
-    height: 800px;
-    width: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 450px 300px;
-    align-content: center;
-    row-gap: 30px; }
-    .m1 #parrafos {
-      display: grid;
-      align-items: center;
-      height: 100%;
-      width: 100%;
-      align-self: center;
-      justify-self: center;
-      color: white;
-      display: grid;
-      font-family: "Permanent Marker", cursive;
-      text-align: center; }
-    .m1 #video {
-      width: 100%; }
-      .m1 #video iframe {
-        height: 100%;
-        width: 100%; }
   /*Footer*/
   .f1 {
-    top: 600px;
-    height: 240px;
+    height: 700px;
     width: 100%; }
-    .f1 h2 {
-      color: black;
-      position: relative;
-      top: 15px;
+    .f1 #divvs {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      align-items: center;
       text-align: center;
-      font-family: "Permanent Marker", cursive; }
-    .f1 .twitter {
-      transition: height 4s, width 4s; }
-    .f1 .twitter :hover {
-      height: 50px;
-      width: 50px; }
-    .f1 .ig {
-      transition: height 4s, width 4s; }
-    .f1 .ig :hover {
-      height: 50px;
-      width: 50px; } }
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      .f1 #divvs h5 {
+        grid-area: a1;
+        width: 100%; }
+      .f1 #divvs #formiss {
+        width: 100%;
+        grid-area: a4; }
+      .f1 #divvs .twiitter {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      .f1 #divvs .twiitter :hover {
+        height: 50px;
+        width: 50px; }
+      .f1 #divvs .iig {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      .f1 #divvs .iig :hover {
+        height: 50px;
+        width: 50px; }
+      .f1 #divvs .ffb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      .f1 #divvs .ffb :hover {
+        height: 50px;
+        width: 50px; } }
 
 @media only screen and (min-width: 600px) {
   /*Header*/
@@ -362,51 +387,46 @@ header {
     #navbar2 #divvv {
       grid-area: a3; }
   /*Main*/
-  .m1 {
-    display: grid;
-    height: 800px;
-    width: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 350px 300px;
-    align-content: center;
-    row-gap: 30px; }
-    .m1 #parrafos {
-      display: grid;
-      align-items: center;
-      height: 100%;
-      width: 100%;
-      align-self: center;
-      justify-self: center;
-      color: white;
-      display: grid;
-      font-family: "Permanent Marker", cursive;
-      text-align: center; }
-    .m1 #video {
-      width: 100%; }
-      .m1 #video iframe {
-        height: 100%;
-        width: 100%; }
   /*Footer*/
   .f1 {
-    top: 600px;
-    height: 240px;
+    height: 700px;
     width: 100%; }
-    .f1 h2 {
-      color: black;
-      position: relative;
-      top: 30px;
+    .f1 #divvs {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      align-items: center;
       text-align: center;
-      font-family: "Permanent Marker", cursive; }
-    .f1 .twitter {
-      transition: height 4s, width 4s; }
-    .f1 .twitter :hover {
-      height: 50px;
-      width: 50px; }
-    .f1 .ig {
-      transition: height 4s, width 4s; }
-    .f1 .ig :hover {
-      height: 50px;
-      width: 50px; } }
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      .f1 #divvs h5 {
+        grid-area: a1;
+        width: 100%; }
+      .f1 #divvs #formiss {
+        width: 100%;
+        grid-area: a4; }
+      .f1 #divvs .twiitter {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      .f1 #divvs .twiitter :hover {
+        height: 50px;
+        width: 50px; }
+      .f1 #divvs .iig {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      .f1 #divvs .iig :hover {
+        height: 50px;
+        width: 50px; }
+      .f1 #divvs .ffb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      .f1 #divvs .ffb :hover {
+        height: 50px;
+        width: 50px; } }
 
 @media only screen and (min-width: 768px) {
   /*Header*/
@@ -423,40 +443,11 @@ header {
     #navbar2 #divvv {
       grid-area: a2; }
   /*Main*/
-  .m1 {
-    display: grid;
-    height: 800px;
-    width: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 300px 400px;
-    align-content: center;
-    row-gap: 30px; }
-    .m1 #parrafos {
-      display: grid;
-      height: 100%;
-      width: 100%;
-      align-self: center;
-      justify-self: center;
-      color: white;
-      font-family: "Permanent Marker", cursive;
-      text-align: center;
-      align-items: center; }
-    .m1 #video {
-      width: 100%; }
-      .m1 #video iframe {
-        height: 100%;
-        width: 100%; }
   /*Footer*/
   .f1 {
     top: 600px;
     height: 240px;
     width: 100%; }
-    .f1 h2 {
-      color: black;
-      position: relative;
-      top: 15px;
-      text-align: center;
-      font-family: "Permanent Marker", cursive; }
     .f1 .twitter {
       transition: height 4s, width 4s; }
     .f1 .twitter :hover {
@@ -483,42 +474,16 @@ header {
     #navbar2 #divvv {
       grid-area: a2; }
   /*Main*/
-  .m1 {
-    display: grid;
-    height: 800px;
-    width: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 300px 400px;
-    align-content: center;
-    row-gap: 30px; }
-    .m1 #parrafos {
-      display: grid;
-      height: 100%;
-      width: 100%;
-      align-self: center;
-      justify-self: center;
-      color: white;
-      font-family: "Permanent Marker", cursive;
-      text-align: center;
-      align-items: center;
-      padding-left: 30px;
-      padding-right: 30px; }
-    .m1 #video {
-      width: 100%; }
-      .m1 #video iframe {
-        height: 100%;
-        width: 100%; }
+  #parraph {
+    display: flex;
+    flex-direction: row; }
+    #parraph #parrafos {
+      justify-content: center; }
   /*Footer*/
   .f1 {
     top: 600px;
     height: 240px;
     width: 100%; }
-    .f1 h2 {
-      color: black;
-      position: relative;
-      top: 15px;
-      text-align: center;
-      font-family: "Permanent Marker", cursive; }
     .f1 .twitter {
       transition: height 4s, width 4s; }
     .f1 .twitter :hover {
@@ -535,22 +500,22 @@ header {
   .headerr {
     background-image: url(../img/banner2.jfif); }
   /*Nav*/
-  #navbar2 {
+  #navbar3 {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 30% 15% 35%;
     grid-template-areas: "a1 a2 a3"; }
-    #navbar2 .logg {
+    #navbar3 .logg {
       grid-area: a1; }
-    #navbar2 #divvv {
+    #navbar3 #divvv {
       grid-area: a3; }
   /*Main*/
   .m2 {
     display: grid;
-    height: 2070px;
+    height: 1570px;
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 1630px 100px;
+    grid-template-rows: 1230px 100px;
     align-content: center;
     row-gap: 150px; }
     .m2 .characters {
@@ -682,48 +647,60 @@ header {
       .m2 .characters .Jiraiya :hover {
         height: 300px;
         width: 150px; }
-    .m2 .description {
-      display: grid;
-      justify-items: center;
-      align-items: center; }
-      .m2 .description .descripcion {
-        color: white;
-        font-family: "Permanent Marker", cursive; }
   /*Footer*/
   .f2 {
-    top: 600px;
-    height: 240px;
+    height: 700px;
     width: 100%; }
-    .f2 h2 {
-      color: black;
-      position: relative;
-      top: 15px;
+    .f2 #divvss {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      align-items: center;
       text-align: center;
-      font-family: "Permanent Marker", cursive; }
-    .f2 .twitter {
-      transition: height 4s, width 4s; }
-    .f2 .twitter :hover {
-      height: 50px;
-      width: 50px; }
-    .f2 .ig {
-      transition: height 4s, width 4s; }
-    .f2 .ig :hover {
-      height: 50px;
-      width: 50px; } }
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      .f2 #divvss h5 {
+        grid-area: a1;
+        width: 100%; }
+      .f2 #divvss #formiiss {
+        width: 100%;
+        grid-area: a4; }
+      .f2 #divvss .twiitterr {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      .f2 #divvss .twiitterr :hover {
+        height: 50px;
+        width: 50px; }
+      .f2 #divvss .iigg {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      .f2 #divvss .iigg :hover {
+        height: 50px;
+        width: 50px; }
+      .f2 #divvss .ffbb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      .f2 #divvss .ffbb :hover {
+        height: 50px;
+        width: 50px; } }
 
 @media only screen and (min-width: 600px) {
   /*Header*/
   .headerr {
     background-image: url(../img/banner2.jfif); }
   /*Nav*/
-  #navbar2 {
+  #navbar3 {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 30% 15% 35%;
     grid-template-areas: "a1 a2 a3"; }
-    #navbar2 .logg {
+    #navbar3 .logg {
       grid-area: a1; }
-    #navbar2 #divvv {
+    #navbar3 #divvv {
       grid-area: a3; }
   /*Main*/
   .m2 {
@@ -861,48 +838,60 @@ header {
       .m2 .characters .Jiraiya :hover {
         height: 300px;
         width: 150px; }
-    .m2 .description {
-      display: grid;
-      justify-items: center;
-      align-items: center; }
-      .m2 .description .descripcion {
-        color: white;
-        font-family: "Permanent Marker", cursive; }
   /*Footer*/
   .f2 {
-    top: 600px;
-    height: 240px;
+    height: 700px;
     width: 100%; }
-    .f2 h2 {
-      color: black;
-      position: relative;
-      top: 30px;
+    .f2 #divvss {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      align-items: center;
       text-align: center;
-      font-family: "Permanent Marker", cursive; }
-    .f2 .twitter {
-      transition: height 4s, width 4s; }
-    .f2 .twitter :hover {
-      height: 50px;
-      width: 50px; }
-    .f2 .ig {
-      transition: height 4s, width 4s; }
-    .f2 .ig :hover {
-      height: 50px;
-      width: 50px; } }
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      .f2 #divvss h5 {
+        grid-area: a1;
+        width: 100%; }
+      .f2 #divvss #formiiss {
+        width: 100%;
+        grid-area: a4; }
+      .f2 #divvss .twiitterr {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      .f2 #divvss .twiitterr :hover {
+        height: 50px;
+        width: 50px; }
+      .f2 #divvss .iigg {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      .f2 #divvss .iigg :hover {
+        height: 50px;
+        width: 50px; }
+      .f2 #divvss .ffbb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      .f2 #divvss .ffbb :hover {
+        height: 50px;
+        width: 50px; } }
 
 @media only screen and (min-width: 768px) {
   /*Header*/
   .headerr {
     background-image: url(../img/banner2.jfif); }
   /*Nav*/
-  #navbar2 {
+  #navbar3 {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 20% 80%;
     grid-template-areas: "a1 a2"; }
-    #navbar2 .logg {
+    #navbar3 .logg {
       grid-area: a1; }
-    #navbar2 #divvv {
+    #navbar3 #divvv {
       grid-area: a2; }
   /*Main*/
   .m2 {
@@ -1040,24 +1029,11 @@ header {
       .m2 .characters .Jiraiya :hover {
         height: 400px;
         width: 250px; }
-    .m2 .description {
-      display: grid;
-      justify-items: center;
-      align-items: center; }
-      .m2 .description .descripcion {
-        color: white;
-        font-family: "Permanent Marker", cursive; }
   /*Footer*/
   .f2 {
     top: 2500px;
     height: 240px;
     width: 100%; }
-    .f2 h2 {
-      color: black;
-      position: relative;
-      top: 20px;
-      text-align: center;
-      font-family: "Permanent Marker", cursive; }
     .f2 .twitter {
       transition: height 4s, width 4s; }
     .f2 .twitter :hover {
@@ -1074,14 +1050,14 @@ header {
   .headerr {
     background-image: url(../img/banner2.jfif); }
   /*Nav*/
-  #navbar2 {
+  #navbar3 {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 50% 50%;
     grid-template-areas: "a1 a2"; }
-    #navbar2 .logg {
+    #navbar3 .logg {
       grid-area: a1; }
-    #navbar2 #divvv {
+    #navbar3 #divvv {
       grid-area: a2; }
   /*Main*/
   .m2 {
@@ -1219,24 +1195,11 @@ header {
       .m2 .characters .Jiraiya :hover {
         height: 500px;
         width: 300px; }
-    .m2 .description {
-      display: grid;
-      justify-items: center;
-      align-items: center; }
-      .m2 .description .descripcion {
-        color: white;
-        font-family: "Permanent Marker", cursive; }
   /*Footer*/
   .f2 {
     top: 2500px;
     height: 240px;
     width: 100%; }
-    .f2 h2 {
-      color: black;
-      position: relative;
-      top: 20px;
-      text-align: center;
-      font-family: "Permanent Marker", cursive; }
     .f2 .twitter {
       transition: height 4s, width 4s; }
     .f2 .twitter :hover {
@@ -1257,150 +1220,188 @@ header {
   #headerr {
     background-image: url(../img/banner4.jfif); }
   /*Nav*/
-  #navbar2 {
+  #navbar4 {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 30% 15% 35%;
     grid-template-areas: "a1 a2 a3"; }
-    #navbar2 .logg {
+    #navbar4 .logg {
       grid-area: a1; }
-    #navbar2 #divvv {
+    #navbar4 #divvv {
       grid-area: a3; }
   /*Main*/
-  .m3 {
-    background-image: url(../img/fondo1.jpg);
+  #m3 {
     display: grid;
     height: 1500px;
     width: 100%;
     grid-template-columns: 100%;
     grid-template-rows: 250px 500px 450px;
     row-gap: 15px;
-    justify-items: center; }
-    .m3 h3 {
+    align-items: center; }
+    #m3 h3 {
       color: white;
       font-family: "Permanent Marker", cursive;
       align-self: center; }
-    .m3 .section {
+    #m3 .section {
       display: grid;
       row-gap: 20px; }
-      .m3 .section .form {
+      #m3 .section .form {
         display: grid;
         row-gap: 20px; }
-    .m3 .kakashi3 {
-      height: 100%;
+    #m3 #kakashi3 {
+      height: 300px;
       width: 100%; }
   /*Footer*/
   .f3 {
-    top: 600px;
-    height: 240px;
+    height: 700px;
     width: 100%; }
-    .f3 h2 {
-      color: black;
-      position: relative;
-      top: 15px;
+    .f3 #diivs {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      align-items: center;
       text-align: center;
-      font-family: "Permanent Marker", cursive; }
-    .f3 .twitter {
-      transition: height 4s, width 4s; }
-    .f3 .twitter :hover {
-      height: 50px;
-      width: 50px; }
-    .f3 .ig {
-      transition: height 4s, width 4s; }
-    .f3 .ig :hover {
-      height: 50px;
-      width: 50px; } }
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      .f3 #diivs h5 {
+        grid-area: a1;
+        width: 100%; }
+      .f3 #diivs #formiis {
+        width: 100%;
+        grid-area: a4; }
+      .f3 #diivs .twwitter {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      .f3 #diivs .twwitter :hover {
+        height: 50px;
+        width: 50px; }
+      .f3 #diivs .iggg {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      .f3 #diivs .iggg :hover {
+        height: 50px;
+        width: 50px; }
+      .f3 #diivs .fbbb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      .f3 #diivs .fbbb :hover {
+        height: 50px;
+        width: 50px; } }
 
 @media only screen and (min-width: 600px) {
   /*Header*/
   #headerr {
     background-image: url(../img/banner4.jfif); }
   /*Nav*/
-  #navbar2 {
+  #navbar4 {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 30% 15% 35%;
     grid-template-areas: "a1 a2 a3"; }
-    #navbar2 .logg {
+    #navbar4 .logg {
       grid-area: a1; }
-    #navbar2 #divvv {
+    #navbar4 #divvv {
       grid-area: a3; }
   /*Main*/
-  .m3 {
+  #m3 {
     display: grid;
     height: 1500px;
     width: 100%;
     grid-template-columns: 100%;
     grid-template-rows: 250px 500px 450px;
     row-gap: 15px;
-    justify-items: center; }
-    .m3 h3 {
+    justify-items: center;
+    align-items: center; }
+    #m3 h3 {
       color: white;
       font-family: "Permanent Marker", cursive;
       align-self: center;
       justify-self: center; }
-    .m3 .section {
+    #m3 .section {
       display: grid;
       row-gap: 20px; }
-      .m3 .section .form {
+      #m3 .section .form {
         display: grid;
         row-gap: 20px; }
-    .m3 .kakashi3 {
+    #m3 #kakashi3 {
       height: 100%;
       width: 100%; }
   /*Footer*/
   .f3 {
-    top: 600px;
-    height: 240px;
+    height: 700px;
     width: 100%; }
-    .f3 h2 {
-      color: black;
-      position: relative;
-      top: 30px;
+    .f3 #diivs {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      align-items: center;
       text-align: center;
-      font-family: "Permanent Marker", cursive; }
-    .f3 .twitter {
-      transition: height 4s, width 4s; }
-    .f3 .twitter :hover {
-      height: 50px;
-      width: 50px; }
-    .f3 .ig {
-      transition: height 4s, width 4s; }
-    .f3 .ig :hover {
-      height: 50px;
-      width: 50px; } }
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      .f3 #diivs h5 {
+        grid-area: a1;
+        width: 100%; }
+      .f3 #diivs #formiis {
+        width: 100%;
+        grid-area: a4; }
+      .f3 #diivs .twwitter {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      .f3 #diivs .twwitter :hover {
+        height: 50px;
+        width: 50px; }
+      .f3 #diivs .iggg {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      .f3 #diivs .iggg :hover {
+        height: 50px;
+        width: 50px; }
+      .f3 #diivs .fbbb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      .f3 #diivs .fbbb :hover {
+        height: 50px;
+        width: 50px; } }
 
 @media only screen and (min-width: 768px) {
   /*Header*/
   #headerr {
     background-image: url(../img/banner4.jfif); }
   /*Nav*/
-  #navbar2 {
+  #navbar4 {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 20% 80%;
     grid-template-areas: "a1 a2"; }
-    #navbar2 .logg {
+    #navbar4 .logg {
       grid-area: a1; }
-    #navbar2 #divvv {
+    #navbar4 #divvv {
       grid-area: a2; }
   /*Main*/
-  .m3 {
+  #m3 {
     display: grid;
     height: 1000px;
     width: 100%;
     grid-template-columns: 50% 50%;
     grid-template-rows: 45% 45%;
     grid-template-areas: "a1 a1" "a2 a3"; }
-    .m3 h3 {
+    #m3 h3 {
       color: white;
       font-family: "Permanent Marker", cursive;
       justify-self: center;
       grid-area: a1; }
-    .m3 .section {
+    #m3 .section {
       grid-area: a2;
       align-self: flex-end; }
-    .m3 .kakashi3 {
+    #m3 #kakashi3 {
       height: 100%;
       width: 100%;
       grid-area: a3; }
@@ -1409,12 +1410,6 @@ header {
     top: 600px;
     height: 240px;
     width: 100%; }
-    .f3 h2 {
-      color: black;
-      position: relative;
-      top: 15px;
-      text-align: center;
-      font-family: "Permanent Marker", cursive; }
     .f3 .twitter {
       transition: height 4s, width 4s; }
     .f3 .twitter :hover {
@@ -1431,17 +1426,17 @@ header {
   #headerr {
     background-image: url(../img/banner4.jfif); }
   /*Nav*/
-  #navbar2 {
+  #navbar4 {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 50% 50%;
     grid-template-areas: "a1 a2"; }
-    #navbar2 .logg {
+    #navbar4 .logg {
       grid-area: a1; }
-    #navbar2 #divvv {
+    #navbar4 #divvv {
       grid-area: a2; }
   /*Main*/
-  .m3 {
+  #m3 {
     display: grid;
     height: 1000px;
     width: 100%;
@@ -1450,17 +1445,17 @@ header {
     grid-template-areas: "a1 a1" "a2 a3";
     padding-right: 10px;
     padding-left: 10px; }
-    .m3 h3 {
+    #m3 h3 {
       color: white;
       font-family: "Permanent Marker", cursive;
       justify-self: center;
       grid-area: a1;
       padding-right: 10px;
       padding-left: 10px; }
-    .m3 .section {
+    #m3 .section {
       grid-area: a2;
       align-self: flex-end; }
-    .m3 .kakashi3 {
+    #m3 #kakashi3 {
       height: 100%;
       width: 100%;
       grid-area: a3; }
@@ -1469,12 +1464,6 @@ header {
     top: 600px;
     height: 240px;
     width: 100%; }
-    .f3 h2 {
-      color: black;
-      position: relative;
-      top: 15px;
-      text-align: center;
-      font-family: "Permanent Marker", cursive; }
     .f3 .twitter {
       transition: height 4s, width 4s; }
     .f3 .twitter :hover {
@@ -1488,17 +1477,17 @@ header {
 
 @media only screen and (max-width: 600px) {
   /*Header*/
-  .headder {
+  #headder {
     background-image: url(../img/banner5.jpg); }
   /*Nav*/
-  #navbar2 {
+  #navbar5 {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 30% 15% 35%;
     grid-template-areas: "a1 a2 a3"; }
-    #navbar2 .logg {
+    #navbar5 .logg {
       grid-area: a1; }
-    #navbar2 #divvv {
+    #navbar5 #divvv {
       grid-area: a3; }
   /*Main*/
   .m4 {
@@ -1521,39 +1510,58 @@ header {
       grid-area: a2; }
   /*Footer*/
   .f4 {
-    top: 600px;
-    height: 240px;
+    height: 700px;
     width: 100%; }
-    .f4 h2 {
-      color: black;
-      position: relative;
-      top: 15px;
+    .f4 #diivvs {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      align-items: center;
       text-align: center;
-      font-family: "Permanent Marker", cursive; }
-    .f4 .twitter {
-      transition: height 4s, width 4s; }
-    .f4 .twitter :hover {
-      height: 50px;
-      width: 50px; }
-    .f4 .ig {
-      transition: height 4s, width 4s; }
-    .f4 .ig :hover {
-      height: 50px;
-      width: 50px; } }
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      .f4 #diivvs h5 {
+        grid-area: a1;
+        width: 100%; }
+      .f4 #diivvs #formmiis {
+        width: 100%;
+        grid-area: a4; }
+      .f4 #diivvs .twwiitter {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      .f4 #diivvs .twwiitter :hover {
+        height: 50px;
+        width: 50px; }
+      .f4 #diivvs .iiggg {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      .f4 #diivvs .iiggg :hover {
+        height: 50px;
+        width: 50px; }
+      .f4 #diivvs .ffbbb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      .f4 #diivvs .ffbbb :hover {
+        height: 50px;
+        width: 50px; } }
 
 @media only screen and (min-width: 600px) {
   /*Header*/
-  .headder {
+  #headder {
     background-image: url(../img/banner5.jpg); }
   /*Nav*/
-  #navbar2 {
+  #navbar5 {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 30% 15% 35%;
     grid-template-areas: "a1 a2 a3"; }
-    #navbar2 .logg {
+    #navbar5 .logg {
       grid-area: a1; }
-    #navbar2 #divvv {
+    #navbar5 #divvv {
       grid-area: a3; }
   /*Main*/
   .m4 {
@@ -1574,39 +1582,58 @@ header {
       grid-area: a2; }
   /*Footer*/
   .f4 {
-    top: 600px;
-    height: 240px;
+    height: 700px;
     width: 100%; }
-    .f4 h2 {
-      color: black;
-      position: relative;
-      top: 30px;
+    .f4 #diivvs {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      align-items: center;
       text-align: center;
-      font-family: "Permanent Marker", cursive; }
-    .f4 .twitter {
-      transition: height 4s, width 4s; }
-    .f4 .twitter :hover {
-      height: 50px;
-      width: 50px; }
-    .f4 .ig {
-      transition: height 4s, width 4s; }
-    .f4 .ig :hover {
-      height: 50px;
-      width: 50px; } }
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      .f4 #diivvs h5 {
+        grid-area: a1;
+        width: 100%; }
+      .f4 #diivvs #formmiis {
+        width: 100%;
+        grid-area: a4; }
+      .f4 #diivvs .twwiitter {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      .f4 #diivvs .twwiitter :hover {
+        height: 50px;
+        width: 50px; }
+      .f4 #diivvs .iiggg {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      .f4 #diivvs .iiggg :hover {
+        height: 50px;
+        width: 50px; }
+      .f4 #diivvs .ffbbb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      .f4 #diivvs .ffbbb :hover {
+        height: 50px;
+        width: 50px; } }
 
 @media only screen and (min-width: 768px) {
   /*Header*/
-  .headder {
+  #headder {
     background-image: url(../img/banner5.jpg); }
   /*Nav*/
-  #navbar2 {
+  #navbar5 {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 20% 80%;
     grid-template-areas: "a1 a2"; }
-    #navbar2 .logg {
+    #navbar5 .logg {
       grid-area: a1; }
-    #navbar2 #divvv {
+    #navbar5 #divvv {
       grid-area: a2; }
   /*Main*/
   .m4 {
@@ -1630,12 +1657,6 @@ header {
     top: 600px;
     height: 240px;
     width: 100%; }
-    .f4 h2 {
-      color: black;
-      position: relative;
-      top: 15px;
-      text-align: center;
-      font-family: "Permanent Marker", cursive; }
     .f4 .twitter {
       transition: height 4s, width 4s; }
     .f4 .twitter :hover {
@@ -1649,17 +1670,17 @@ header {
 
 @media only screen and (min-width: 992px) {
   /*Header*/
-  .headder {
+  #headder {
     background-image: url(../img/banner5.jpg); }
   /*Nav*/
-  #navbar2 {
+  #navbar5 {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 50% 50%;
     grid-template-areas: "a1 a2"; }
-    #navbar2 .logg {
+    #navbar5 .logg {
       grid-area: a1; }
-    #navbar2 #divvv {
+    #navbar5 #divvv {
       grid-area: a2; }
   /*Main*/
   .m4 {
@@ -1685,12 +1706,6 @@ header {
     top: 600px;
     height: 240px;
     width: 100%; }
-    .f4 h2 {
-      color: black;
-      position: relative;
-      top: 15px;
-      text-align: center;
-      font-family: "Permanent Marker", cursive; }
     .f4 .twitter {
       transition: height 4s, width 4s; }
     .f4 .twitter :hover {
