@@ -13,7 +13,6 @@ footer{
 }
 
 $colorTitulos: darkorange;
-$colorBlanco: white;
 $fuentePermanent: 'Permanent Marker', cursive;
 $altoPersonajes: 300px;
 $anchoPersonajes: 150px;
@@ -67,17 +66,16 @@ header{
     grid-template-rows: 250px 250px 250px;
     row-gap: 15px;
 
-    .video{
-        height: 100%;
-        width: 100%;
+    #video{
+        @include Propiedades2(100%, 100%);
     
-        iframe{
+        video{
             @include Propiedades2(100%, 100%);
         }
     }
     
     #imagen{
-        width: 100%;
+        @include Propiedades2(100%, 100%);
         
         img{
             @include Propiedades2(100%, 100%);
@@ -86,7 +84,6 @@ header{
     
     .info{
         display: grid;
-        color: $colorBlanco;
         font-family: $fuentePermanent;
         text-align: $textoAlineado; 
         
@@ -115,10 +112,11 @@ header{
 
                         h5{
                             grid-area: a1;
-                            width: 100%;
+                            width: 70%;
                         }
                         #formis{
-                            width: 100%;
+                            width: 70%;
+                            justify-self: center;
                             grid-area: a4;
                         }
                         .twitterr{
@@ -179,16 +177,16 @@ header{
     grid-template-rows: 300px 350px 250px;
     row-gap: 15px;
 
-    .video{
-        width: 100%;
+    #video{
+        @include Propiedades2(100%, 100%);
     
-        iframe{
+        video{
             @include Propiedades2(100%, 100%);
         }
     } 
 
     #imagen{
-        width: 100%;
+        @include Propiedades2(100%, 100%);
     
         img{
             @include Propiedades2(100%, 100%);
@@ -197,7 +195,6 @@ header{
 
     .info{
         display: grid;
-        color: $colorBlanco;
         font-family: $fuentePermanent;
         text-align: $textoAlineado; 
         
@@ -226,10 +223,11 @@ header{
 
                         h5{
                             grid-area: a1;
-                            width: 100%;
+                            width: 70%;
                         }
                         #formis{
-                            width: 100%;
+                            justify-self: center;
+                            width: 60%;
                             grid-area: a4;
                         }
                         .twitterr{
@@ -289,10 +287,10 @@ header{
     grid-template-rows: 300px 350px 250px;
     row-gap: 15px;
 
-    .video{
-        width: 100%;
+    #video{
+        @include Propiedades2(100%, 100%);
     
-        iframe{
+        video{
             @include Propiedades2(100%, 100%);
         }
     }
@@ -305,7 +303,6 @@ header{
     }
     .info{
         display: grid;
-        color: $colorBlanco;
         font-family: $fuentePermanent;
         text-align: $textoAlineado;   
         
@@ -317,37 +314,57 @@ header{
 
 /* Footer */
 #f{
-    top: 600px;
-    @include Propiedades2(240px, 100%);
+    height: 700px;
+    width: 100%;
+    
+    #divs{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
 
-    h5{
-        text-align: $textoAlineado;
-        font-family: $fuentePermanent;
-        color: white;
-        position: relative;
-        padding-top: 20px;
-    }
-
-    .twitterr{
-        transition: height 4s, width 4s;
-    }
-    .twitterr :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .igg{
-        transition: height 4s, width 4s;
-    }
-    .igg :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .fbb{
-        transition: height 4s, width 4s;
-        width: 100%;
-        grid-area: a5;
-    }
-    .fbb :hover{
-        @include Propiedades2(50px, 50px);
-    }
+                        h5{
+                            grid-area: a1;
+                            width: 70%;
+                            justify-self: center;
+                        }
+                        #formis{
+                            justify-self: center;
+                            width: 60%;
+                            grid-area: a4;
+                        }
+                        .twitterr{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twitterr :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .igg{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .igg :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .fbb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .fbb :hover{
+                            @include Propiedades2(50px, 50px);
+                            
+                        }
+    }  
 }
 
 }
@@ -380,15 +397,15 @@ header{
     grid-template-rows: 400px 600px 100px;
     row-gap: 33px;
 }
-.video{
-    width: 100%;
+#video{
+    @include Propiedades2(100%, 100%);
 
-    iframe{
+    video{
         @include Propiedades2(100%, 100%);
     }
 }
 #imagen{
-    width: 100%;
+    @include Propiedades2(100%, 100%);
 
     img{
         @include Propiedades2(100%, 100%);
@@ -396,7 +413,6 @@ header{
 }
 .info{
     display: grid;
-    color: $colorBlanco;
     font-family: $fuentePermanent;
     text-align: $textoAlineado;  
 
@@ -407,38 +423,57 @@ header{
 
 /* Footer */
 #f{
-    top: 600px;
-    @include Propiedades2(250px, 100%);
-
-    h5{
-        
-        font-family: $fuentePermanent;
-        color: white;
-        position: relative;
-        padding-top: 20px;
-    }
-
-    .twitterr{
-        transition: height 4s, width 4s;
-    }
-    .twitterr :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .igg{
-        transition: height 4s, width 4s;
-    }
-    .igg :hover{
-        @include Propiedades2(50px, 50px);
+    height: 700px;
+    width: 100%;
     
-    }
-    .fbb{
-        transition: height 4s, width 4s;
-        width: 100%;
-        grid-area: a5;
-    }
-    .fbb :hover{
-        @include Propiedades2(50px, 50px);
-    }
+    #divs{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
+
+                        h5{
+                            grid-area: a1;
+                            width: 70%;
+                            justify-self: center;
+                        }
+                        #formis{
+                            justify-self: center;
+                            width: 60%;
+                            grid-area: a4;
+                        }
+                        .twitterr{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twitterr :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .igg{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .igg :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .fbb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .fbb :hover{
+                            @include Propiedades2(50px, 50px);
+                            
+                        }
+    }  
 }
 
 }
@@ -470,7 +505,25 @@ header{
 
 /*Main*/
 
+.mmain{
+    display: grid;
+    row-gap: 30px;
 
+    #videos{
+        @include Propiedades2(100%, 100%);
+        
+    
+        video{
+            @include Propiedades2(100%, 100%);
+            
+        }
+    }    
+    
+    #parraph{
+        justify-self: center;
+        width: 80%;
+    }
+}
 
 /*Footer*/
 
@@ -492,10 +545,12 @@ header{
 
                         h5{
                             grid-area: a1;
-                            width: 100%;
+                            width: 70%;
+                            justify-self: center;
                         }
                         #formiss{
-                            width: 100%;
+                            width: 70%;
+                            justify-self: center;
                             grid-area: a4;
                         }
                         .twiitter{
@@ -550,6 +605,25 @@ header{
 
 /*Main*/
 
+.mmain{
+    display: grid;
+    row-gap: 30px;
+
+    #videos{
+        @include Propiedades2(100%, 100%);
+        
+    
+        video{
+            @include Propiedades2(100%, 100%);
+            
+        }
+    }    
+    
+    #parraph{
+        justify-self: center;
+        width: 80%;
+    }
+}
 
 /*Footer*/
 
@@ -571,10 +645,12 @@ header{
 
                         h5{
                             grid-area: a1;
-                            width: 100%;
+                            width: 70%;
+                            justify-self: center;
                         }
                         #formiss{
-                            width: 100%;
+                            width: 70%;
+                            justify-self: center;
                             grid-area: a4;
                         }
                         .twiitter{
@@ -629,26 +705,79 @@ header{
 
 /*Main*/
 
+.mmain{
+    display: grid;
+    row-gap: 30px;
 
+    #videos{
+        @include Propiedades2(100%, 100%);
+        
+    
+        video{
+            @include Propiedades2(100%, 100%);
+            
+        }
+    }    
+    
+    #parraph{
+        justify-self: center;
+        width: 80%;
+    }
+}
 
 /*Footer*/
 
 .f1{
-    top: 600px;
-    @include Propiedades2(240px, 100%);
+    height: 700px;
+    width: 100%;
+    
+    #divvs{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
 
-    .twitter{
-        transition: height 4s, width 4s;
-    }
-    .twitter :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .ig{
-        transition: height 4s, width 4s;
-    }
-    .ig :hover{
-        @include Propiedades2(50px, 50px);
-    }
+                        h5{
+                            grid-area: a1;
+                            width: 70%;
+                            justify-self: center;
+                        }
+                        #formiss{
+                            width: 70%;
+                            justify-self: center;
+                            grid-area: a4;
+                        }
+                        .twiitter{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twiitter :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .iig{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .iig :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .ffb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .ffb :hover{
+                            @include Propiedades2(50px, 50px); 
+                        }
+    }  
 }
 
 }
@@ -676,35 +805,80 @@ header{
 
 /*Main*/
 
-#parraph{
-    display: flex;
-    flex-direction: row;
-    #parrafos{
-        justify-content: center;
+.mmain{
+    display: grid;
+    row-gap: 30px;
 
+    #videos{
+        @include Propiedades2(100%, 100%);
+        
+    
+        video{
+            @include Propiedades2(100%, 100%);
+            
+        }
+    }    
+    
+    #parraph{
+        justify-self: center;
+        width: 80%;
     }
-
 }
+
 /*Footer*/
 
 .f1{
-    top: 600px;
-    @include Propiedades2(240px, 100%);
+    height: 700px;
+    width: 100%;
+    
+    #divvs{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
 
-    .twitter{
-        transition: height 4s, width 4s;
-    }
-    .twitter :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .ig{
-        transition: height 4s, width 4s;
-    }
-    .ig :hover{
-        @include Propiedades2(50px, 50px);
-    }
+                        h5{
+                            grid-area: a1;
+                            width: 70%;
+                            justify-self: center;
+                        }
+                        #formiss{
+                            width: 70%;
+                            justify-self: center;
+                            grid-area: a4;
+                        }
+                        .twiitter{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twiitter :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .iig{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .iig :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .ffb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .ffb :hover{
+                            @include Propiedades2(50px, 50px); 
+                        }
+    }  
 }
-
 }
 
 
@@ -922,10 +1096,12 @@ header{
 
                         h5{
                             grid-area: a1;
-                            width: 100%;
+                            width: 70%;
+                            justify-self: center;
                         }
                         #formiiss{
-                            width: 100%;
+                            width: 70%;
+                            justify-self: center;
                             grid-area: a4;
                         }
                         .twiitterr{
@@ -1156,10 +1332,12 @@ header{
 
                         h5{
                             grid-area: a1;
-                            width: 100%;
+                            width: 70%;
+                            justify-self: center;
                         }
                         #formiiss{
-                            width: 100%;
+                            width: 70%;
+                            justify-self: center;
                             grid-area: a4;
                         }
                         .twiitterr{
@@ -1373,22 +1551,58 @@ header{
 /*Footer*/
 
 .f2{
-    top: 2500px;
-    @include Propiedades2(240px, 100%);
+    height: 700px;
+    width: 100%;
+    
+    #divvss{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
 
-    .twitter{
-        transition: height 4s, width 4s;
-    }
-    .twitter :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .ig{
-        transition: height 4s, width 4s;
-    }
-    .ig :hover{
-        @include Propiedades2(50px, 50px);
-    }
-}
+                        h5{
+                            grid-area: a1;
+                            width: 70%;
+                            justify-self: center;
+                        }
+                        #formiiss{
+                            width: 70%;
+                            justify-self: center;
+                            grid-area: a4;
+                        }
+                        .twiitterr{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twiitterr :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .iigg{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .iigg :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .ffbb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .ffbb :hover{
+                            @include Propiedades2(50px, 50px);
+                            
+                        }
+    }  
+} 
 
 }
 
@@ -1574,21 +1788,57 @@ header{
 /*Footer*/
 
 .f2{
-    top: 2500px;
-    @include Propiedades2(240px, 100%);
+    height: 700px;
+    width: 100%;
+    
+    #divvss{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
 
-    .twitter{
-        transition: height 4s, width 4s;
-    }
-    .twitter :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .ig{
-        transition: height 4s, width 4s;
-    }
-    .ig :hover{
-        @include Propiedades2(50px, 50px);
-    }
+                        h5{
+                            grid-area: a1;
+                            width: 70%;
+                            justify-self: center;
+                        }
+                        #formiiss{
+                            width: 70%;
+                            justify-self: center;
+                            grid-area: a4;
+                        }
+                        .twiitterr{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twiitterr :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .iigg{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .iigg :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .ffbb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .ffbb :hover{
+                            @include Propiedades2(50px, 50px);
+                            
+                        }
+    }  
 }
 
 }
@@ -1634,7 +1884,6 @@ header{
     
 
     h3{
-        color: $colorBlanco;
         font-family: $fuentePermanent;
         align-self: center;
     }
@@ -1643,7 +1892,12 @@ header{
         display: grid;
         row-gap: 20px;
     
-        .form{
+        #form{
+            display: grid;
+            row-gap: 20px;
+        }
+
+        #form2{
             display: grid;
             row-gap: 20px;
         }
@@ -1674,10 +1928,12 @@ header{
 
                         h5{
                             grid-area: a1;
-                            width: 100%;
+                            width: 70%;
+                            justify-self: center;
                         }
                         #formiis{
-                            width: 100%;
+                            width: 70%;
+                            justify-self: center;
                             grid-area: a4;
                         }
                         .twwitter{
@@ -1743,7 +1999,6 @@ header{
     align-items: center;
 
     h3{
-        color: $colorBlanco;
         font-family: $fuentePermanent;
         align-self: center;
         justify-self: center;
@@ -1753,7 +2008,12 @@ header{
         display: grid;
         row-gap: 20px;
     
-        .form{
+        #form{
+            display: grid;
+            row-gap: 20px;
+        }
+
+        #form2{
             display: grid;
             row-gap: 20px;
         }
@@ -1785,10 +2045,12 @@ header{
 
                         h5{
                             grid-area: a1;
-                            width: 100%;
+                            width: 70%;
+                            justify-self: center;
                         }
                         #formiis{
-                            width: 100%;
+                            width: 70%;
+                            justify-self: center;
                             grid-area: a4;
                         }
                         .twwitter{
@@ -1853,7 +2115,6 @@ header{
                          "a2 a3";  
                          
     h3{
-        color: $colorBlanco;
         font-family: $fuentePermanent;
         justify-self: center;
         grid-area: a1;
@@ -1873,22 +2134,58 @@ header{
 /*Footer*/
 
 .f3{
-    top: 600px;
-    @include Propiedades2(240px, 100%);
+    height: 700px;
+    width: 100%;
+    
+    #diivs{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
 
-    .twitter{
-        transition: height 4s, width 4s;
-    }
-    .twitter :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .ig{
-        transition: height 4s, width 4s;
-    }
-    .ig :hover{
-        @include Propiedades2(50px, 50px);
-    }
-}
+                        h5{
+                            grid-area: a1;
+                            width: 70%;
+                            justify-self: center;
+                        }
+                        #formiis{
+                            width: 70%;
+                            justify-self: center;
+                            grid-area: a4;
+                        }
+                        .twwitter{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twwitter :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .iggg{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .iggg :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .fbbb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .fbbb :hover{
+                            @include Propiedades2(50px, 50px);
+                            
+                        }
+    }  
+} 
 
 }
 
@@ -1926,7 +2223,6 @@ header{
     padding-left: 10px;
 
     h3{
-        color: $colorBlanco;
         font-family: $fuentePermanent;
         justify-self: center;
         grid-area: a1;
@@ -1947,21 +2243,57 @@ header{
 /*Footer*/
 
 .f3{
-    top: 600px;
-    @include Propiedades2(240px, 100%);
+    height: 700px;
+    width: 100%;
+    
+    #diivs{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
 
-    .twitter{
-        transition: height 4s, width 4s;
-    }
-    .twitter :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .ig{
-        transition: height 4s, width 4s;
-    }
-    .ig :hover{
-        @include Propiedades2(50px, 50px);
-    }
+                        h5{
+                            grid-area: a1;
+                            width: 70%;
+                            justify-self: center;
+                        }
+                        #formiis{
+                            width: 70%;
+                            justify-self: center;
+                            grid-area: a4;
+                        }
+                        .twwitter{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twwitter :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .iggg{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .iggg :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .fbbb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .fbbb :hover{
+                            @include Propiedades2(50px, 50px);
+                            
+                        }
+    }  
 } 
 
 }
@@ -1993,28 +2325,13 @@ header{
 
 /*Main*/
 
-.m4{
+.divvz{
     display: grid;
-    @include Propiedades2(800px, 100%);
-    grid-template-columns: 100%;
-    row-gap: 25px;
-    grid-template-rows: 350px 350px;
-    grid-template-areas: "a1"
-                         "a2";
+    row-gap: 30px;
 
-    h3{
-        height: 100%;
-        color: $colorBlanco;
-        grid-area: a1;
-        align-self: center;
-        font-family: $fuentePermanent;
-    }   
-    
     #dattebayo{
         @include Propiedades2(100%, 100%);
-        grid-area: a2;
     }
-                    
 }
 
 /*Footer*/
@@ -2037,10 +2354,12 @@ header{
 
                         h5{
                             grid-area: a1;
-                            width: 100%;
+                            width: 70%;
+                            justify-self: center;
                         }
                         #formmiis{
-                            width: 100%;
+                            width: 70%;
+                            justify-self: center;
                             grid-area: a4;
                         }
                         .twwiitter{
@@ -2096,24 +2415,12 @@ header{
 
 /*Main*/
 
-.m4{
+.divvz{
     display: grid;
-    @include Propiedades2(700px, 100%);
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "a1"
-                         "a2";
-
-    h3{
-        color: $colorBlanco;
-        grid-area: a1;
-        align-self: center;
-        font-family: $fuentePermanent;
-    }
+    row-gap: 30px;
 
     #dattebayo{
         @include Propiedades2(100%, 100%);
-        grid-area: a2;
     }
 }
 
@@ -2137,10 +2444,12 @@ header{
 
                         h5{
                             grid-area: a1;
-                            width: 100%;
+                            width: 70%;
+                            justify-self: center;
                         }
                         #formmiis{
-                            width: 100%;
+                            width: 70%;
+                            justify-self: center;
                             grid-area: a4;
                         }
                         .twwiitter{
@@ -2196,45 +2505,75 @@ header{
 
 /*Main*/
 
-.m4{
-    display: grid;
-    @include Propiedades2(700px, 100%);
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "a1"
-                         "a2";
+#mmm{
+    height: 720px;
+    width: 100%;
 
-    h3{
-        color: $colorBlanco;
-        grid-area: a1;
-        align-self: center;
-        font-family: $fuentePermanent;
-    }
-
-    #dattebayo{
-        @include Propiedades2(100%, 100%);
-        grid-area: a2;
-    }
+    .divvz{
+        text-align: $textoAlineado;
+        display: grid;
+        row-gap: 30px;
+        
+        #dattebayo{
+                @include Propiedades2(100%, 100%);
+            }    
+    }   
 }
 
 /*Footer*/
 
 .f4{
-    top: 600px;
-    @include Propiedades2(240px, 100%);
+    height: 700px;
+    width: 100%;
+    
+    #diivvs{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
 
-    .twitter{
-        transition: height 4s, width 4s;
-    }
-    .twitter :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .ig{
-        transition: height 4s, width 4s;
-    }
-    .ig :hover{
-        @include Propiedades2(50px, 50px);
-    }
+                        h5{
+                            grid-area: a1;
+                            width: 70%;
+                            justify-self: center;
+                        }
+                        #formmiis{
+                            width: 70%;
+                            justify-self: center;
+                            grid-area: a4;
+                        }
+                        .twwiitter{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twwiitter :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .iiggg{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .iiggg :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .ffbbb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .ffbbb :hover{
+                            @include Propiedades2(50px, 50px);
+                            
+                        }
+    }  
 }
 
 }
@@ -2262,46 +2601,74 @@ header{
 
 /*Main*/
 
-.m4{
-    display: grid;
-    @include Propiedades2(700px, 100%);
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "a1"
-                         "a2";
+#mmm{
+    height: 720px;
+    width: 100%;
 
-    h3{
-        color: $colorBlanco;
-        grid-area: a1;
-        align-self: center;
-        font-family: $fuentePermanent;
-        padding-right: 10px;
-        padding-left: 10px;  
-    }
-
-    #dattebayo{
-        @include Propiedades2(100%, 100%);
-        grid-area: a2;
-    }
-} 
+    .divvz{
+        text-align: $textoAlineado;
+        display: grid;
+        row-gap: 30px;
+        
+        #dattebayo{
+                @include Propiedades2(100%, 100%);
+            }    
+    }   
+}
 
 /*Footer*/
 
 .f4{
-    top: 600px;
-    @include Propiedades2(240px, 100%);
+    height: 700px;
+    width: 100%;
+    
+    #diivvs{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: $textoAlineado;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a4 a4 a4"
+                         "a2 a3 a5";
 
-    .twitter{
-        transition: height 4s, width 4s;
-    }
-    .twitter :hover{
-        @include Propiedades2(50px, 50px);
-    }
-    .ig{
-        transition: height 4s, width 4s;
-    }
-    .ig :hover{
-        @include Propiedades2(50px, 50px);
-    }
+                        h5{
+                            grid-area: a1;
+                            width: 70%;
+                            justify-self: center;
+                        }
+                        #formmiis{
+                            width: 70%;
+                            justify-self: center;
+                            grid-area: a4;
+                        }
+                        .twwiitter{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a2;
+                        }
+                        .twwiitter :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .iiggg{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a3;
+                        }
+                        .iiggg :hover{
+                            @include Propiedades2(50px, 50px);
+                        }
+                        .ffbbb{
+                            transition: height 4s, width 4s;
+                            width: 100%;
+                            grid-area: a5;
+                        }
+                        .ffbbb :hover{
+                            @include Propiedades2(50px, 50px);
+                            
+                        }
+    }  
 }
 }

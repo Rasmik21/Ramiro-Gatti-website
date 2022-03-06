@@ -42,20 +42,20 @@ header {
     grid-template-columns: 100%;
     grid-template-rows: 250px 250px 250px;
     row-gap: 15px; }
-    .m .video {
+    .m #video {
       height: 100%;
       width: 100%; }
-      .m .video iframe {
+      .m #video video {
         height: 100%;
         width: 100%; }
     .m #imagen {
+      height: 100%;
       width: 100%; }
       .m #imagen img {
         height: 100%;
         width: 100%; }
     .m .info {
       display: grid;
-      color: white;
       font-family: "Permanent Marker", cursive;
       text-align: center; }
       .m .info #parrafo {
@@ -75,9 +75,10 @@ header {
       grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
       #f #divs h5 {
         grid-area: a1;
-        width: 100%; }
+        width: 70%; }
       #f #divs #formis {
-        width: 100%;
+        width: 70%;
+        justify-self: center;
         grid-area: a4; }
       #f #divs .twitterr {
         transition: height 4s, width 4s;
@@ -123,19 +124,20 @@ header {
     grid-template-columns: 100%;
     grid-template-rows: 300px 350px 250px;
     row-gap: 15px; }
-    .m .video {
+    .m #video {
+      height: 100%;
       width: 100%; }
-      .m .video iframe {
+      .m #video video {
         height: 100%;
         width: 100%; }
     .m #imagen {
+      height: 100%;
       width: 100%; }
       .m #imagen img {
         height: 100%;
         width: 100%; }
     .m .info {
       display: grid;
-      color: white;
       font-family: "Permanent Marker", cursive;
       text-align: center; }
       .m .info #parrafo {
@@ -155,9 +157,10 @@ header {
       grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
       #f #divs h5 {
         grid-area: a1;
-        width: 100%; }
+        width: 70%; }
       #f #divs #formis {
-        width: 100%;
+        justify-self: center;
+        width: 60%;
         grid-area: a4; }
       #f #divs .twitterr {
         transition: height 4s, width 4s;
@@ -203,9 +206,10 @@ header {
     grid-template-columns: 100%;
     grid-template-rows: 300px 350px 250px;
     row-gap: 15px; }
-    .m .video {
+    .m #video {
+      height: 100%;
       width: 100%; }
-      .m .video iframe {
+      .m #video video {
         height: 100%;
         width: 100%; }
     .m #imagen {
@@ -215,39 +219,52 @@ header {
         width: 100%; }
     .m .info {
       display: grid;
-      color: white;
       font-family: "Permanent Marker", cursive;
       text-align: center; }
       .m .info #parrafo {
         align-self: center; }
   /* Footer */
   #f {
-    top: 600px;
-    height: 240px;
+    height: 700px;
     width: 100%; }
-    #f h5 {
-      text-align: center;
-      font-family: "Permanent Marker", cursive;
-      color: white;
-      position: relative;
-      padding-top: 20px; }
-    #f .twitterr {
-      transition: height 4s, width 4s; }
-    #f .twitterr :hover {
-      height: 50px;
-      width: 50px; }
-    #f .igg {
-      transition: height 4s, width 4s; }
-    #f .igg :hover {
-      height: 50px;
-      width: 50px; }
-    #f .fbb {
-      transition: height 4s, width 4s;
+    #f #divs {
+      height: 100%;
       width: 100%;
-      grid-area: a5; }
-    #f .fbb :hover {
-      height: 50px;
-      width: 50px; } }
+      display: grid;
+      align-items: center;
+      text-align: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      #f #divs h5 {
+        grid-area: a1;
+        width: 70%;
+        justify-self: center; }
+      #f #divs #formis {
+        justify-self: center;
+        width: 60%;
+        grid-area: a4; }
+      #f #divs .twitterr {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      #f #divs .twitterr :hover {
+        height: 50px;
+        width: 50px; }
+      #f #divs .igg {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      #f #divs .igg :hover {
+        height: 50px;
+        width: 50px; }
+      #f #divs .fbb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      #f #divs .fbb :hover {
+        height: 50px;
+        width: 50px; } }
 
 @media only screen and (min-width: 992px) {
   /* Header */
@@ -271,50 +288,66 @@ header {
     grid-template-columns: 100%;
     grid-template-rows: 400px 600px 100px;
     row-gap: 33px; }
-  .video {
+  #video {
+    height: 100%;
     width: 100%; }
-    .video iframe {
+    #video video {
       height: 100%;
       width: 100%; }
   #imagen {
+    height: 100%;
     width: 100%; }
     #imagen img {
       height: 100%;
       width: 100%; }
   .info {
     display: grid;
-    color: white;
     font-family: "Permanent Marker", cursive;
     text-align: center; }
     .info #parrafo {
       align-self: center; }
   /* Footer */
   #f {
-    top: 600px;
-    height: 250px;
+    height: 700px;
     width: 100%; }
-    #f h5 {
-      font-family: "Permanent Marker", cursive;
-      color: white;
-      position: relative;
-      padding-top: 20px; }
-    #f .twitterr {
-      transition: height 4s, width 4s; }
-    #f .twitterr :hover {
-      height: 50px;
-      width: 50px; }
-    #f .igg {
-      transition: height 4s, width 4s; }
-    #f .igg :hover {
-      height: 50px;
-      width: 50px; }
-    #f .fbb {
-      transition: height 4s, width 4s;
+    #f #divs {
+      height: 100%;
       width: 100%;
-      grid-area: a5; }
-    #f .fbb :hover {
-      height: 50px;
-      width: 50px; } }
+      display: grid;
+      align-items: center;
+      text-align: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      #f #divs h5 {
+        grid-area: a1;
+        width: 70%;
+        justify-self: center; }
+      #f #divs #formis {
+        justify-self: center;
+        width: 60%;
+        grid-area: a4; }
+      #f #divs .twitterr {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      #f #divs .twitterr :hover {
+        height: 50px;
+        width: 50px; }
+      #f #divs .igg {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      #f #divs .igg :hover {
+        height: 50px;
+        width: 50px; }
+      #f #divs .fbb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      #f #divs .fbb :hover {
+        height: 50px;
+        width: 50px; } }
 
 @media only screen and (max-width: 600px) {
   /*Header*/
@@ -331,6 +364,18 @@ header {
     #navbar2 #divvv {
       grid-area: a3; }
   /*Main*/
+  .mmain {
+    display: grid;
+    row-gap: 30px; }
+    .mmain #videos {
+      height: 100%;
+      width: 100%; }
+      .mmain #videos video {
+        height: 100%;
+        width: 100%; }
+    .mmain #parraph {
+      justify-self: center;
+      width: 80%; }
   /*Footer*/
   .f1 {
     height: 700px;
@@ -346,9 +391,11 @@ header {
       grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
       .f1 #divvs h5 {
         grid-area: a1;
-        width: 100%; }
+        width: 70%;
+        justify-self: center; }
       .f1 #divvs #formiss {
-        width: 100%;
+        width: 70%;
+        justify-self: center;
         grid-area: a4; }
       .f1 #divvs .twiitter {
         transition: height 4s, width 4s;
@@ -387,6 +434,18 @@ header {
     #navbar2 #divvv {
       grid-area: a3; }
   /*Main*/
+  .mmain {
+    display: grid;
+    row-gap: 30px; }
+    .mmain #videos {
+      height: 100%;
+      width: 100%; }
+      .mmain #videos video {
+        height: 100%;
+        width: 100%; }
+    .mmain #parraph {
+      justify-self: center;
+      width: 80%; }
   /*Footer*/
   .f1 {
     height: 700px;
@@ -402,9 +461,11 @@ header {
       grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
       .f1 #divvs h5 {
         grid-area: a1;
-        width: 100%; }
+        width: 70%;
+        justify-self: center; }
       .f1 #divvs #formiss {
-        width: 100%;
+        width: 70%;
+        justify-self: center;
         grid-area: a4; }
       .f1 #divvs .twiitter {
         transition: height 4s, width 4s;
@@ -443,21 +504,60 @@ header {
     #navbar2 #divvv {
       grid-area: a2; }
   /*Main*/
+  .mmain {
+    display: grid;
+    row-gap: 30px; }
+    .mmain #videos {
+      height: 100%;
+      width: 100%; }
+      .mmain #videos video {
+        height: 100%;
+        width: 100%; }
+    .mmain #parraph {
+      justify-self: center;
+      width: 80%; }
   /*Footer*/
   .f1 {
-    top: 600px;
-    height: 240px;
+    height: 700px;
     width: 100%; }
-    .f1 .twitter {
-      transition: height 4s, width 4s; }
-    .f1 .twitter :hover {
-      height: 50px;
-      width: 50px; }
-    .f1 .ig {
-      transition: height 4s, width 4s; }
-    .f1 .ig :hover {
-      height: 50px;
-      width: 50px; } }
+    .f1 #divvs {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      align-items: center;
+      text-align: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      .f1 #divvs h5 {
+        grid-area: a1;
+        width: 70%;
+        justify-self: center; }
+      .f1 #divvs #formiss {
+        width: 70%;
+        justify-self: center;
+        grid-area: a4; }
+      .f1 #divvs .twiitter {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      .f1 #divvs .twiitter :hover {
+        height: 50px;
+        width: 50px; }
+      .f1 #divvs .iig {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      .f1 #divvs .iig :hover {
+        height: 50px;
+        width: 50px; }
+      .f1 #divvs .ffb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      .f1 #divvs .ffb :hover {
+        height: 50px;
+        width: 50px; } }
 
 @media only screen and (min-width: 992px) {
   /*Header*/
@@ -474,26 +574,60 @@ header {
     #navbar2 #divvv {
       grid-area: a2; }
   /*Main*/
-  #parraph {
-    display: flex;
-    flex-direction: row; }
-    #parraph #parrafos {
-      justify-content: center; }
+  .mmain {
+    display: grid;
+    row-gap: 30px; }
+    .mmain #videos {
+      height: 100%;
+      width: 100%; }
+      .mmain #videos video {
+        height: 100%;
+        width: 100%; }
+    .mmain #parraph {
+      justify-self: center;
+      width: 80%; }
   /*Footer*/
   .f1 {
-    top: 600px;
-    height: 240px;
+    height: 700px;
     width: 100%; }
-    .f1 .twitter {
-      transition: height 4s, width 4s; }
-    .f1 .twitter :hover {
-      height: 50px;
-      width: 50px; }
-    .f1 .ig {
-      transition: height 4s, width 4s; }
-    .f1 .ig :hover {
-      height: 50px;
-      width: 50px; } }
+    .f1 #divvs {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      align-items: center;
+      text-align: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      .f1 #divvs h5 {
+        grid-area: a1;
+        width: 70%;
+        justify-self: center; }
+      .f1 #divvs #formiss {
+        width: 70%;
+        justify-self: center;
+        grid-area: a4; }
+      .f1 #divvs .twiitter {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      .f1 #divvs .twiitter :hover {
+        height: 50px;
+        width: 50px; }
+      .f1 #divvs .iig {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      .f1 #divvs .iig :hover {
+        height: 50px;
+        width: 50px; }
+      .f1 #divvs .ffb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      .f1 #divvs .ffb :hover {
+        height: 50px;
+        width: 50px; } }
 
 @media only screen and (max-width: 600px) {
   /*Header*/
@@ -662,9 +796,11 @@ header {
       grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
       .f2 #divvss h5 {
         grid-area: a1;
-        width: 100%; }
+        width: 70%;
+        justify-self: center; }
       .f2 #divvss #formiiss {
-        width: 100%;
+        width: 70%;
+        justify-self: center;
         grid-area: a4; }
       .f2 #divvss .twiitterr {
         transition: height 4s, width 4s;
@@ -853,9 +989,11 @@ header {
       grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
       .f2 #divvss h5 {
         grid-area: a1;
-        width: 100%; }
+        width: 70%;
+        justify-self: center; }
       .f2 #divvss #formiiss {
-        width: 100%;
+        width: 70%;
+        justify-self: center;
         grid-area: a4; }
       .f2 #divvss .twiitterr {
         transition: height 4s, width 4s;
@@ -1031,19 +1169,46 @@ header {
         width: 250px; }
   /*Footer*/
   .f2 {
-    top: 2500px;
-    height: 240px;
+    height: 700px;
     width: 100%; }
-    .f2 .twitter {
-      transition: height 4s, width 4s; }
-    .f2 .twitter :hover {
-      height: 50px;
-      width: 50px; }
-    .f2 .ig {
-      transition: height 4s, width 4s; }
-    .f2 .ig :hover {
-      height: 50px;
-      width: 50px; } }
+    .f2 #divvss {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      align-items: center;
+      text-align: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      .f2 #divvss h5 {
+        grid-area: a1;
+        width: 70%;
+        justify-self: center; }
+      .f2 #divvss #formiiss {
+        width: 70%;
+        justify-self: center;
+        grid-area: a4; }
+      .f2 #divvss .twiitterr {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      .f2 #divvss .twiitterr :hover {
+        height: 50px;
+        width: 50px; }
+      .f2 #divvss .iigg {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      .f2 #divvss .iigg :hover {
+        height: 50px;
+        width: 50px; }
+      .f2 #divvss .ffbb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      .f2 #divvss .ffbb :hover {
+        height: 50px;
+        width: 50px; } }
 
 @media only screen and (min-width: 992px) {
   /*Header*/
@@ -1197,19 +1362,46 @@ header {
         width: 300px; }
   /*Footer*/
   .f2 {
-    top: 2500px;
-    height: 240px;
+    height: 700px;
     width: 100%; }
-    .f2 .twitter {
-      transition: height 4s, width 4s; }
-    .f2 .twitter :hover {
-      height: 50px;
-      width: 50px; }
-    .f2 .ig {
-      transition: height 4s, width 4s; }
-    .f2 .ig :hover {
-      height: 50px;
-      width: 50px; } }
+    .f2 #divvss {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      align-items: center;
+      text-align: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      .f2 #divvss h5 {
+        grid-area: a1;
+        width: 70%;
+        justify-self: center; }
+      .f2 #divvss #formiiss {
+        width: 70%;
+        justify-self: center;
+        grid-area: a4; }
+      .f2 #divvss .twiitterr {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      .f2 #divvss .twiitterr :hover {
+        height: 50px;
+        width: 50px; }
+      .f2 #divvss .iigg {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      .f2 #divvss .iigg :hover {
+        height: 50px;
+        width: 50px; }
+      .f2 #divvss .ffbb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      .f2 #divvss .ffbb :hover {
+        height: 50px;
+        width: 50px; } }
 
 .form2 {
   display: grid;
@@ -1239,13 +1431,15 @@ header {
     row-gap: 15px;
     align-items: center; }
     #m3 h3 {
-      color: white;
       font-family: "Permanent Marker", cursive;
       align-self: center; }
     #m3 .section {
       display: grid;
       row-gap: 20px; }
-      #m3 .section .form {
+      #m3 .section #form {
+        display: grid;
+        row-gap: 20px; }
+      #m3 .section #form2 {
         display: grid;
         row-gap: 20px; }
     #m3 #kakashi3 {
@@ -1266,9 +1460,11 @@ header {
       grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
       .f3 #diivs h5 {
         grid-area: a1;
-        width: 100%; }
+        width: 70%;
+        justify-self: center; }
       .f3 #diivs #formiis {
-        width: 100%;
+        width: 70%;
+        justify-self: center;
         grid-area: a4; }
       .f3 #diivs .twwitter {
         transition: height 4s, width 4s;
@@ -1317,14 +1513,16 @@ header {
     justify-items: center;
     align-items: center; }
     #m3 h3 {
-      color: white;
       font-family: "Permanent Marker", cursive;
       align-self: center;
       justify-self: center; }
     #m3 .section {
       display: grid;
       row-gap: 20px; }
-      #m3 .section .form {
+      #m3 .section #form {
+        display: grid;
+        row-gap: 20px; }
+      #m3 .section #form2 {
         display: grid;
         row-gap: 20px; }
     #m3 #kakashi3 {
@@ -1345,9 +1543,11 @@ header {
       grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
       .f3 #diivs h5 {
         grid-area: a1;
-        width: 100%; }
+        width: 70%;
+        justify-self: center; }
       .f3 #diivs #formiis {
-        width: 100%;
+        width: 70%;
+        justify-self: center;
         grid-area: a4; }
       .f3 #diivs .twwitter {
         transition: height 4s, width 4s;
@@ -1394,7 +1594,6 @@ header {
     grid-template-rows: 45% 45%;
     grid-template-areas: "a1 a1" "a2 a3"; }
     #m3 h3 {
-      color: white;
       font-family: "Permanent Marker", cursive;
       justify-self: center;
       grid-area: a1; }
@@ -1407,19 +1606,46 @@ header {
       grid-area: a3; }
   /*Footer*/
   .f3 {
-    top: 600px;
-    height: 240px;
+    height: 700px;
     width: 100%; }
-    .f3 .twitter {
-      transition: height 4s, width 4s; }
-    .f3 .twitter :hover {
-      height: 50px;
-      width: 50px; }
-    .f3 .ig {
-      transition: height 4s, width 4s; }
-    .f3 .ig :hover {
-      height: 50px;
-      width: 50px; } }
+    .f3 #diivs {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      align-items: center;
+      text-align: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      .f3 #diivs h5 {
+        grid-area: a1;
+        width: 70%;
+        justify-self: center; }
+      .f3 #diivs #formiis {
+        width: 70%;
+        justify-self: center;
+        grid-area: a4; }
+      .f3 #diivs .twwitter {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      .f3 #diivs .twwitter :hover {
+        height: 50px;
+        width: 50px; }
+      .f3 #diivs .iggg {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      .f3 #diivs .iggg :hover {
+        height: 50px;
+        width: 50px; }
+      .f3 #diivs .fbbb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      .f3 #diivs .fbbb :hover {
+        height: 50px;
+        width: 50px; } }
 
 @media only screen and (min-width: 992px) {
   /*Header*/
@@ -1446,7 +1672,6 @@ header {
     padding-right: 10px;
     padding-left: 10px; }
     #m3 h3 {
-      color: white;
       font-family: "Permanent Marker", cursive;
       justify-self: center;
       grid-area: a1;
@@ -1461,19 +1686,46 @@ header {
       grid-area: a3; }
   /*Footer*/
   .f3 {
-    top: 600px;
-    height: 240px;
+    height: 700px;
     width: 100%; }
-    .f3 .twitter {
-      transition: height 4s, width 4s; }
-    .f3 .twitter :hover {
-      height: 50px;
-      width: 50px; }
-    .f3 .ig {
-      transition: height 4s, width 4s; }
-    .f3 .ig :hover {
-      height: 50px;
-      width: 50px; } }
+    .f3 #diivs {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      align-items: center;
+      text-align: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      .f3 #diivs h5 {
+        grid-area: a1;
+        width: 70%;
+        justify-self: center; }
+      .f3 #diivs #formiis {
+        width: 70%;
+        justify-self: center;
+        grid-area: a4; }
+      .f3 #diivs .twwitter {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      .f3 #diivs .twwitter :hover {
+        height: 50px;
+        width: 50px; }
+      .f3 #diivs .iggg {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      .f3 #diivs .iggg :hover {
+        height: 50px;
+        width: 50px; }
+      .f3 #diivs .fbbb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      .f3 #diivs .fbbb :hover {
+        height: 50px;
+        width: 50px; } }
 
 @media only screen and (max-width: 600px) {
   /*Header*/
@@ -1490,24 +1742,12 @@ header {
     #navbar5 #divvv {
       grid-area: a3; }
   /*Main*/
-  .m4 {
+  .divvz {
     display: grid;
-    height: 800px;
-    width: 100%;
-    grid-template-columns: 100%;
-    row-gap: 25px;
-    grid-template-rows: 350px 350px;
-    grid-template-areas: "a1" "a2"; }
-    .m4 h3 {
+    row-gap: 30px; }
+    .divvz #dattebayo {
       height: 100%;
-      color: white;
-      grid-area: a1;
-      align-self: center;
-      font-family: "Permanent Marker", cursive; }
-    .m4 #dattebayo {
-      height: 100%;
-      width: 100%;
-      grid-area: a2; }
+      width: 100%; }
   /*Footer*/
   .f4 {
     height: 700px;
@@ -1523,9 +1763,11 @@ header {
       grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
       .f4 #diivvs h5 {
         grid-area: a1;
-        width: 100%; }
+        width: 70%;
+        justify-self: center; }
       .f4 #diivvs #formmiis {
-        width: 100%;
+        width: 70%;
+        justify-self: center;
         grid-area: a4; }
       .f4 #diivvs .twwiitter {
         transition: height 4s, width 4s;
@@ -1564,22 +1806,12 @@ header {
     #navbar5 #divvv {
       grid-area: a3; }
   /*Main*/
-  .m4 {
+  .divvz {
     display: grid;
-    height: 700px;
-    width: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "a1" "a2"; }
-    .m4 h3 {
-      color: white;
-      grid-area: a1;
-      align-self: center;
-      font-family: "Permanent Marker", cursive; }
-    .m4 #dattebayo {
+    row-gap: 30px; }
+    .divvz #dattebayo {
       height: 100%;
-      width: 100%;
-      grid-area: a2; }
+      width: 100%; }
   /*Footer*/
   .f4 {
     height: 700px;
@@ -1595,9 +1827,11 @@ header {
       grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
       .f4 #diivvs h5 {
         grid-area: a1;
-        width: 100%; }
+        width: 70%;
+        justify-self: center; }
       .f4 #diivvs #formmiis {
-        width: 100%;
+        width: 70%;
+        justify-self: center;
         grid-area: a4; }
       .f4 #diivvs .twwiitter {
         transition: height 4s, width 4s;
@@ -1636,37 +1870,58 @@ header {
     #navbar5 #divvv {
       grid-area: a2; }
   /*Main*/
-  .m4 {
-    display: grid;
-    height: 700px;
-    width: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "a1" "a2"; }
-    .m4 h3 {
-      color: white;
-      grid-area: a1;
-      align-self: center;
-      font-family: "Permanent Marker", cursive; }
-    .m4 #dattebayo {
-      height: 100%;
-      width: 100%;
-      grid-area: a2; }
+  #mmm {
+    height: 720px;
+    width: 100%; }
+    #mmm .divvz {
+      text-align: center;
+      display: grid;
+      row-gap: 30px; }
+      #mmm .divvz #dattebayo {
+        height: 100%;
+        width: 100%; }
   /*Footer*/
   .f4 {
-    top: 600px;
-    height: 240px;
+    height: 700px;
     width: 100%; }
-    .f4 .twitter {
-      transition: height 4s, width 4s; }
-    .f4 .twitter :hover {
-      height: 50px;
-      width: 50px; }
-    .f4 .ig {
-      transition: height 4s, width 4s; }
-    .f4 .ig :hover {
-      height: 50px;
-      width: 50px; } }
+    .f4 #diivvs {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      align-items: center;
+      text-align: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      .f4 #diivvs h5 {
+        grid-area: a1;
+        width: 70%;
+        justify-self: center; }
+      .f4 #diivvs #formmiis {
+        width: 70%;
+        justify-self: center;
+        grid-area: a4; }
+      .f4 #diivvs .twwiitter {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      .f4 #diivvs .twwiitter :hover {
+        height: 50px;
+        width: 50px; }
+      .f4 #diivvs .iiggg {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      .f4 #diivvs .iiggg :hover {
+        height: 50px;
+        width: 50px; }
+      .f4 #diivvs .ffbbb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      .f4 #diivvs .ffbbb :hover {
+        height: 50px;
+        width: 50px; } }
 
 @media only screen and (min-width: 992px) {
   /*Header*/
@@ -1683,36 +1938,55 @@ header {
     #navbar5 #divvv {
       grid-area: a2; }
   /*Main*/
-  .m4 {
-    display: grid;
-    height: 700px;
-    width: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "a1" "a2"; }
-    .m4 h3 {
-      color: white;
-      grid-area: a1;
-      align-self: center;
-      font-family: "Permanent Marker", cursive;
-      padding-right: 10px;
-      padding-left: 10px; }
-    .m4 #dattebayo {
-      height: 100%;
-      width: 100%;
-      grid-area: a2; }
+  #mmm {
+    height: 720px;
+    width: 100%; }
+    #mmm .divvz {
+      text-align: center;
+      display: grid;
+      row-gap: 30px; }
+      #mmm .divvz #dattebayo {
+        height: 100%;
+        width: 100%; }
   /*Footer*/
   .f4 {
-    top: 600px;
-    height: 240px;
+    height: 700px;
     width: 100%; }
-    .f4 .twitter {
-      transition: height 4s, width 4s; }
-    .f4 .twitter :hover {
-      height: 50px;
-      width: 50px; }
-    .f4 .ig {
-      transition: height 4s, width 4s; }
-    .f4 .ig :hover {
-      height: 50px;
-      width: 50px; } }
+    .f4 #diivvs {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      align-items: center;
+      text-align: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a1 a1 a1" "a4 a4 a4" "a2 a3 a5"; }
+      .f4 #diivvs h5 {
+        grid-area: a1;
+        width: 70%;
+        justify-self: center; }
+      .f4 #diivvs #formmiis {
+        width: 70%;
+        justify-self: center;
+        grid-area: a4; }
+      .f4 #diivvs .twwiitter {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a2; }
+      .f4 #diivvs .twwiitter :hover {
+        height: 50px;
+        width: 50px; }
+      .f4 #diivvs .iiggg {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a3; }
+      .f4 #diivvs .iiggg :hover {
+        height: 50px;
+        width: 50px; }
+      .f4 #diivvs .ffbbb {
+        transition: height 4s, width 4s;
+        width: 100%;
+        grid-area: a5; }
+      .f4 #diivvs .ffbbb :hover {
+        height: 50px;
+        width: 50px; } }
