@@ -13,23 +13,36 @@ if (animeFavorito == "Naruto"){
     alert ("El mio también!");
     
     let personajes = prompt("Cuál es tu personaje favorito de Naruto?");
+    while (personajes != "Naruto") {
+        switch (personajes) {
+            case "Kakashi":
+            alert ("Raikiri!");
+            break;
     
-    switch (personajes) {
-        case "Naruto":
-        alert ("Rasengan!");
-        break;
-
-        case "Itachi":
-        alert ("Amaterasu!");
-        break;
+            case "Itachi":
+            alert ("Amaterasu!");
+            break;
+            
+            case "Sasuke":
+            alert ("Chidori!");
+            break;
+    
+            default:
+            alert ("No conozco sus poderes.");
+    
+            function nombreCompleto(nombre, apellido){
+                let nombreApellido = `Su nombre completo es ${nombre} ${apellido}`;
+                alert(`Su nombre completo es ${nombre} ${apellido}`);
+                return nombreApellido;
+            }
+            
+            let nombrePersonaje = prompt("Cual es su nombre?");
+            let apellidoPersonaje = prompt("Cual es su apellido?");
         
-        case "Sasuke":
-        alert ("Chidori!");
-        break;
-
-        default:
-        alert ("No conozco sus poderes.");
-        break;
+            nombreCompleto(nombrePersonaje, apellidoPersonaje);
+            break;
+    } 
+     break;
 }
 } 
 
