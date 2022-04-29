@@ -176,3 +176,50 @@ console.log(buscarPrecios);
 
 
 console.log(new Date());
+
+
+// (ESTÁ EN LA SECCION PERSONAJES)
+console.log(document.getElementsByClassName("Naruto"));
+console.log(document.getElementsByClassName("Sasuke"));
+console.log(document.getElementsByClassName("Sakura"));
+console.log(document.getElementsByClassName("Kakashi"));
+console.log(document.getElementsByClassName("Itachi"));
+console.log(document.getElementsByClassName("Minato"));
+console.log(document.getElementsByClassName("Obito"));
+console.log(document.getElementsByClassName("Madara"));
+console.log(document.getElementsByClassName("Hashirama"));
+console.log(document.getElementsByClassName("Tobirama"));
+console.log(document.getElementsByClassName("Pain"));
+console.log(document.getElementsByClassName("Sarutobi"));
+console.log(document.getElementsByClassName("Tsunade"));
+console.log(document.getElementsByClassName("Orochimaru"));
+console.log(document.getElementsByClassName("Jiraiya"));
+
+
+// (ESTÁ EN EL INDEX)
+let titulo = document.getElementById("headerrr");
+let jutsus = prompt("Cuál es tu jutsu favorito?");
+titulo.innerText = "Tu jutsu es " + jutsus;
+
+
+const boton = document.querySelector("#headerrr");
+boton.addEventListener("mouseover", ()=>{       
+   
+console.log("Qué poder!");
+})
+
+
+//(EN INDEX)
+console.log(localStorage.getItem("jutsu"));  
+
+let jutsu = "Mi jutsu es Kotoamatsukami";
+
+localStorage.setItem("jutsu", jutsu);
+
+
+let herramientaShinobi = {
+    nombre: "Bombas de humo",
+    precio: 400
+}
+localStorage.setItem("herramienta", JSON.stringify(herramientaShinobi));
+    
