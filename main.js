@@ -29,6 +29,7 @@ if (animeFavorito == "Naruto"){
     
             default:
             alert ("No conozco sus poderes.");
+            break;
     
             function nombreCompleto(nombre, apellido){
                 let nombreApellido = `Su nombre completo es ${nombre} ${apellido}`;
@@ -202,6 +203,7 @@ let jutsus = prompt("Cuál es tu jutsu favorito?");
 titulo.innerText = "Tu jutsu es " + jutsus;
 
 
+
 const boton = document.querySelector("#headerrr");
 boton.addEventListener("mouseover", ()=>{       
    
@@ -223,3 +225,28 @@ let herramientaShinobi = {
 }
 localStorage.setItem("herramienta", JSON.stringify(herramientaShinobi));
     
+
+
+//Jquery (index)
+$("#headerrr").css({
+    opacity: 2
+});
+$("#imagen").css({
+    opacity: 1
+})
+
+
+
+//Toastify (imagen de Naruto en Index)
+
+$("#imggg").on("click", function(){
+    Toastify({
+
+        text: "Arigato Dattebayo!",
+        
+        duration: 3000
+        
+        }).showToast();
+})
+
+
