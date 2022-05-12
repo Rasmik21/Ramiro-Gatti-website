@@ -250,3 +250,20 @@ $("#imggg").on("click", function(){
 })
 
 
+
+
+const bton = document.querySelector("#btttn");
+const container = document.querySelector(".containerrr");
+
+const obtenerDatos = () => {
+    //fetch(url, configuracion opcional)
+    fetch("pruebas.txt")
+        .then(Response => Response.text())
+        .then(result => container.innerHTML += `<p>${result}</p>`)
+        // .then(result => console.log(result))
+        .catch (error => console.log(error))
+}
+
+bton.onclick = () => {
+    obtenerDatos();
+}

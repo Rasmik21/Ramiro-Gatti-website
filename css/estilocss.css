@@ -20,6 +20,9 @@ header {
   header h1 {
     padding-top: 50px; }
 
+.containerrr {
+  color: orangered; }
+
 @media only screen and (max-width: 600px) {
   /* Header */
   #headerrr {
@@ -62,7 +65,7 @@ header {
         align-self: center; }
   /* Footer */
   #f {
-    height: 700px;
+    height: 900px;
     width: 100%; }
     #f #divs {
       height: 100%;
@@ -144,7 +147,7 @@ header {
         align-self: center; }
   /* Footer */
   #f {
-    height: 700px;
+    height: 900px;
     width: 100%; }
     #f #divs {
       height: 100%;
@@ -225,7 +228,7 @@ header {
         align-self: center; }
   /* Footer */
   #f {
-    height: 700px;
+    height: 900px;
     width: 100%; }
     #f #divs {
       height: 100%;
@@ -308,7 +311,7 @@ header {
       align-self: center; }
   /* Footer */
   #f {
-    height: 700px;
+    height: 900px;
     width: 100%; }
     #f #divs {
       height: 100%;
